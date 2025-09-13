@@ -1,0 +1,326 @@
+/* VitaHue Health & Wellness Platform Styles */
+
+/* Color Variables */
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #81c784;
+    --accent-color: #4caf50;
+    --dark-green: #1b5e20;
+    --light-green: #c8e6c9;
+    --warm-white: #fafafa;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --border-light: #e8f5e8;
+}
+
+/* General Styles */
+.vitahue-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.vitahue-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.vitahue-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.vitahue-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Pills */
+.vitahue-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.nav-pill {
+    background: white;
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+}
+
+.nav-pill:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav-pill.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Content Sections */
+.vitahue-section {
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    border-left: 5px solid var(--accent-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-title i {
+    color: var(--accent-color);
+}
+
+/* Cards */
+.vitahue-card {
+    background: var(--warm-white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-light);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.vitahue-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--secondary-color);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.card-content {
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background: linear-gradient(135deg, var(--light-green) 0%, white 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.vitahue-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.vitahue-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.vitahue-btn-secondary {
+    background: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.vitahue-btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Stats */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.stat-item {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vitahue-title {
+        font-size: 2rem;
+    }
+    
+    .vitahue-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-pill {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .vitahue-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactive Elements */
+.interactive-element {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.interactive-element:hover {
+    transform: scale(1.05);
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
