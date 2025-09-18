@@ -15,14 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // Load initial data
 async function loadInitialData() {
     try {
-        // Load resources and events for quick access
-        const [resourcesResponse, eventsResponse] = await Promise.all([
-            axios.get('/api/resources'),
-            axios.get('/api/events')
-        ]);
-        
-        resourcesData = resourcesResponse.data;
-        eventsData = eventsResponse.data;
+        // Use static data instead of API calls to avoid 500 errors
+        resourcesData = getPartnerOrganizations();
+        eventsData = getEventsData();
         
         console.log(`Loaded ${resourcesData.length} resources and ${eventsData.length} events`);
     } catch (error) {
@@ -122,20 +117,27 @@ function loadResourceHub() {
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <select id="category-filter" onchange="filterResources()" class="p-2 border rounded">
                             <option value="">All Categories</option>
-                            <option value="housing">Housing</option>
-                            <option value="jobs">Jobs & Employment</option>
-                            <option value="health">Health & Wellness</option>
-                            <option value="community">Community Services</option>
-                            <option value="education">Education</option>
-                            <option value="financial">Financial Services</option>
+                            <option value="Family Support Services">Family Support Services</option>
+                            <option value="Food Security">Food Security</option>
+                            <option value="Mental Health & Parent Support">Mental Health & Parent Support</option>
+                            <option value="Healthcare Advocacy">Healthcare Advocacy</option>
+                            <option value="Violence Prevention">Violence Prevention</option>
+                            <option value="Women's Empowerment">Women's Empowerment</option>
+                            <option value="Substance Abuse Recovery">Substance Abuse Recovery</option>
+                            <option value="Reentry Services">Reentry Services</option>
+                            <option value="Wellness & Mental Health">Wellness & Mental Health</option>
+                            <option value="Fatherhood Support">Fatherhood Support</option>
+                            <option value="Community Services">Community Services</option>
+                            <option value="Latino Community Services">Latino Community Services</option>
+                            <option value="Civil Rights & Economic Empowerment">Civil Rights</option>
+                            <option value="Women's Services">Women's Services</option>
                         </select>
                         
                         <select id="community-filter" onchange="filterResources()" class="p-2 border rounded">
                             <option value="">All Communities</option>
-                            <option value="black">Black Community Focus</option>
-                            <option value="brown">Brown Community Focus</option>
-                            <option value="latin">Latino Community Focus</option>
-                            <option value="both">All Communities</option>
+                            <option value="Black Community Focus">Black Community Focus</option>
+                            <option value="Latino Community Focus">Latino Community Focus</option>
+                            <option value="All Communities">All Communities</option>
                         </select>
                         
                         <input type="text" id="search-input" onkeyup="filterResources()" placeholder="Search by name..." class="p-2 border rounded">
@@ -161,8 +163,8 @@ function loadResourceHub() {
 
 async function loadResources() {
     try {
-        const response = await axios.get('/api/resources');
-        resourcesData = response.data;
+        // Use static partner organizations data from CSV
+        resourcesData = getPartnerOrganizations();
         displayResources(resourcesData);
     } catch (error) {
         console.error('Error loading resources:', error);
@@ -170,6 +172,188 @@ async function loadResources() {
             <p class="text-red-600">Error loading resources. Please try again.</p>
         `;
     }
+}
+
+// Partner Organizations Data from CSV
+function getPartnerOrganizations() {
+    return [
+        {
+            name: "Adaptt Rochester",
+            website: "https://www.adapttrochester.com/",
+            address: "Rochester, NY",
+            phone: "(585) 616-3231",
+            category: "Family Support Services",
+            description: "Transitional housing, food pantry, clothing closet, family care programs",
+            director: "Tamara Howard & Angela Wollschlager (Co-Founders)",
+            community_focus: "Black Community Focus",
+            logo: "https://www.adapttrochester.com/uploads/FBCt4AQK/blue.png"
+        },
+        {
+            name: "Sweet Ida Mae Pantry",
+            website: "sweetidamaepantry.com",
+            address: "1274 Dewey Ave, Rochester, NY 14613",
+            phone: "(585) 230-3703",
+            category: "Food Security",
+            description: "Community food pantry providing essential food assistance",
+            director: "Devon Reynolds (Founder & Director)",
+            community_focus: "All Communities",
+            logo: null
+        },
+        {
+            name: "BIPOC PEEEEK",
+            website: "http://bipocparentvoice.org",
+            address: "10 Cady Street Lower Level Suite 11, Rochester NY 14608",
+            email: "bipocparentvoice@gmail.com",
+            category: "Mental Health & Parent Support",
+            description: "BIPOC parent advocacy, mental health services, peer support",
+            director: "Sara Taylor (Founder & Visionary), Len Statham (Project Lead)",
+            community_focus: "Black Community Focus",
+            logo: "https://pbs.twimg.com/media/F8AjoCSXMAAsRWd.jpg"
+        },
+        {
+            name: "Sickle Cell Advocates of Rochester (SCAR)",
+            website: null,
+            address: "Rochester, NY",
+            email: "sicklecelladvocatesofrochester@gmail.com",
+            category: "Healthcare Advocacy",
+            description: "Sickle cell disease awareness and support services",
+            director: "Gladys Magee & Stephanie Ramos (Co-Directors)",
+            community_focus: "Black Community Focus",
+            logo: null
+        },
+        {
+            name: "Barakah Muslim Charity",
+            website: "https://www.barakahmuslimcharity.org/",
+            address: "584 Jefferson Ave, Rochester, NY 14611",
+            phone: "(585) 325-2621",
+            category: "Food Security & Community Support",
+            description: "Food pantry, clothing drive, community assistance programs",
+            director: "Dr. Irshad Altheimer (President), Zuhair Johnson (Executive Director)",
+            community_focus: "All Communities",
+            logo: "https://static.wixstatic.com/media/72026f_fffe518f4a714fd2b0123164fa593c41~mv2_d_4200_3000_s_4_2.png"
+        },
+        {
+            name: "ROC the Peace",
+            website: "https://www.rocthepeace.org/",
+            address: "3000 Mt. Read Blvd. Suite 202, Rochester, NY 14615",
+            phone: "(585) 820-4049",
+            category: "Violence Prevention",
+            description: "Community outreach, anti-violence initiatives, youth programs",
+            director: "Sirena Cotton (Executive Director)",
+            community_focus: "Black Community Focus",
+            logo: "https://cdn.prod.website-files.com/636ee008c0125c7441549cf4/636eefa43958c93a9261c207_logo_rocthepeace1e-COLOR.jpg"
+        },
+        {
+            name: "Women's Foundation of Genesee Valley",
+            website: "https://womensfoundation.org/",
+            address: "494 East Ave, Rochester, NY 14607",
+            phone: "(585) 242-0940",
+            category: "Women's Empowerment",
+            description: "Grants, education, economic self-sufficiency programs for women",
+            director: "Krystle Ellis (Executive Director), Sydney Bell (Board Chair)",
+            community_focus: "All Communities",
+            logo: "https://www.grantforward.com/sponsor_image/20240512222452_a124033a8ae8018e3bff4d74b555badf.jpg"
+        },
+        {
+            name: "Recovery Houses of Rochester",
+            website: "https://www.recoveryhousesofrochester.org/",
+            address: "Rochester, NY (multiple locations)",
+            phone: null,
+            category: "Substance Abuse Recovery",
+            description: "Safe housing and support for men in recovery",
+            director: "Van Smith (Founder & Executive Director)",
+            community_focus: "All Communities",
+            logo: "https://rehabs.org/wp-content/uploads/2021/09/recovery-houses-of-rochester-rochester-ny-front.jpg"
+        },
+        {
+            name: "Reentry and Community Development Center",
+            website: "https://www.rcdc-17.org/",
+            address: "437 North Street, Rochester, NY 14605",
+            phone: "(585) 445-8380",
+            category: "Reentry Services",
+            description: "Support groups, case management, substance abuse support for formerly incarcerated individuals",
+            director: "Miquel Powell, LMSW, CASAC (Executive Director)",
+            community_focus: "All Communities",
+            logo: "https://static.wixstatic.com/media/0ea964_8de335872f3849b08e9eb6b2921ffe27~mv2.jpg"
+        },
+        {
+            name: "Breathe Deep",
+            website: "https://breathedeepinc.org/",
+            address: "28 Green Clover Dr, Henrietta, NY 14467",
+            phone: "(585) 732-9249",
+            category: "Wellness & Mental Health",
+            description: "Restorative wellness programs for marginalized communities",
+            director: "Dr. Melany J. Silas-Chandler (CEO & President)",
+            community_focus: "Black Community Focus",
+            logo: "https://i.ytimg.com/vi/ChkP0k3SyL0/maxresdefault.jpg"
+        },
+        {
+            name: "The Fatherhood Connection",
+            website: "https://fatherhoodconnection.com/",
+            address: "210 West Main St, Rochester, NY 14620",
+            phone: "(585) 284-2445",
+            category: "Fatherhood Support",
+            description: "Community building and identity solutions for fathers",
+            director: "Reginald Cox (Founder/Director)",
+            community_focus: "Black Community Focus",
+            logo: "https://fatherhoodconnection.com/wp-content/uploads/2021/09/Logo-back-768x436.png"
+        },
+        {
+            name: "Baden Street Settlement",
+            website: "https://badenstreet.org/",
+            address: "152 Baden Street, Rochester, NY 14605",
+            phone: "(585) 325-4910",
+            category: "Community Services",
+            description: "Behavioral health, substance use disorder treatment, community programs",
+            director: "Catherine Thomas (Executive Director)",
+            community_focus: "All Communities",
+            logo: "https://badenstreet.org/wp-content/uploads/Baden-Logo1-282.png.webp"
+        },
+        {
+            name: "Ibero American Development Corporation",
+            website: "https://www.ibero.org/",
+            address: "124 Evergreen Street, Rochester, NY 14605",
+            phone: "(585) 256-8900",
+            category: "Latino Community Services",
+            description: "Dual-language services, human services for Latino community",
+            director: "Angélica Pérez-Delgado (President & CEO)",
+            community_focus: "Latino Community Focus",
+            logo: "https://www.ibero.org/wp-content/uploads/2020/05/ibero-logo.jpg"
+        },
+        {
+            name: "Urban League of Rochester",
+            website: "https://www.urbanleagueroc.org/",
+            address: "265 North Clinton Avenue, Rochester, NY 14605",
+            phone: "(585) 325-6530",
+            category: "Civil Rights & Economic Empowerment",
+            description: "Community transformation, individual empowerment, civil rights advocacy",
+            director: "Community Leadership",
+            community_focus: "Black Community Focus",
+            logo: null
+        },
+        {
+            name: "YMCA of Greater Rochester",
+            website: "https://rochesterymca.org/",
+            address: "444 East Main Street, Rochester, NY 14604",
+            phone: "(585) 546-5500",
+            category: "Community Services",
+            description: "Swimming, health & wellness, childcare programs, community building",
+            director: "Community Leadership",
+            community_focus: "All Communities",
+            logo: null
+        },
+        {
+            name: "YWCA of Rochester & Monroe County",
+            website: "https://www.ywcarochester.org/",
+            address: "175 North Clinton Avenue, Rochester, NY 14604",
+            phone: "(585) 546-5820",
+            category: "Women's Services",
+            description: "Eliminating racism, empowering women, survivor services",
+            director: "Community Leadership",
+            community_focus: "All Communities",
+            logo: null
+        }
+    ];
 }
 
 function displayResources(resources) {
@@ -190,18 +374,37 @@ function displayResources(resources) {
     
     container.innerHTML = resources.map(resource => `
         <div class="bg-white border rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
-            <div class="flex items-start justify-between mb-3">
-                <h4 class="text-lg font-bold text-forest-green">${resource.name}</h4>
-                <span class="text-xs bg-light-green text-black px-2 py-1 rounded">${resource.category}</span>
-            </div>
+            ${resource.logo ? `
+                <div class="flex items-center mb-4">
+                    <img src="${resource.logo}" alt="${resource.name} logo" class="w-12 h-12 object-contain mr-3 rounded">
+                    <div class="flex-1">
+                        <h4 class="text-lg font-bold text-forest-green">${resource.name}</h4>
+                        <span class="text-xs bg-light-green text-black px-2 py-1 rounded">${resource.category}</span>
+                    </div>
+                </div>
+            ` : `
+                <div class="flex items-start justify-between mb-3">
+                    <h4 class="text-lg font-bold text-forest-green">${resource.name}</h4>
+                    <span class="text-xs bg-light-green text-black px-2 py-1 rounded">${resource.category}</span>
+                </div>
+            `}
             
             <p class="text-gray-700 mb-4">${resource.description || 'No description available'}</p>
             
+            ${resource.director ? `
+                <div class="bg-gray-50 p-3 rounded mb-4">
+                    <p class="text-sm text-gray-700">
+                        <i class="fas fa-user-tie mr-2 text-forest-green"></i>
+                        <strong>Leadership:</strong> ${resource.director}
+                    </p>
+                </div>
+            ` : ''}
+            
             <div class="space-y-2 text-sm text-gray-600">
-                ${resource.address ? `<p><i class="fas fa-map-marker-alt mr-2"></i>${resource.address}</p>` : ''}
-                ${resource.phone ? `<p><i class="fas fa-phone mr-2"></i>${resource.phone}</p>` : ''}
-                ${resource.email ? `<p><i class="fas fa-envelope mr-2"></i><a href="mailto:${resource.email}" class="text-forest-green hover:underline">${resource.email}</a></p>` : ''}
-                ${resource.website ? `<p><i class="fas fa-globe mr-2"></i><a href="${resource.website}" target="_blank" class="text-forest-green hover:underline">Visit Website</a></p>` : ''}
+                ${resource.address ? `<p><i class="fas fa-map-marker-alt mr-2 text-forest-green"></i>${resource.address}</p>` : ''}
+                ${resource.phone ? `<p><i class="fas fa-phone mr-2 text-forest-green"></i><a href="tel:${resource.phone}" class="text-forest-green hover:underline">${resource.phone}</a></p>` : ''}
+                ${resource.email ? `<p><i class="fas fa-envelope mr-2 text-forest-green"></i><a href="mailto:${resource.email}" class="text-forest-green hover:underline">${resource.email}</a></p>` : ''}
+                ${resource.website ? `<p><i class="fas fa-globe mr-2 text-forest-green"></i><a href="${resource.website}" target="_blank" class="text-forest-green hover:underline">Visit Website</a></p>` : ''}
             </div>
             
             <div class="mt-4 flex items-center justify-between">
@@ -209,7 +412,9 @@ function displayResources(resources) {
                     <i class="fas fa-check-circle mr-1 text-green-500"></i>
                     <span>Community Vetted</span>
                 </div>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded">${resource.community_focus}</span>
+                <span class="text-xs ${resource.community_focus === 'Black Community Focus' ? 'bg-purple-100 text-purple-800' : 
+                               resource.community_focus === 'Latino Community Focus' ? 'bg-blue-100 text-blue-800' : 
+                               'bg-gray-100 text-gray-800'} px-2 py-1 rounded">${resource.community_focus}</span>
             </div>
         </div>
     `).join('');
@@ -240,6 +445,52 @@ function filterResources() {
     }
     
     displayResources(filtered);
+}
+
+// Sample Events Data
+function getEventsData() {
+    const today = new Date();
+    const tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);
+    const thisWeekend = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    return [
+        {
+            id: 1,
+            title: "Black Heritage Month Celebration",
+            date: today.toISOString().split('T')[0],
+            time: "6:00 PM - 9:00 PM",
+            location: "Strong Museum of Play",
+            category: "Cultural",
+            description: "Join us for an evening celebrating Rochester's Black heritage with music, art, and community stories.",
+            image: "https://cdn1.genspark.ai/user-upload-image/3_generated/cbaa998b-fd5e-4e31-b338-11273e5e1218",
+            organizer: "Rochester Heritage Society",
+            featured: true
+        },
+        {
+            id: 2,
+            title: "Community Health Fair",
+            date: tomorrow.toISOString().split('T')[0],
+            time: "10:00 AM - 3:00 PM",
+            location: "Martin Luther King Jr. Park",
+            category: "Health",
+            description: "Free health screenings, wellness information, and resources for the community.",
+            image: "https://cdn1.genspark.ai/user-upload-image/3_generated/db98b2a3-0107-49e8-a6db-649adc975b89",
+            organizer: "Rochester Health Coalition",
+            featured: false
+        },
+        {
+            id: 3,
+            title: "Business Networking Mixer",
+            date: thisWeekend.toISOString().split('T')[0],
+            time: "7:00 PM - 10:00 PM",
+            location: "Downtown Rochester",
+            category: "Business",
+            description: "Connect with local Black and Latino business owners and entrepreneurs.",
+            image: "https://cdn1.genspark.ai/user-upload-image/3_generated/33fa80ff-f967-48c9-bf01-bd2c317db5ab",
+            organizer: "Rochester Business Network",
+            featured: false
+        }
+    ];
 }
 
 // ================================
@@ -1424,7 +1675,7 @@ function loadVitaHue() {
                                     <strong>High Stage 2:</strong> 140/90 mmHg or higher
                                 </div>
                                 <div class="mt-4 text-center">
-                                    <button class="vitahue-btn vitahue-btn-secondary">
+                                    <button onclick="trackBloodPressure()" class="vitahue-btn vitahue-btn-secondary">
                                         <i class="fas fa-chart-line mr-2"></i>Track My BP
                                     </button>
                                 </div>
