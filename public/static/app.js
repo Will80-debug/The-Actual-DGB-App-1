@@ -2833,73 +2833,375 @@ function loadYouthVibe() {
                     </div>
                 </section>
 
-                <!-- Age-Segmented Experiences -->
+                <!-- Music & Creators Hub -->
+                <section class="mb-12">
+                    <div class="text-center mb-8">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                            <span class="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 text-transparent bg-clip-text">Music & Creators Hub</span>
+                        </h2>
+                        <p class="text-xl text-gray-600">Your daily dose of culture, creativity, and community vibes</p>
+                    </div>
+
+                    <!-- Daily Trends Hero -->
+                    <div class="relative mb-8 rounded-2xl overflow-hidden">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/bdd5c3f7-5968-4ccd-9e6c-3737f097c9e3" 
+                             alt="Music & Creators Community" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-pink-900/60 to-transparent">
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold mb-2">Today's Culture Feed</h3>
+                                <p class="text-lg opacity-90">Fresh drops, trending sounds, and creative inspiration</p>
+                                <div class="flex items-center space-x-4 mt-3">
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">🔥 Trending Now</span>
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">⚡ Daily Updates</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Dashboard -->
+                    <div class="bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 mb-8 text-white">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold mb-2">🎵 Today's Vibe Check</h3>
+                            <p class="opacity-90">Automatically updated daily • Last refresh: Just now</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <!-- Today's Beat -->
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center">
+                                <i class="fas fa-music text-3xl mb-2"></i>
+                                <h4 class="font-bold mb-1">Beat of the Day</h4>
+                                <p class="text-sm opacity-90">"Summer Nights" - Open verse challenge</p>
+                                <button onclick="playBeatPreview()" class="mt-2 bg-white/30 px-3 py-1 rounded-full text-xs hover:bg-white/40">
+                                    ▶ Listen (30s)
+                                </button>
+                            </div>
+
+                            <!-- Trending Sound -->
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center">
+                                <i class="fab fa-tiktok text-3xl mb-2"></i>
+                                <h4 class="font-bold mb-1">TikTok Trend</h4>
+                                <p class="text-sm opacity-90">#RochesterVibes dance challenge</p>
+                                <button onclick="viewTrend()" class="mt-2 bg-white/30 px-3 py-1 rounded-full text-xs hover:bg-white/40">
+                                    Learn Moves
+                                </button>
+                            </div>
+
+                            <!-- Meme of Day -->
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center">
+                                <i class="fas fa-laugh text-3xl mb-2"></i>
+                                <h4 class="font-bold mb-1">Meme Check</h4>
+                                <p class="text-sm opacity-90">"When the beat drops just right" 😤</p>
+                                <button onclick="shareMeme()" class="mt-2 bg-white/30 px-3 py-1 rounded-full text-xs hover:bg-white/40">
+                                    Share It
+                                </button>
+                            </div>
+
+                            <!-- Local Spotlight -->
+                            <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center">
+                                <i class="fas fa-star text-3xl mb-2"></i>
+                                <h4 class="font-bold mb-1">ROC Spotlight</h4>
+                                <p class="text-sm opacity-90">Maya J. - Teen Producer</p>
+                                <button onclick="viewProfile()" class="mt-2 bg-white/30 px-3 py-1 rounded-full text-xs hover:bg-white/40">
+                                    See Story
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Age-Segmented Music & Culture Experiences -->
                 <section class="mb-12">
                     <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
-                        <span class="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text">Experiences Tailored to Your Age</span>
+                        <span class="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text">Culture by Your Vibe</span>
                     </h2>
 
-                    <!-- Ages 13-15 -->
+                    <!-- Ages 13-15: Explore & Create -->
                     <div id="age-13-15" class="mb-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8">
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
                                 13-15
                             </div>
                             <div>
-                                <h3 class="text-2xl font-bold text-gray-800">Explore & Discover</h3>
-                                <p class="text-gray-600">Find your interests and build foundations</p>
+                                <h3 class="text-2xl font-bold text-gray-800">Explore & Create</h3>
+                                <p class="text-gray-600">Discover your creative voice and build your first fanbase</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-microscope text-2xl text-blue-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Science Clubs</h4>
-                                <p class="text-sm text-gray-600">Hands-on STEM exploration</p>
+
+                        <!-- Music & Audio Content -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-blue-600 mb-4 flex items-center">
+                                <i class="fas fa-headphones mr-2"></i>Music & Audio Playground
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-music text-2xl text-blue-500 mr-2"></i>
+                                        <span class="font-semibold">Clean Hits</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Daily new drops (rap, R&B, Afrobeat) - 30sec previews</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                                            <span>"Good Days" - SZA</span>
+                                            <button class="text-blue-500 hover:text-blue-700">▶</button>
+                                        </div>
+                                        <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+                                            <span>"Heat Waves" - Glass Animals</span>
+                                            <button class="text-blue-500 hover:text-blue-700">▶</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-puzzle-piece text-2xl text-pink-500 mr-2"></i>
+                                        <span class="font-semibold">Lyric Games</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">"Lyric Decoder" + "Guess the Sample" polls</p>
+                                    <div class="bg-pink-50 p-3 rounded text-sm">
+                                        <p class="mb-2">🎵 "I got my mind set on you..." - Which artist?</p>
+                                        <div class="grid grid-cols-2 gap-1 text-xs">
+                                            <button class="bg-pink-100 p-1 rounded hover:bg-pink-200">A) Drake</button>
+                                            <button class="bg-pink-100 p-1 rounded hover:bg-pink-200">B) J. Cole</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-trophy text-2xl text-yellow-500 mr-2"></i>
+                                        <span class="font-semibold">Beat Challenge</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Weekly beat + open verse challenge</p>
+                                    <div class="text-center">
+                                        <button onclick="joinBeatChallenge()" class="bg-gradient-to-r from-yellow-400 to-orange-400 text-white px-4 py-2 rounded-full text-sm font-semibold hover:shadow-lg">
+                                            Join This Week
+                                        </button>
+                                        <p class="text-xs text-gray-500 mt-1">47 submissions so far</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-paint-brush text-2xl text-pink-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Art Workshops</h4>
-                                <p class="text-sm text-gray-600">Creative expression classes</p>
+                        </div>
+
+                        <!-- Social & Trends -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-purple-600 mb-4 flex items-center">
+                                <i class="fab fa-tiktok mr-2"></i>Social Trends Lab
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-fire text-2xl text-red-500 mr-2"></i>
+                                        <span class="font-semibold">Daily Trendboard</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Safe TikTok sounds & dance challenges</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-red-50 p-2 rounded">🔥 #RocYouthVibes - 2.3M views</div>
+                                        <div class="bg-orange-50 p-2 rounded">💃 Smooth moves challenge</div>
+                                        <div class="bg-yellow-50 p-2 rounded">🎵 "Good Energy" sound trend</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-cut text-2xl text-green-500 mr-2"></i>
+                                        <span class="font-semibold">Edit Templates</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">CapCut templates teens can copy</p>
+                                    <button onclick="browseTemplates()" class="w-full bg-green-100 text-green-700 py-2 rounded font-semibold text-sm hover:bg-green-200">
+                                        Browse 24 Templates
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-gamepad text-2xl text-blue-500 mr-2"></i>
+                                        <span class="font-semibold">Gaming Quick-Hits</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Fortnite/Roblox updates simplified</p>
+                                    <div class="space-y-1 text-xs">
+                                        <div class="bg-blue-50 p-2 rounded">🎮 New Fortnite season drops Friday</div>
+                                        <div class="bg-purple-50 p-2 rounded">🏆 Local Roblox tournament tonight</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-users text-2xl text-green-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Peer Groups</h4>
-                                <p class="text-sm text-gray-600">Make friends with similar interests</p>
+                        </div>
+
+                        <!-- Creative Challenges -->
+                        <div>
+                            <h4 class="text-lg font-bold text-cyan-600 mb-4 flex items-center">
+                                <i class="fas fa-palette mr-2"></i>Creative Challenges
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-camera text-2xl text-pink-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">15-Sec Dance Tutorial</h5>
+                                    <p class="text-xs text-gray-600">Learn trending moves</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-laugh text-2xl text-yellow-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Safe Meme Monday</h5>
+                                    <p class="text-xs text-gray-600">Weekly meme creation</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-tshirt text-2xl text-green-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Fit Battle Friday</h5>
+                                    <p class="text-xs text-gray-600">Rate outfits 1-5</p>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-hamburger text-2xl text-orange-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">$10 Food Challenge</h5>
+                                    <p class="text-xs text-gray-600">Make meals last all day</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ages 16-18 -->
+                    <!-- Ages 16-18: Build & Connect -->
                     <div id="age-16-18" class="mb-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
                                 16-18
                             </div>
                             <div>
-                                <h3 class="text-2xl font-bold text-gray-800">Build & Prepare</h3>
-                                <p class="text-gray-600">Develop skills and plan for the future</p>
+                                <h3 class="text-2xl font-bold text-gray-800">Build & Connect</h3>
+                                <p class="text-gray-600">Level up your skills and build your creative network</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-graduation-cap text-2xl text-purple-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">College Prep</h4>
-                                <p class="text-sm text-gray-600">SAT prep, applications, scholarships</p>
+
+                        <!-- Advanced Creative Content -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-purple-600 mb-4 flex items-center">
+                                <i class="fas fa-microphone mr-2"></i>Creator Development Hub
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-record-vinyl text-2xl text-purple-500 mr-2"></i>
+                                        <span class="font-semibold">Producer Spotlight</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Weekly producer features + beat breakdowns</p>
+                                    <div class="bg-purple-50 p-3 rounded">
+                                        <div class="flex items-center mb-2">
+                                            <div class="w-8 h-8 bg-purple-500 rounded-full mr-2"></div>
+                                            <div>
+                                                <p class="font-semibold text-sm">BeatsBy_Jay_ROC</p>
+                                                <p class="text-xs text-gray-600">Local teen producer</p>
+                                            </div>
+                                        </div>
+                                        <button class="w-full bg-purple-100 text-purple-700 py-1 rounded text-sm">View Beat Pack</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-video text-2xl text-red-500 mr-2"></i>
+                                        <span class="font-semibold">Content Creation</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Film/TV/Streaming watch parties + reviews</p>
+                                    <div class="space-y-2">
+                                        <div class="bg-red-50 p-2 rounded text-xs">
+                                            🎬 "Black Panther 2" watch party - Friday 8PM
+                                        </div>
+                                        <div class="bg-blue-50 p-2 rounded text-xs">
+                                            📱 Spoiler-free recap templates available
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-palette text-2xl text-pink-500 mr-2"></i>
+                                        <span class="font-semibold">Digital Art Studio</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Cover art remixes + design challenges</p>
+                                    <button onclick="joinArtChallenge()" class="w-full bg-gradient-to-r from-pink-400 to-purple-400 text-white py-2 rounded font-semibold text-sm">
+                                        This Week: Album Cover Remix
+                                    </button>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-briefcase text-2xl text-green-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Internships</h4>
-                                <p class="text-sm text-gray-600">Real work experience</p>
+                        </div>
+
+                        <!-- Advanced Gaming & Sports -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-green-600 mb-4 flex items-center">
+                                <i class="fas fa-trophy mr-2"></i>Competitive Culture
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-gamepad text-2xl text-blue-500 mr-2"></i>
+                                        <span class="font-semibold">Esports Central</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">2K/Madden/Minecraft tournaments</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-blue-50 p-2 rounded">🏆 ROC Youth 2K Tournament - March 25</div>
+                                        <div class="bg-green-50 p-2 rounded">⚡ Loadout of the week: Fortnite</div>
+                                        <div class="bg-purple-50 p-2 rounded">🎮 Local game night @ Innovation Center</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-basketball-ball text-2xl text-orange-500 mr-2"></i>
+                                        <span class="font-semibold">Sports Highlights</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">NBA/NFL/Local athlete spotlights</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-orange-50 p-2 rounded">🏀 Play of the Day: Vote now!</div>
+                                        <div class="bg-red-50 p-2 rounded">⭐ Marcus Johnson - East High MVP</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fab fa-youtube text-2xl text-red-500 mr-2"></i>
+                                        <span class="font-semibold">Anime & Manga</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Season calendars + release trackers</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-red-50 p-2 rounded">📅 Attack on Titan finale - This Sunday</div>
+                                        <div class="bg-blue-50 p-2 rounded">🎨 Fan art of the week contest</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-car text-2xl text-blue-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Life Skills</h4>
-                                <p class="text-sm text-gray-600">Driving, banking, job interviews</p>
+                        </div>
+
+                        <!-- Fashion & Lifestyle -->
+                        <div>
+                            <h4 class="text-lg font-bold text-pink-600 mb-4 flex items-center">
+                                <i class="fas fa-tshirt mr-2"></i>Style & Lifestyle
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-shoe-prints text-2xl text-red-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Sneaker Drop Calendar</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Jordan 4s dropping Friday</p>
+                                    <button class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs">Set Reminder</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-cut text-2xl text-purple-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Hair & Nail Trends</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Spring protective styles</p>
+                                    <button class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">View Tutorial</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-recycle text-2xl text-green-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Thrift Flips</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Transform old fits</p>
+                                    <button class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Share Flip</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-mobile-alt text-2xl text-blue-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Budget Tech Tips</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Creator gear under $50</p>
+                                    <button class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">View List</button>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Ages 19-24 -->
+                    <!-- Ages 19-24: Launch & Lead -->
                     <div id="age-19-24" class="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-8">
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
@@ -2907,24 +3209,134 @@ function loadYouthVibe() {
                             </div>
                             <div>
                                 <h3 class="text-2xl font-bold text-gray-800">Launch & Lead</h3>
-                                <p class="text-gray-600">Start your career and make an impact</p>
+                                <p class="text-gray-600">Monetize your creativity and inspire the next generation</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-rocket text-2xl text-green-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Career Launch</h4>
-                                <p class="text-sm text-gray-600">Full-time jobs, career paths</p>
+
+                        <!-- Professional Creative Development -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-green-600 mb-4 flex items-center">
+                                <i class="fas fa-rocket mr-2"></i>Creative Entrepreneurship
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-dollar-sign text-2xl text-green-500 mr-2"></i>
+                                        <span class="font-semibold">Teenpreneur Spotlight</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Weekly interviews with young entrepreneurs</p>
+                                    <div class="bg-green-50 p-3 rounded">
+                                        <div class="flex items-center mb-2">
+                                            <div class="w-8 h-8 bg-green-500 rounded-full mr-2"></div>
+                                            <div>
+                                                <p class="font-semibold text-sm">Keisha M., 22</p>
+                                                <p class="text-xs text-gray-600">Digital marketing agency owner</p>
+                                            </div>
+                                        </div>
+                                        <button class="w-full bg-green-100 text-green-700 py-1 rounded text-sm">Read Full Interview</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-chart-line text-2xl text-blue-500 mr-2"></i>
+                                        <span class="font-semibold">Creator Monetization</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Turn your content into income streams</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-blue-50 p-2 rounded">💰 Brand partnership opportunities</div>
+                                        <div class="bg-purple-50 p-2 rounded">🎵 Music licensing for creators</div>
+                                        <div class="bg-green-50 p-2 rounded">📱 Social media management tips</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-users text-2xl text-purple-500 mr-2"></i>
+                                        <span class="font-semibold">Community Building</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Lead workshops and mentor younger creators</p>
+                                    <button onclick="applyMentorRole()" class="w-full bg-gradient-to-r from-purple-400 to-pink-400 text-white py-2 rounded font-semibold text-sm">
+                                        Become a Mentor
+                                    </button>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-lightbulb text-2xl text-yellow-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Entrepreneurship</h4>
-                                <p class="text-sm text-gray-600">Start your own business</p>
+                        </div>
+
+                        <!-- Advanced Opportunities -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-bold text-teal-600 mb-4 flex items-center">
+                                <i class="fas fa-briefcase mr-2"></i>Professional Opportunities
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-microphone-alt text-2xl text-red-500 mr-2"></i>
+                                        <span class="font-semibold">Media & Broadcasting</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Podcast hosting, radio internships</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-red-50 p-2 rounded">🎙️ WXXI Youth Radio Program</div>
+                                        <div class="bg-orange-50 p-2 rounded">📺 Channel 10 internship openings</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-code text-2xl text-blue-500 mr-2"></i>
+                                        <span class="font-semibold">Tech & Innovation</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">App development, AI tools for creators</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-blue-50 p-2 rounded">💻 RIT coding bootcamp - April start</div>
+                                        <div class="bg-purple-50 p-2 rounded">🤖 AI tools workshop series</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-handshake text-2xl text-green-500 mr-2"></i>
+                                        <span class="font-semibold">Industry Connections</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mb-3">Network with music industry professionals</p>
+                                    <div class="space-y-2 text-xs">
+                                        <div class="bg-green-50 p-2 rounded">🎵 Record label showcases</div>
+                                        <div class="bg-yellow-50 p-2 rounded">🤝 Industry mentor matching</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
-                                <i class="fas fa-megaphone text-2xl text-purple-500 mb-2"></i>
-                                <h4 class="font-semibold mb-1">Community Impact</h4>
-                                <p class="text-sm text-gray-600">Leadership roles, advocacy</p>
+                        </div>
+
+                        <!-- Leadership & Community Impact -->
+                        <div>
+                            <h4 class="text-lg font-bold text-orange-600 mb-4 flex items-center">
+                                <i class="fas fa-megaphone mr-2"></i>Community Leadership
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-star text-2xl text-yellow-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Excellence Spotlight</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Black youth achievements</p>
+                                    <button class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">Nominate Someone</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-calendar text-2xl text-purple-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Local Scene</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Open mics, showcases</p>
+                                    <button class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">Find Events</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-heart text-2xl text-red-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Volunteer Gigs</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Community service</p>
+                                    <button class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs">Sign Up</button>
+                                </div>
+                                <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
+                                    <i class="fas fa-trophy text-2xl text-green-500 mb-2"></i>
+                                    <h5 class="font-semibold text-sm">Challenge Prizes</h5>
+                                    <p class="text-xs text-gray-600 mb-2">Win equipment & cash</p>
+                                    <button class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Enter Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -3268,6 +3680,311 @@ function addYouthVibeEventListeners() {
             </div>
         `);
     };
+}
+
+// Music & Creators Interactive Functions
+window.playBeatPreview = function() {
+    showYouthVibeModal('🎵 Beat of the Day: "Summer Nights"', `
+        <div class="text-center space-y-4">
+            <div class="w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto flex items-center justify-center text-white text-4xl">
+                🎵
+            </div>
+            <h3 class="text-xl font-bold">Open Verse Challenge</h3>
+            <p class="text-gray-600">Listen to the beat and drop your best bars!</p>
+            
+            <div class="bg-purple-50 p-4 rounded-lg">
+                <div class="flex items-center justify-center space-x-4 mb-4">
+                    <button class="bg-purple-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">▶</button>
+                    <div class="text-left">
+                        <p class="font-semibold">30-second preview</p>
+                        <p class="text-sm text-gray-600">Prod. by BeatsBy_Jay_ROC</p>
+                    </div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-purple-500 h-2 rounded-full w-1/3"></div>
+                </div>
+            </div>
+            
+            <div class="space-y-2">
+                <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold">
+                    Record My Verse
+                </button>
+                <button class="w-full border border-purple-500 text-purple-500 py-2 rounded-lg font-semibold">
+                    Download Beat (Clean)
+                </button>
+            </div>
+            
+            <div class="text-sm text-gray-500">
+                <p>Submissions close Friday 11:59 PM</p>
+                <p>Winner gets $50 gift card + studio time</p>
+            </div>
+        </div>
+    `);
+};
+
+window.viewTrend = function() {
+    showYouthVibeModal('🕺 #RochesterVibes Dance Challenge', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="w-full h-48 bg-gradient-to-br from-pink-400 to-purple-600 rounded-lg mb-4 flex items-center justify-center text-white text-6xl">
+                    💃
+                </div>
+                <h3 class="text-xl font-bold mb-2">Learn the Rochester Vibes Dance</h3>
+                <p class="text-gray-600">2.3M views and counting!</p>
+            </div>
+            
+            <div class="space-y-3">
+                <div class="bg-pink-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-pink-700 mb-1">Step 1: The Foundation</h4>
+                    <p class="text-sm text-gray-600">Start with shoulder rolls - 8 counts</p>
+                </div>
+                <div class="bg-purple-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-purple-700 mb-1">Step 2: The Wave</h4>
+                    <p class="text-sm text-gray-600">Body wave from head to toe - smooth motion</p>
+                </div>
+                <div class="bg-indigo-50 p-3 rounded-lg">
+                    <h4 class="font-semibold text-indigo-700 mb-1">Step 3: The Finish</h4>
+                    <p class="text-sm text-gray-600">Jump with arms up - show that Rochester pride!</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-2">
+                <button class="bg-gradient-to-r from-pink-500 to-purple-500 text-white py-2 rounded-lg font-semibold">
+                    Watch Tutorial
+                </button>
+                <button class="border border-purple-500 text-purple-500 py-2 rounded-lg font-semibold">
+                    Use Template
+                </button>
+            </div>
+        </div>
+    `);
+};
+
+window.shareMeme = function() {
+    showYouthVibeModal('😂 Today\'s Meme Check', `
+        <div class="text-center space-y-4">
+            <div class="text-6xl">😤</div>
+            <h3 class="text-xl font-bold">"When the beat drops just right"</h3>
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <p class="text-gray-600 mb-3">That feeling when you find the perfect beat for your freestyle...</p>
+                <div class="flex items-center justify-center space-x-2">
+                    <span class="text-2xl">😤</span>
+                    <span class="font-bold">= Pure satisfaction</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-2">
+                <button class="bg-blue-500 text-white py-2 rounded-lg">Share on TikTok</button>
+                <button class="bg-purple-500 text-white py-2 rounded-lg">Save to Camera Roll</button>
+            </div>
+            
+            <p class="text-xs text-gray-500">Remember: Keep it positive and respectful!</p>
+        </div>
+    `);
+};
+
+window.viewProfile = function() {
+    showYouthVibeModal('⭐ ROC Spotlight: Maya J.', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-3xl font-bold">
+                    MJ
+                </div>
+                <h3 class="text-xl font-bold">Maya Johnson, 17</h3>
+                <p class="text-gray-600">Teen Producer & Beat Maker</p>
+                <div class="flex justify-center space-x-4 mt-2">
+                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Rochester, NY</span>
+                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs">Self-Taught</span>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">From Bedroom to Beats</h4>
+                <p class="text-sm text-gray-700 mb-3">Started making beats on her phone junior year. Now she's produced tracks for 5 local artists and has 50K+ streams on her instrumentals.</p>
+                <div class="space-y-2 text-xs">
+                    <div class="flex justify-between">
+                        <span>🎵 Beats produced:</span>
+                        <span class="font-semibold">127</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>📱 Instagram followers:</span>
+                        <span class="font-semibold">12.3K</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>💰 Monthly earnings:</span>
+                        <span class="font-semibold">$800+</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-2">
+                <button class="w-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-2 rounded-lg font-semibold">
+                    Listen to Beat Pack
+                </button>
+                <button class="w-full border border-orange-500 text-orange-500 py-2 rounded-lg font-semibold">
+                    Read Full Interview
+                </button>
+            </div>
+        </div>
+    `);
+};
+
+// Additional Music & Creators Functions
+window.joinBeatChallenge = function() {
+    showYouthVibeModal('🏆 Join Beat Challenge', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-2">This Week: "Summer Nights" Challenge</h3>
+                <p class="text-gray-600">47 submissions • 3 days left</p>
+            </div>
+            
+            <div class="bg-purple-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">Rules:</h4>
+                <ul class="text-sm space-y-1">
+                    <li>• 16-30 bars over the provided beat</li>
+                    <li>• Keep it clean - no explicit content</li>
+                    <li>• Original lyrics only</li>
+                    <li>• Submit by Friday 11:59 PM</li>
+                </ul>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">Prizes:</h4>
+                <ul class="text-sm space-y-1">
+                    <li>🥇 1st Place: $50 + 4 hours studio time</li>
+                    <li>🥈 2nd Place: $25 + beat pack</li>
+                    <li>🥉 3rd Place: Shoutout + feature</li>
+                </ul>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-lg font-bold">
+                Start Recording
+            </button>
+        </div>
+    `);
+};
+
+window.browseTemplates = function() {
+    showYouthVibeModal('✂️ CapCut Templates', `
+        <div class="space-y-4">
+            <h3 class="text-xl font-bold text-center">24 Fresh Templates</h3>
+            
+            <div class="grid grid-cols-2 gap-3">
+                <div class="bg-pink-50 p-3 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🎵</div>
+                    <h4 class="font-semibold text-sm">Beat Drop Edit</h4>
+                    <p class="text-xs text-gray-600 mb-2">Perfect for music reveals</p>
+                    <button class="bg-pink-500 text-white px-3 py-1 rounded text-xs">Copy Template</button>
+                </div>
+                
+                <div class="bg-blue-50 p-3 rounded-lg text-center">
+                    <div class="text-2xl mb-2">📱</div>
+                    <h4 class="font-semibold text-sm">Aesthetic Transition</h4>
+                    <p class="text-xs text-gray-600 mb-2">Smooth style changes</p>
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded text-xs">Copy Template</button>
+                </div>
+                
+                <div class="bg-green-50 p-3 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🏀</div>
+                    <h4 class="font-semibold text-sm">Sports Highlight</h4>
+                    <p class="text-xs text-gray-600 mb-2">Game day moments</p>
+                    <button class="bg-green-500 text-white px-3 py-1 rounded text-xs">Copy Template</button>
+                </div>
+                
+                <div class="bg-purple-50 p-3 rounded-lg text-center">
+                    <div class="text-2xl mb-2">🎨</div>
+                    <h4 class="font-semibold text-sm">Art Process</h4>
+                    <p class="text-xs text-gray-600 mb-2">Creation timelapse</p>
+                    <button class="bg-purple-500 text-white px-3 py-1 rounded text-xs">Copy Template</button>
+                </div>
+            </div>
+            
+            <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-semibold">
+                View All 24 Templates
+            </button>
+        </div>
+    `);
+};
+
+window.applyMentorRole = function() {
+    showYouthVibeModal('🌟 Become a Youth Mentor', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="text-4xl mb-2">🤝</div>
+                <h3 class="text-xl font-bold">Lead the Next Generation</h3>
+                <p class="text-gray-600">Share your skills and inspire younger creators</p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">Mentor Opportunities:</h4>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-center">
+                        <i class="fas fa-music text-purple-500 mr-2"></i>
+                        <span>Music production workshops</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-video text-blue-500 mr-2"></i>
+                        <span>Content creation masterclasses</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-palette text-pink-500 mr-2"></i>
+                        <span>Digital art tutorials</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-handshake text-green-500 mr-2"></i>
+                        <span>One-on-one mentoring</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-bold text-green-700 mb-2">Benefits:</h4>
+                <ul class="text-sm space-y-1">
+                    <li>• Build leadership experience</li>
+                    <li>• Expand your network</li>
+                    <li>• Earn community service hours</li>
+                    <li>• Get featured as a community leader</li>
+                </ul>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-lg font-bold">
+                Apply to Mentor
+            </button>
+        </div>
+    `);
+};
+
+// Initialize daily content updates
+function initializeDailyUpdates() {
+    // This would connect to a real API in production
+    // For now, we'll simulate daily updates with rotating content
+    
+    const dailyContent = {
+        beats: [
+            { title: "Summer Nights", artist: "BeatsBy_Jay_ROC", genre: "Chill Hop" },
+            { title: "City Dreams", artist: "ROC_Producer", genre: "Lo-Fi" },
+            { title: "Midnight Vibes", artist: "YouthBeats585", genre: "R&B" }
+        ],
+        trends: [
+            { name: "#RochesterVibes", views: "2.3M", type: "dance" },
+            { name: "#ROCYouthTalent", views: "1.8M", type: "showcase" },
+            { name: "#CreativeROC", views: "987K", type: "art" }
+        ],
+        spotlights: [
+            { name: "Maya J.", age: 17, skill: "Beat Production" },
+            { name: "DeShawn M.", age: 19, skill: "Video Editing" },
+            { name: "Aaliyah K.", age: 16, skill: "Digital Art" }
+        ]
+    };
+    
+    // Rotate content based on day of week
+    const dayIndex = new Date().getDay();
+    const todaysBeat = dailyContent.beats[dayIndex % dailyContent.beats.length];
+    const todaysTrend = dailyContent.trends[dayIndex % dailyContent.trends.length];
+    const todaysSpotlight = dailyContent.spotlights[dayIndex % dailyContent.spotlights.length];
+    
+    // Update UI elements with today's content
+    // This would be expanded in a real implementation
 }
 
 function showYouthVibeModal(title, content) {
