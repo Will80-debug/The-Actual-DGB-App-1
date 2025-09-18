@@ -471,9 +471,9 @@ app.get('/', (c) => {
                     <!-- MVP Healthcare -->
                     <div class="bg-mvp-red text-white rounded-lg p-6 hover:bg-red-700 transition-colors cursor-pointer shadow-lg relative overflow-hidden" onclick="navigateTo('mvp-healthcare')">
                         <!-- Background Image -->
-                        <div class="absolute inset-0 opacity-20">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/3ad23880-bd38-462f-8dc9-25b65186f7c2" 
-                                 alt="Healthcare Services" 
+                        <div class="absolute inset-0 opacity-25">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/24_generated/b4b3dabe-0249-451f-9954-18ea3268d1c9" 
+                                 alt="MVP Healthcare Medical Facility" 
                                  class="w-full h-full object-cover">
                         </div>
                         <div class="relative z-10 text-center">

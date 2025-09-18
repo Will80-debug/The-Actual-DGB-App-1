@@ -2560,9 +2560,9 @@ function loadMVPHealthcare() {
             <!-- Hero Section with MVP Branding -->
             <div class="relative overflow-hidden bg-gradient-to-r from-mvp-red to-mvp-brown text-white">
                 <!-- Background Hero Image -->
-                <div class="absolute inset-0 opacity-20">
-                    <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/bc5e9e84-656b-4c8a-be82-46db2166fcec" 
-                         alt="MVP Healthcare Community" 
+                <div class="absolute inset-0 opacity-30">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a224d35b-c9ab-4299-ad54-b238cfa29716" 
+                         alt="MVP Healthcare Professional Consultation" 
                          class="w-full h-full object-cover">
                 </div>
                 <div class="absolute inset-0 bg-gradient-to-r from-mvp-red/80 to-mvp-brown/80"></div>
@@ -2645,7 +2645,13 @@ function loadMVPHealthcare() {
             </div>
 
             <!-- Provider Search Section -->
-            <section id="provider-search" class="py-16 bg-white">
+            <section id="provider-search" class="py-16 bg-white relative">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-3">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/24_generated/b4b3dabe-0249-451f-9954-18ea3268d1c9" 
+                         alt="MVP Healthcare Medical Facility" 
+                         class="w-full h-full object-cover">
+                </div>
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="text-center mb-12">
                         <h2 class="text-4xl font-bold text-mvp-brown mb-4">Find Your Healthcare Provider</h2>
@@ -2758,7 +2764,13 @@ function loadMVPHealthcare() {
             </section>
 
             <!-- Services Directory Section -->
-            <section id="services" class="py-16 bg-gray-50">
+            <section id="services" class="py-16 bg-gray-50 relative">
+                <!-- Subtle Background Pattern -->
+                <div class="absolute inset-0 opacity-2">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/24_generated/b4b3dabe-0249-451f-9954-18ea3268d1c9" 
+                         alt="Medical Facility Background" 
+                         class="w-full h-full object-cover">
+                </div>
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="text-center mb-12">
                         <h2 class="text-4xl font-bold text-mvp-brown mb-4">Comprehensive Healthcare Services</h2>
@@ -2886,8 +2898,8 @@ function loadMVPHealthcare() {
                                 </div>
                             </div>
                             <div class="text-center">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/95660651-d4c3-44c5-a1d9-165bd8a08bf9" 
-                                     alt="Community Health Event" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a458ed0b-9d99-4f08-afa9-9692799fbe11" 
+                                     alt="MVP Healthcare Community Health Screening Event" 
                                      class="w-full max-w-md mx-auto rounded-lg shadow-lg">
                             </div>
                         </div>
@@ -2896,8 +2908,13 @@ function loadMVPHealthcare() {
                     <!-- Upcoming Events Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="bg-white border border-mvp-red/20 rounded-lg overflow-hidden hover:shadow-lg transition-all">
-                            <div class="h-48 bg-gradient-to-r from-mvp-green/20 to-green-200 flex items-center justify-center">
-                                <i class="fas fa-dumbbell text-6xl text-mvp-green"></i>
+                            <div class="h-48 bg-gradient-to-r from-mvp-green/20 to-green-200 flex items-center justify-center relative overflow-hidden">
+                                <div class="absolute inset-0 opacity-30">
+                                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a458ed0b-9d99-4f08-afa9-9692799fbe11" 
+                                         alt="Fitness & Wellness Workshop" 
+                                         class="w-full h-full object-cover">
+                                </div>
+                                <i class="fas fa-dumbbell text-6xl text-mvp-green relative z-10"></i>
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center mb-2">
@@ -2962,7 +2979,13 @@ function loadMVPHealthcare() {
             </section>
 
             <!-- Volunteer Hub Section -->
-            <section id="volunteer-hub" class="py-16 bg-gradient-to-br from-mvp-green/5 to-green-50">
+            <section id="volunteer-hub" class="py-16 bg-gradient-to-br from-mvp-green/5 to-green-50 relative">
+                <!-- Background Image -->
+                <div class="absolute inset-0 opacity-5">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a2a769d1-b69e-45e9-9c14-2926bd343246" 
+                         alt="MVP Healthcare Volunteers" 
+                         class="w-full h-full object-cover">
+                </div>
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="text-center mb-12">
                         <h2 class="text-4xl font-bold text-mvp-brown mb-4">Volunteer Hub</h2>
@@ -3074,12 +3097,21 @@ function loadMVPHealthcare() {
 
                     <!-- Volunteer Application CTA -->
                     <div class="mt-12 text-center">
-                        <div class="bg-gradient-to-r from-mvp-red to-mvp-brown rounded-xl p-8 text-white">
-                            <h3 class="text-3xl font-bold mb-4">Ready to Make a Difference?</h3>
-                            <p class="text-xl mb-6 opacity-90">Join our volunteer network and help strengthen community health</p>
-                            <button onclick="openVolunteerApplication()" class="bg-mvp-green hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
-                                <i class="fas fa-clipboard-list mr-2"></i>Complete Volunteer Application
-                            </button>
+                        <div class="bg-gradient-to-r from-mvp-red to-mvp-brown rounded-xl overflow-hidden shadow-2xl">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+                                <div class="p-8 text-white">
+                                    <h3 class="text-3xl font-bold mb-4">Ready to Make a Difference?</h3>
+                                    <p class="text-xl mb-6 opacity-90">Join our volunteer network and help strengthen community health</p>
+                                    <button onclick="openVolunteerApplication()" class="bg-mvp-green hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+                                        <i class="fas fa-clipboard-list mr-2"></i>Complete Volunteer Application
+                                    </button>
+                                </div>
+                                <div class="hidden lg:block">
+                                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a2a769d1-b69e-45e9-9c14-2926bd343246" 
+                                         alt="MVP Healthcare Volunteers in Action" 
+                                         class="w-full h-full object-cover">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3181,53 +3213,23 @@ function loadMVPHealthcare() {
                             </div>
                         </div>
 
-                        <!-- App Preview -->
+                        <!-- App Preview with Real MVP Interface -->
                         <div class="text-center">
                             <div class="relative inline-block">
-                                <div class="w-80 h-96 bg-gradient-to-br from-mvp-red to-mvp-brown rounded-3xl p-6 shadow-2xl">
-                                    <div class="bg-white h-full rounded-2xl p-4 flex flex-col">
-                                        <!-- App Header -->
-                                        <div class="flex items-center justify-between mb-4">
-                                            <div class="flex items-center">
-                                                <div class="w-8 h-8 bg-mvp-red rounded-lg flex items-center justify-center mr-2">
-                                                    <i class="fas fa-plus text-white text-sm"></i>
-                                                </div>
-                                                <span class="font-bold text-mvp-brown">MVP Health</span>
-                                            </div>
-                                            <i class="fas fa-user-circle text-2xl text-mvp-red"></i>
-                                        </div>
-
-                                        <!-- Quick Actions -->
-                                        <div class="grid grid-cols-2 gap-3 mb-4">
-                                            <div class="bg-mvp-red/10 rounded-lg p-3 text-center">
-                                                <i class="fas fa-id-card text-mvp-red text-xl mb-2"></i>
-                                                <div class="text-xs font-semibold text-mvp-brown">ID Card</div>
-                                            </div>
-                                            <div class="bg-mvp-green/10 rounded-lg p-3 text-center">
-                                                <i class="fas fa-search text-mvp-green text-xl mb-2"></i>
-                                                <div class="text-xs font-semibold text-mvp-brown">Find Care</div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Recent Activity -->
-                                        <div class="flex-1">
-                                            <h4 class="text-sm font-bold text-mvp-brown mb-3">Recent Activity</h4>
-                                            <div class="space-y-2">
-                                                <div class="bg-gray-50 rounded-lg p-2">
-                                                    <div class="text-xs font-semibold text-mvp-brown">Appointment Scheduled</div>
-                                                    <div class="text-xs text-gray-600">Dr. Johnson - Feb 20</div>
-                                                </div>
-                                                <div class="bg-gray-50 rounded-lg p-2">
-                                                    <div class="text-xs font-semibold text-mvp-brown">Prescription Ready</div>
-                                                    <div class="text-xs text-gray-600">CVS Pharmacy</div>
-                                                </div>
-                                                <div class="bg-gray-50 rounded-lg p-2">
-                                                    <div class="text-xs font-semibold text-mvp-brown">Test Results</div>
-                                                    <div class="text-xs text-gray-600">Available to view</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4107b484-d579-4949-9357-f1c542e7103d" 
+                                     alt="MVP Healthcare Mobile App Interface" 
+                                     class="w-80 h-auto mx-auto rounded-3xl shadow-2xl">
+                            </div>
+                            
+                            <!-- App Features Highlight -->
+                            <div class="mt-6 grid grid-cols-2 gap-4 max-w-sm mx-auto">
+                                <div class="bg-white rounded-lg p-4 shadow-md">
+                                    <i class="fas fa-id-card text-mvp-red text-2xl mb-2"></i>
+                                    <div class="text-xs font-semibold text-mvp-brown">Digital ID Card</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow-md">
+                                    <i class="fas fa-calendar-alt text-mvp-green text-2xl mb-2"></i>
+                                    <div class="text-xs font-semibold text-mvp-brown">Appointments</div>
                                 </div>
                             </div>
                         </div>
