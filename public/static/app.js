@@ -2564,7 +2564,737 @@ function loadNewsCenter() {
 }
 
 function loadYouthVibe() {
-    loadGenericSection('youth-vibe', 'Youth Vibe', 'fas fa-music', 'Music, entertainment, and youth-focused content');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 text-white">
+                <!-- Background Hero Image -->
+                <div class="absolute inset-0 opacity-30">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/aabf3411-04e7-4f23-8b26-6d4a5addd6c9" 
+                         alt="Youth Vibe Community" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/80 to-indigo-600/80"></div>
+                
+                <div class="relative z-10 px-4 py-16">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <div class="animate-pulse mb-6">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
+                                Youth Vibe
+                            </h1>
+                            <div class="w-32 h-1 bg-gradient-to-r from-yellow-400 to-pink-400 mx-auto mb-4 rounded-full"></div>
+                        </div>
+                        <p class="text-2xl md:text-3xl font-light mb-6">
+                            Your instant gateway to everything young and happening in Rochester, NY
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4 mb-8">
+                            <button onclick="scrollToAgeGroup('13-15')" class="age-btn bg-white/20 backdrop-blur-md px-6 py-3 rounded-full hover:bg-white/30 transition-all border border-white/30">
+                                <i class="fas fa-users mr-2"></i>Ages 13-15
+                            </button>
+                            <button onclick="scrollToAgeGroup('16-18')" class="age-btn bg-white/20 backdrop-blur-md px-6 py-3 rounded-full hover:bg-white/30 transition-all border border-white/30">
+                                <i class="fas fa-graduation-cap mr-2"></i>Ages 16-18
+                            </button>
+                            <button onclick="scrollToAgeGroup('19-24')" class="age-btn bg-white/20 backdrop-blur-md px-6 py-3 rounded-full hover:bg-white/30 transition-all border border-white/30">
+                                <i class="fas fa-briefcase mr-2"></i>Ages 19-24
+                            </button>
+                        </div>
+                        <div class="flex justify-center space-x-6">
+                            <button onclick="goHome()" class="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all flex items-center">
+                                <i class="fas fa-arrow-left mr-2"></i>Back to Home
+                            </button>
+                            <button onclick="openPersonalizationModal()" class="bg-gradient-to-r from-yellow-400 to-pink-400 text-black px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all flex items-center">
+                                <i class="fas fa-user-cog mr-2"></i>Customize My Vibe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Pills -->
+            <div class="bg-white shadow-lg sticky top-0 z-40 border-b">
+                <div class="max-w-6xl mx-auto px-4 py-4">
+                    <div class="flex flex-wrap gap-2 justify-center">
+                        <button onclick="jumpToCategory('opportunities')" class="nav-pill bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm hover:bg-purple-200 transition-all">
+                            🚀 Opportunities
+                        </button>
+                        <button onclick="jumpToCategory('success-stories')" class="nav-pill bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm hover:bg-pink-200 transition-all">
+                            ⭐ Success Stories
+                        </button>
+                        <button onclick="jumpToCategory('mentorship')" class="nav-pill bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm hover:bg-indigo-200 transition-all">
+                            👥 Mentorship
+                        </button>
+                        <button onclick="jumpToCategory('skills')" class="nav-pill bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm hover:bg-green-200 transition-all">
+                            💪 Skills
+                        </button>
+                        <button onclick="jumpToCategory('creative')" class="nav-pill bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-sm hover:bg-yellow-200 transition-all">
+                            🎨 Creative Hub
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="max-w-6xl mx-auto px-4 py-8">
+                
+                <!-- Strategic Content Categories -->
+                <section id="opportunities" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">Opportunities Waiting for You</span>
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <!-- Education Pathways -->
+                        <div class="opportunity-card bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('education')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Education Pathways</h3>
+                                <p class="text-sm opacity-90 mb-4">Academic resources, college prep, scholarships</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">156 Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Creative Development -->
+                        <div class="opportunity-card bg-gradient-to-br from-pink-500 to-rose-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('creative')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-palette text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Creative Development</h3>
+                                <p class="text-sm opacity-90 mb-4">Arts programs, digital media, creative expression</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">89 Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Career Launch -->
+                        <div class="opportunity-card bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('career')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-rocket text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Career Launch</h3>
+                                <p class="text-sm opacity-90 mb-4">Job readiness, internships, entrepreneurship</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">124 Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Community Leadership -->
+                        <div class="opportunity-card bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('leadership')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-megaphone text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Community Leadership</h3>
+                                <p class="text-sm opacity-90 mb-4">Civic engagement, advocacy, service</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">67 Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row of Categories -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Physical Wellbeing -->
+                        <div class="opportunity-card bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('wellness')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-heartbeat text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Physical Wellbeing</h3>
+                                <p class="text-sm opacity-90 mb-4">Sports, fitness, nutrition programs</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">43 Opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mental Health -->
+                        <div class="opportunity-card bg-gradient-to-br from-teal-500 to-cyan-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('mental-health')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-brain text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Mental Health</h3>
+                                <p class="text-sm opacity-90 mb-4">Wellness, support resources, stress management</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">52 Resources</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Connection -->
+                        <div class="opportunity-card bg-gradient-to-br from-violet-500 to-purple-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('social')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-users text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Social Connection</h3>
+                                <p class="text-sm opacity-90 mb-4">Events, meetups, interest communities</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">78 Events</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Financial Literacy -->
+                        <div class="opportunity-card bg-gradient-to-br from-yellow-500 to-amber-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('financial')">
+                            <div class="text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-dollar-sign text-2xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">Financial Literacy</h3>
+                                <p class="text-sm opacity-90 mb-4">Money management, saving, investing</p>
+                                <div class="bg-white/20 rounded-lg p-2">
+                                    <span class="text-xs font-semibold">34 Resources</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Success Stories Section -->
+                <section id="success-stories" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                        <span class="bg-gradient-to-r from-pink-600 to-yellow-600 text-transparent bg-clip-text">Success Stories That Inspire</span>
+                    </h2>
+                    
+                    <div class="relative overflow-hidden rounded-2xl mb-8">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/db5c27b9-5633-4126-b22d-daf2eca2c8c8" 
+                             alt="Youth Success Stories" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <h3 class="text-2xl font-bold mb-2">Rochester Youth Making It Happen</h3>
+                                <p class="text-lg opacity-90">From graduation to entrepreneurship, see what's possible</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Story Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                                    A
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Amara J., 19</h4>
+                                    <p class="text-sm text-gray-600">College Scholarship Winner</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">"Through Youth Vibe, I found the scholarship that paid for my entire college education. Now I'm studying computer science at RIT!"</p>
+                            <div class="flex items-center text-yellow-500">
+                                <i class="fas fa-star mr-1"></i>
+                                <span class="text-sm font-semibold">Full Scholarship Recipient</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                                    M
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Marcus R., 22</h4>
+                                    <p class="text-sm text-gray-600">Young Entrepreneur</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">"Started my graphic design business through the entrepreneurship program. Now I'm employing three other young creators!"</p>
+                            <div class="flex items-center text-green-500">
+                                <i class="fas fa-briefcase mr-1"></i>
+                                <span class="text-sm font-semibold">Business Owner</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                                    S
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Sophia L., 17</h4>
+                                    <p class="text-sm text-gray-600">Community Leader</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">"Led a campaign that brought a new community center to my neighborhood. Youth voices matter when we organize together!"</p>
+                            <div class="flex items-center text-blue-500">
+                                <i class="fas fa-megaphone mr-1"></i>
+                                <span class="text-sm font-semibold">City Council Youth Rep</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Age-Segmented Experiences -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                        <span class="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text">Experiences Tailored to Your Age</span>
+                    </h2>
+
+                    <!-- Ages 13-15 -->
+                    <div id="age-13-15" class="mb-8 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+                                13-15
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Explore & Discover</h3>
+                                <p class="text-gray-600">Find your interests and build foundations</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-microscope text-2xl text-blue-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Science Clubs</h4>
+                                <p class="text-sm text-gray-600">Hands-on STEM exploration</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-paint-brush text-2xl text-pink-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Art Workshops</h4>
+                                <p class="text-sm text-gray-600">Creative expression classes</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-users text-2xl text-green-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Peer Groups</h4>
+                                <p class="text-sm text-gray-600">Make friends with similar interests</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ages 16-18 -->
+                    <div id="age-16-18" class="mb-8 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+                                16-18
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Build & Prepare</h3>
+                                <p class="text-gray-600">Develop skills and plan for the future</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-graduation-cap text-2xl text-purple-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">College Prep</h4>
+                                <p class="text-sm text-gray-600">SAT prep, applications, scholarships</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-briefcase text-2xl text-green-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Internships</h4>
+                                <p class="text-sm text-gray-600">Real work experience</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-car text-2xl text-blue-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Life Skills</h4>
+                                <p class="text-sm text-gray-600">Driving, banking, job interviews</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ages 19-24 -->
+                    <div id="age-19-24" class="bg-gradient-to-r from-green-50 to-teal-50 rounded-2xl p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-xl font-bold mr-4">
+                                19-24
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Launch & Lead</h3>
+                                <p class="text-gray-600">Start your career and make an impact</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-rocket text-2xl text-green-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Career Launch</h4>
+                                <p class="text-sm text-gray-600">Full-time jobs, career paths</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-lightbulb text-2xl text-yellow-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Entrepreneurship</h4>
+                                <p class="text-sm text-gray-600">Start your own business</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 hover:shadow-md transition-all">
+                                <i class="fas fa-megaphone text-2xl text-purple-500 mb-2"></i>
+                                <h4 class="font-semibold mb-1">Community Impact</h4>
+                                <p class="text-sm text-gray-600">Leadership roles, advocacy</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mentorship System -->
+                <section id="mentorship" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                        <span class="bg-gradient-to-r from-orange-600 to-red-600 text-transparent bg-clip-text">Connect with Mentors Who Get It</span>
+                    </h2>
+                    
+                    <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl p-8 mb-8">
+                        <div class="text-center">
+                            <i class="fas fa-handshake text-6xl mb-4 opacity-80"></i>
+                            <h3 class="text-2xl font-bold mb-4">Find Your Perfect Mentor Match</h3>
+                            <p class="text-lg mb-6 opacity-90">Connect with successful professionals who understand your journey and want to help you succeed.</p>
+                            <button onclick="openMentorMatchModal()" class="bg-white text-orange-500 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all">
+                                <i class="fas fa-search mr-2"></i>Find My Mentor
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="mentor-type bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <i class="fas fa-user-tie text-4xl text-blue-500 mb-4"></i>
+                                <h4 class="font-bold text-lg mb-2">Industry Professionals</h4>
+                                <p class="text-sm text-gray-600 mb-4">Connect with experts in your field of interest</p>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">147 Available</span>
+                            </div>
+                        </div>
+
+                        <div class="mentor-type bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <i class="fas fa-graduation-cap text-4xl text-green-500 mb-4"></i>
+                                <h4 class="font-bold text-lg mb-2">Near-Peer Mentors</h4>
+                                <p class="text-sm text-gray-600 mb-4">Learn from youth just a few steps ahead</p>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">89 Available</span>
+                            </div>
+                        </div>
+
+                        <div class="mentor-type bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <i class="fas fa-lightbulb text-4xl text-yellow-500 mb-4"></i>
+                                <h4 class="font-bold text-lg mb-2">Entrepreneurs</h4>
+                                <p class="text-sm text-gray-600 mb-4">Business owners who started young</p>
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">56 Available</span>
+                            </div>
+                        </div>
+
+                        <div class="mentor-type bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="text-center">
+                                <i class="fas fa-heart text-4xl text-pink-500 mb-4"></i>
+                                <h4 class="font-bold text-lg mb-2">Life Coaches</h4>
+                                <p class="text-sm text-gray-600 mb-4">Support for personal development</p>
+                                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">32 Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions Bar -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6">
+                        <h3 class="text-2xl font-bold text-white text-center mb-6">Take Action Now</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <button onclick="openApplicationSystem()" class="bg-white/20 backdrop-blur-md text-white p-4 rounded-xl hover:bg-white/30 transition-all text-center">
+                                <i class="fas fa-file-alt text-2xl mb-2"></i>
+                                <div class="text-sm font-semibold">Apply Now</div>
+                            </button>
+                            <button onclick="openEventCalendar()" class="bg-white/20 backdrop-blur-md text-white p-4 rounded-xl hover:bg-white/30 transition-all text-center">
+                                <i class="fas fa-calendar text-2xl mb-2"></i>
+                                <div class="text-sm font-semibold">Events</div>
+                            </button>
+                            <button onclick="openResourceLibrary()" class="bg-white/20 backdrop-blur-md text-white p-4 rounded-xl hover:bg-white/30 transition-all text-center">
+                                <i class="fas fa-book text-2xl mb-2"></i>
+                                <div class="text-sm font-semibold">Resources</div>
+                            </button>
+                            <button onclick="openCommunityChat()" class="bg-white/20 backdrop-blur-md text-white p-4 rounded-xl hover:bg-white/30 transition-all text-center">
+                                <i class="fas fa-comments text-2xl mb-2"></i>
+                                <div class="text-sm font-semibold">Connect</div>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Call-to-Action -->
+                <section class="text-center bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to Vibe with Your Future?</h3>
+                    <p class="text-gray-600 mb-6 text-lg">Join thousands of Rochester youth who are making moves and building their dreams.</p>
+                    <div class="flex justify-center space-x-4">
+                        <button onclick="startPersonalizedJourney()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all">
+                            <i class="fas fa-rocket mr-2"></i>Start My Journey
+                        </button>
+                        <button onclick="connectWithPeers()" class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-all">
+                            <i class="fas fa-users mr-2"></i>Connect with Peers
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    `;
+
+    // Add event listeners for interactive elements
+    addYouthVibeEventListeners();
+}
+
+// Youth Vibe Interactive Functions
+function addYouthVibeEventListeners() {
+    // Smooth scrolling for navigation
+    window.scrollToAgeGroup = function(ageGroup) {
+        const element = document.getElementById(`age-${ageGroup}`);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    window.jumpToCategory = function(category) {
+        const element = document.getElementById(category);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    // Modal Functions
+    window.openPersonalizationModal = function() {
+        showYouthVibeModal('Customize Your Youth Vibe Experience', `
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">What's your main interest?</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="interest-btn p-3 rounded-lg border hover:bg-purple-50 text-left" data-interest="tech">
+                            <i class="fas fa-laptop mr-2"></i>Technology
+                        </button>
+                        <button class="interest-btn p-3 rounded-lg border hover:bg-purple-50 text-left" data-interest="arts">
+                            <i class="fas fa-palette mr-2"></i>Arts & Creative
+                        </button>
+                        <button class="interest-btn p-3 rounded-lg border hover:bg-purple-50 text-left" data-interest="sports">
+                            <i class="fas fa-football-ball mr-2"></i>Sports & Fitness
+                        </button>
+                        <button class="interest-btn p-3 rounded-lg border hover:bg-purple-50 text-left" data-interest="business">
+                            <i class="fas fa-briefcase mr-2"></i>Business & Entrepreneurship
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">How do you like to learn?</label>
+                    <select class="w-full p-3 rounded-lg border">
+                        <option>Hands-on experiences</option>
+                        <option>Online tutorials</option>
+                        <option>Group workshops</option>
+                        <option>One-on-one mentoring</option>
+                    </select>
+                </div>
+                <button onclick="savePersonalization()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold">
+                    Save My Preferences
+                </button>
+            </div>
+        `);
+    };
+
+    window.openCategoryModal = function(category) {
+        const categoryData = {
+            education: {
+                title: 'Education Pathways',
+                icon: 'graduation-cap',
+                color: 'blue',
+                opportunities: [
+                    { name: 'Rochester City School District Dual Enrollment', type: 'Academic Program', deadline: 'Rolling Admissions' },
+                    { name: 'MCC Early College High School Program', type: 'College Prep', deadline: 'March 15th' },
+                    { name: 'Gates Millennium Scholarship', type: 'Scholarship', deadline: 'January 15th' },
+                    { name: 'STEM Academy Summer Program', type: 'Summer Program', deadline: 'April 30th' }
+                ]
+            },
+            creative: {
+                title: 'Creative Development',
+                icon: 'palette',
+                color: 'pink',
+                opportunities: [
+                    { name: 'Eastman Community Music School', type: 'Music Program', deadline: 'Ongoing' },
+                    { name: 'Rochester Youth Art Program', type: 'Visual Arts', deadline: 'Monthly Enrollment' },
+                    { name: 'Digital Media Bootcamp', type: 'Technology', deadline: 'June 1st' },
+                    { name: 'Teen Theater Workshop', type: 'Performing Arts', deadline: 'August 15th' }
+                ]
+            }
+        };
+
+        const data = categoryData[category] || categoryData.education;
+        showYouthVibeModal(data.title, `
+            <div class="space-y-4">
+                <div class="text-center mb-6">
+                    <i class="fas fa-${data.icon} text-6xl text-${data.color}-500 mb-4"></i>
+                    <p class="text-gray-600">Discover opportunities perfect for your interests and goals</p>
+                </div>
+                ${data.opportunities.map(opp => `
+                    <div class="border rounded-lg p-4 hover:bg-gray-50">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-semibold text-gray-800">${opp.name}</h4>
+                            <span class="text-xs bg-${data.color}-100 text-${data.color}-800 px-2 py-1 rounded">${opp.type}</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Application Deadline: ${opp.deadline}</p>
+                        <button class="bg-${data.color}-500 text-white px-4 py-2 rounded text-sm hover:bg-${data.color}-600">
+                            Learn More
+                        </button>
+                    </div>
+                `).join('')}
+            </div>
+        `);
+    };
+
+    window.openMentorMatchModal = function() {
+        showYouthVibeModal('Find Your Perfect Mentor', `
+            <div class="space-y-6">
+                <div class="text-center mb-6">
+                    <i class="fas fa-handshake text-6xl text-orange-500 mb-4"></i>
+                    <p class="text-gray-600">Answer a few questions to get matched with the perfect mentor for your goals</p>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">What area do you want guidance in?</label>
+                    <select class="w-full p-3 rounded-lg border">
+                        <option>College preparation</option>
+                        <option>Career exploration</option>
+                        <option>Starting a business</option>
+                        <option>Creative development</option>
+                        <option>Leadership skills</option>
+                        <option>Personal development</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Preferred mentorship style:</label>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="style" class="mr-2"> Regular one-on-one meetings
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="style" class="mr-2"> Group mentorship sessions
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="style" class="mr-2"> Project-based collaboration
+                        </label>
+                    </div>
+                </div>
+                
+                <button onclick="findMentorMatches()" class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold">
+                    Find My Matches
+                </button>
+            </div>
+        `);
+    };
+
+    // Interactive Functions
+    window.openApplicationSystem = function() {
+        showYouthVibeModal('Universal Application System', `
+            <div class="space-y-4">
+                <div class="text-center mb-6">
+                    <i class="fas fa-file-alt text-6xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold">Apply to Multiple Opportunities</h3>
+                    <p class="text-gray-600">Save time with our streamlined application system</p>
+                </div>
+                
+                <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 class="font-semibold text-green-800 mb-2">✓ Profile 85% Complete</h4>
+                    <p class="text-sm text-green-700">Add transcripts to reach 100% completion</p>
+                </div>
+                
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 border rounded">
+                        <span>Summer Internship Program</span>
+                        <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Apply</button>
+                    </div>
+                    <div class="flex justify-between items-center p-3 border rounded">
+                        <span>Leadership Development Workshop</span>
+                        <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Apply</button>
+                    </div>
+                    <div class="flex justify-between items-center p-3 border rounded">
+                        <span>Coding Bootcamp Scholarship</span>
+                        <button class="bg-blue-500 text-white px-3 py-1 rounded text-sm">Apply</button>
+                    </div>
+                </div>
+            </div>
+        `);
+    };
+
+    window.openEventCalendar = function() {
+        showYouthVibeModal('Upcoming Youth Events', `
+            <div class="space-y-4">
+                <div class="text-center mb-6">
+                    <i class="fas fa-calendar text-6xl text-green-500 mb-4"></i>
+                </div>
+                
+                <div class="space-y-3">
+                    <div class="border-l-4 border-blue-500 pl-4 py-2">
+                        <h4 class="font-semibold">Teen Tech Meetup</h4>
+                        <p class="text-sm text-gray-600">Saturday, March 23rd • 2:00 PM</p>
+                        <p class="text-sm">Innovation Center @ RIT</p>
+                    </div>
+                    <div class="border-l-4 border-pink-500 pl-4 py-2">
+                        <h4 class="font-semibold">Art & Music Showcase</h4>
+                        <p class="text-sm text-gray-600">Friday, March 29th • 6:00 PM</p>
+                        <p class="text-sm">Memorial Art Gallery</p>
+                    </div>
+                    <div class="border-l-4 border-green-500 pl-4 py-2">
+                        <h4 class="font-semibold">Career Fair for Youth</h4>
+                        <p class="text-sm text-gray-600">Wednesday, April 3rd • 4:00 PM</p>
+                        <p class="text-sm">Rochester Convention Center</p>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-green-500 text-white py-2 rounded font-semibold">View Full Calendar</button>
+            </div>
+        `);
+    };
+
+    window.startPersonalizedJourney = function() {
+        showYouthVibeModal('Start Your Personalized Journey', `
+            <div class="text-center space-y-6">
+                <i class="fas fa-rocket text-6xl text-purple-500"></i>
+                <h3 class="text-2xl font-bold">Ready to Launch Your Future?</h3>
+                <p class="text-gray-600">Let's create a personalized roadmap to help you reach your goals!</p>
+                
+                <div class="space-y-3 text-left">
+                    <div class="flex items-center p-3 bg-purple-50 rounded">
+                        <i class="fas fa-check text-purple-500 mr-3"></i>
+                        <span>Discover your strengths and interests</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-purple-50 rounded">
+                        <i class="fas fa-check text-purple-500 mr-3"></i>
+                        <span>Get matched with relevant opportunities</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-purple-50 rounded">
+                        <i class="fas fa-check text-purple-500 mr-3"></i>
+                        <span>Connect with mentors in your field</span>
+                    </div>
+                </div>
+                
+                <button onclick="beginAssessment()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold">
+                    Begin Assessment
+                </button>
+            </div>
+        `);
+    };
+}
+
+function showYouthVibeModal(title, content) {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-gray-800">${title}</h2>
+                    <button onclick="this.closest('.fixed').remove()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                ${content}
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add click outside to close
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    });
 }
 
 function loadSeniorCircle() {
