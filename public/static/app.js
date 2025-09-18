@@ -1519,7 +1519,7 @@ function loadRocRootsConnect() {
                                 Thematic Journeys
                             </h3>
                             <div class="space-y-3">
-                                <button onclick="startThematicJourney('underground-railroad')" class="w-full text-left p-4 rounded-lg hover:shadow-lg transition-all relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(239, 68, 68, 0.8), rgba(239, 68, 68, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96');">
+                                <button onclick="startThematicJourney('underground-railroad')" class="w-full text-left p-4 rounded-lg hover:shadow-lg transition-all relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(239, 68, 68, 0.8), rgba(239, 68, 68, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619');">
                                     <div class="flex items-center space-x-3 relative z-10">
                                         <i class="fas fa-train text-white"></i>
                                         <div>
@@ -1549,7 +1549,7 @@ function loadRocRootsConnect() {
                                     </div>
                                 </button>
                                 
-                                <button onclick="startThematicJourney('education-leaders')" class="w-full text-left p-4 rounded-lg hover:shadow-lg transition-all relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96');">
+                                <button onclick="startThematicJourney('education-leaders')" class="w-full text-left p-4 rounded-lg hover:shadow-lg transition-all relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0.9)), url('https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619');">
                                     <div class="flex items-center space-x-3 relative z-10">
                                         <i class="fas fa-graduation-cap text-white"></i>
                                         <div>
@@ -1670,7 +1670,7 @@ function loadRocRootsConnect() {
                     
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all" onclick="openImageViewer('underground-railroad')">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96" 
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619" 
                                  alt="Underground Railroad Scene - 1840s Rochester" 
                                  class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
@@ -4340,7 +4340,7 @@ function loadInteractiveTimeline() {
             figures: ['Frederick Douglass', 'Susan B. Anthony'],
             location: 'Susan B. Anthony House',
             media: {
-                image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96',
+                image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619',
                 audio: '/static/audio/underground-railroad.mp3'
             }
         },
@@ -4353,7 +4353,7 @@ function loadInteractiveTimeline() {
             figures: ['Frederick Douglass'],
             location: 'Frederick Douglass House',
             media: {
-                image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96',
+                image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619',
                 video: '/static/video/douglass-story.mp4'
             }
         },
@@ -4366,7 +4366,7 @@ function loadInteractiveTimeline() {
             figures: ['Local soldiers'],
             location: 'Mount Hope Cemetery',
             media: {
-                image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96'
+                image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619'
             }
         },
         {
@@ -4520,9 +4520,9 @@ function toggleTimelineView() {
 function openTimelineEvent(year) {
     // Find the event data to get the image
     const timelineData = [
-        { year: 1820, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96', title: 'Underground Railroad Begins' },
-        { year: 1847, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96', title: 'Frederick Douglass Arrives' },
-        { year: 1863, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96', title: 'Civil War Participation' },
+        { year: 1820, image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619', title: 'Underground Railroad Begins' },
+        { year: 1847, image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619', title: 'Frederick Douglass Arrives' },
+        { year: 1863, image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619', title: 'Civil War Participation' },
         { year: 1918, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/817f24ac-3b57-4c96-a17a-fa3f31e5d635', title: 'Great Migration Impact' },
         { year: 1964, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/817f24ac-3b57-4c96-a17a-fa3f31e5d635', title: 'Rochester Race Riots' },
         { year: 2020, image: 'https://cdn1.genspark.ai/user-upload-image/3_generated/925a7ea4-13a4-4949-b36c-9802fdab72ed', title: 'Daniel Prude Protests' }
@@ -5128,7 +5128,7 @@ function loadFeaturedHeritageStory() {
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="bg-gradient-to-br from-cultural-brown/10 to-golden-yellow/10 rounded-lg p-6">
                 <div class="w-full h-48 bg-gradient-to-br from-cultural-brown to-golden-yellow rounded-lg overflow-hidden mb-6 relative">
-                    <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96" 
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619" 
                          alt="Underground Railroad in Rochester" 
                          class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -6372,7 +6372,7 @@ function openImageGallery() {
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="space-y-4">
                         <div class="relative group cursor-pointer rounded-lg overflow-hidden shadow-lg" onclick="openImageViewer('underground-railroad')">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96" 
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619" 
                                  alt="Underground Railroad Scene" 
                                  class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent">
@@ -6430,7 +6430,7 @@ function openImageGallery() {
 function openImageViewer(imageType) {
     const images = {
         'underground-railroad': {
-            url: 'https://cdn1.genspark.ai/user-upload-image/3_generated/f0e8d458-7bb0-4a21-a4bb-778afb278e96',
+            url: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/140edb7e-7d71-4481-a267-3fd219442619',
             title: 'Underground Railroad Era - 1840s Rochester',
             description: 'A dramatic nighttime scene depicting freedom seekers making their journey along the Underground Railroad. Frederick Douglass\'s house is visible in the background, illuminated by warm lamplight. The scene captures the courage and determination of those seeking freedom, with figures carrying lanterns and moving through the snowy landscape. This represents Rochester\'s crucial role as a final stop before Canada and freedom.',
             era: '1840s',
