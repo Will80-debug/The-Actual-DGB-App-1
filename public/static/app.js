@@ -2555,7 +2555,697 @@ function loadVitaHue() {
 }
 
 function loadMVPHealthcare() {
-    loadGenericSection('mvp-healthcare', 'MVP Healthcare', 'fas fa-hospital', 'Healthcare services and insurance information');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-mvp-red/5 via-white to-mvp-green/10">
+            <!-- Hero Section with MVP Branding -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-mvp-red to-mvp-brown text-white">
+                <!-- Background Hero Image -->
+                <div class="absolute inset-0 opacity-20">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/bc5e9e84-656b-4c8a-be82-46db2166fcec" 
+                         alt="MVP Healthcare Community" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-mvp-red/80 to-mvp-brown/80"></div>
+                
+                <div class="relative z-10 px-4 py-16">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <div class="animate-pulse mb-6">
+                            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white">
+                                MVP Healthcare
+                            </h1>
+                            <div class="w-32 h-1 bg-mvp-green mx-auto mb-4 rounded-full"></div>
+                        </div>
+                        <p class="text-2xl md:text-3xl font-light mb-6">
+                            Your Community Health Partner in Rochester, NY
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4 mb-8">
+                            <button onclick="scrollToMVPSection('provider-search')" class="bg-mvp-green hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-all">
+                                <i class="fas fa-search mr-2"></i>Find Providers
+                            </button>
+                            <button onclick="scrollToMVPSection('community-events')" class="border-2 border-mvp-green text-mvp-green hover:bg-mvp-green hover:text-white font-semibold py-3 px-6 rounded-lg transition-all">
+                                <i class="fas fa-calendar mr-2"></i>Community Events
+                            </button>
+                            <button onclick="openMVPApp()" class="border-2 border-white text-white hover:bg-white hover:text-mvp-red font-semibold py-3 px-6 rounded-lg transition-all">
+                                <i class="fas fa-mobile-alt mr-2"></i>Mobile App
+                            </button>
+                        </div>
+                        
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold text-mvp-green">500K+</div>
+                                <div class="text-sm opacity-90">Members Served</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold text-mvp-green">25+</div>
+                                <div class="text-sm opacity-90">Locations</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold text-mvp-green">24/7</div>
+                                <div class="text-sm opacity-90">Member Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="bg-white shadow-lg sticky top-0 z-40">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex overflow-x-auto no-scrollbar">
+                        <button onclick="scrollToMVPSection('provider-search')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-user-md mr-2"></i>Provider Search
+                        </button>
+                        <button onclick="scrollToMVPSection('services')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-hospital mr-2"></i>Services
+                        </button>
+                        <button onclick="scrollToMVPSection('community-events')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-calendar mr-2"></i>Events
+                        </button>
+                        <button onclick="scrollToMVPSection('volunteer-hub')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-hands-helping mr-2"></i>Volunteer Hub
+                        </button>
+                        <button onclick="scrollToMVPSection('mobile-app')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-mobile-alt mr-2"></i>Mobile App
+                        </button>
+                        <button onclick="scrollToMVPSection('wellness')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-heartbeat mr-2"></i>Wellness
+                        </button>
+                        <button onclick="scrollToMVPSection('member-resources')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-id-card mr-2"></i>Member Resources
+                        </button>
+                        <button onclick="scrollToMVPSection('health-education')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-graduation-cap mr-2"></i>Health Education
+                        </button>
+                        <button onclick="scrollToMVPSection('emergency')" class="mvp-tab-btn whitespace-nowrap px-6 py-4 text-mvp-red border-b-2 border-transparent hover:border-mvp-red transition-all">
+                            <i class="fas fa-ambulance mr-2"></i>Emergency
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Provider Search Section -->
+            <section id="provider-search" class="py-16 bg-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-mvp-brown mb-4">Find Your Healthcare Provider</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Search our network of healthcare professionals accepting MVP Health Care plans
+                        </p>
+                    </div>
+
+                    <!-- Search Form -->
+                    <div class="bg-gradient-to-r from-mvp-red to-mvp-brown rounded-xl p-8 mb-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Provider Type</label>
+                                <select class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                                    <option>Primary Care Physician</option>
+                                    <option>Cardiologist</option>
+                                    <option>Dermatologist</option>
+                                    <option>Orthopedist</option>
+                                    <option>Gynecologist</option>
+                                    <option>Psychiatrist</option>
+                                    <option>Pediatrician</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Location</label>
+                                <select class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                                    <option>Rochester, NY</option>
+                                    <option>Greece, NY</option>
+                                    <option>Irondequoit, NY</option>
+                                    <option>Webster, NY</option>
+                                    <option>Penfield, NY</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-white font-semibold mb-2">Insurance Plan</label>
+                                <select class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                                    <option>MVP Gold</option>
+                                    <option>MVP Silver</option>
+                                    <option>MVP Bronze</option>
+                                    <option>MVP Essential</option>
+                                    <option>MVP Medicaid</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button onclick="searchMVPProviders()" class="w-full bg-mvp-green hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-all">
+                            <i class="fas fa-search mr-2"></i>Search Providers
+                        </button>
+                    </div>
+
+                    <!-- Featured Providers -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border border-mvp-red/20 rounded-lg p-6 hover:shadow-lg transition-all cursor-pointer" onclick="openProviderDetails('dr-johnson')">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-mvp-red/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user-md text-2xl text-mvp-red"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-mvp-brown">Dr. Sarah Johnson</h3>
+                                    <p class="text-gray-600">Family Medicine</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">Accepting new patients. Specializes in preventive care and chronic disease management.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-mvp-green font-semibold">★★★★★ 4.9</span>
+                                <button class="text-mvp-red hover:text-mvp-brown transition-colors">
+                                    <i class="fas fa-calendar mr-1"></i>Book Appointment
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-mvp-red/20 rounded-lg p-6 hover:shadow-lg transition-all cursor-pointer" onclick="openProviderDetails('dr-martinez')">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-mvp-red/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-heartbeat text-2xl text-mvp-red"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-mvp-brown">Dr. Carlos Martinez</h3>
+                                    <p class="text-gray-600">Cardiology</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">Leading cardiologist with expertise in heart disease prevention and intervention.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-mvp-green font-semibold">★★★★★ 4.8</span>
+                                <button class="text-mvp-red hover:text-mvp-brown transition-colors">
+                                    <i class="fas fa-calendar mr-1"></i>Book Appointment
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-mvp-red/20 rounded-lg p-6 hover:shadow-lg transition-all cursor-pointer" onclick="openProviderDetails('dr-washington')">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-mvp-red/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-child text-2xl text-mvp-red"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-mvp-brown">Dr. Kenya Washington</h3>
+                                    <p class="text-gray-600">Pediatrics</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">Dedicated pediatrician focused on comprehensive child healthcare from infancy to adolescence.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-mvp-green font-semibold">★★★★★ 4.9</span>
+                                <button class="text-mvp-red hover:text-mvp-brown transition-colors">
+                                    <i class="fas fa-calendar mr-1"></i>Book Appointment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Directory Section -->
+            <section id="services" class="py-16 bg-gray-50">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-mvp-brown mb-4">Comprehensive Healthcare Services</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Explore our full range of medical services and specialties
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('primary-care')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-mvp-red to-mvp-brown rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-stethoscope text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Primary Care</h3>
+                                <p class="text-gray-600 mb-4">Comprehensive primary care services including annual physicals, preventive care, and routine health maintenance.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('specialist-care')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-mvp-green to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-user-md text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Specialist Care</h3>
+                                <p class="text-gray-600 mb-4">Access to our network of specialists including cardiology, orthopedics, dermatology, and more.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('urgent-care')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-mvp-brown to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-clock text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Urgent Care</h3>
+                                <p class="text-gray-600 mb-4">Quick access to non-emergency medical care when you need it most, with extended hours.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('mental-health')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-purple-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-brain text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Mental Health</h3>
+                                <p class="text-gray-600 mb-4">Comprehensive mental health services including counseling, therapy, and psychiatric care.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('preventive-care')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-shield-alt text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Preventive Care</h3>
+                                <p class="text-gray-600 mb-4">Screenings, vaccinations, and wellness programs to keep you healthy and prevent disease.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all cursor-pointer" onclick="openServiceDetails('pharmacy')">
+                            <div class="text-center">
+                                <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-pills text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-mvp-brown mb-2">Pharmacy Services</h3>
+                                <p class="text-gray-600 mb-4">Full-service pharmacy with prescription medications, refill reminders, and medication management.</p>
+                                <button class="text-mvp-red hover:text-mvp-brown font-semibold">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Events Section -->
+            <section id="community-events" class="py-16 bg-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-mvp-brown mb-4">Community Health Events</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Join us for health screenings, wellness workshops, and community health initiatives
+                        </p>
+                    </div>
+
+                    <!-- Featured Event -->
+                    <div class="bg-gradient-to-r from-mvp-red to-mvp-brown rounded-xl p-8 text-white mb-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-heartbeat text-2xl text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold">Free Health Screening Event</h3>
+                                        <p class="opacity-90">Saturday, February 15, 2025</p>
+                                    </div>
+                                </div>
+                                <p class="text-lg mb-6 opacity-90">
+                                    Join us for free health screenings including blood pressure checks, diabetes screenings, and wellness consultations. 
+                                    Open to all community members.
+                                </p>
+                                <div class="flex flex-wrap gap-4">
+                                    <button onclick="rsvpEvent('health-screening')" class="bg-mvp-green hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all">
+                                        <i class="fas fa-calendar-check mr-2"></i>RSVP Now
+                                    </button>
+                                    <button onclick="getDirections('community-center')" class="border-2 border-white text-white hover:bg-white hover:text-mvp-red px-6 py-3 rounded-lg font-semibold transition-all">
+                                        <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/95660651-d4c3-44c5-a1d9-165bd8a08bf9" 
+                                     alt="Community Health Event" 
+                                     class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border border-mvp-red/20 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                            <div class="h-48 bg-gradient-to-r from-mvp-green/20 to-green-200 flex items-center justify-center">
+                                <i class="fas fa-dumbbell text-6xl text-mvp-green"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-12 h-12 bg-mvp-green/10 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-calendar text-mvp-green"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-mvp-brown">Fitness & Wellness Workshop</h3>
+                                        <p class="text-gray-600 text-sm">February 20, 2025</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-4">Learn about nutrition, exercise, and healthy lifestyle choices from our wellness experts.</p>
+                                <button onclick="rsvpEvent('fitness-workshop')" class="w-full bg-mvp-red hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-all">
+                                    <i class="fas fa-plus-circle mr-2"></i>Register
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-mvp-red/20 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                            <div class="h-48 bg-gradient-to-r from-purple-200 to-purple-300 flex items-center justify-center">
+                                <i class="fas fa-baby text-6xl text-purple-600"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-calendar text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-mvp-brown">New Parent Support Group</h3>
+                                        <p class="text-gray-600 text-sm">February 25, 2025</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-4">Connect with other new parents and learn about infant care, nutrition, and development.</p>
+                                <button onclick="rsvpEvent('parent-support')" class="w-full bg-mvp-red hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-all">
+                                    <i class="fas fa-plus-circle mr-2"></i>Register
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-mvp-red/20 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                            <div class="h-48 bg-gradient-to-r from-blue-200 to-blue-300 flex items-center justify-center">
+                                <i class="fas fa-prescription-bottle-alt text-6xl text-blue-600"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-calendar text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-mvp-brown">Medication Management Class</h3>
+                                        <p class="text-gray-600 text-sm">March 5, 2025</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-4">Learn how to properly manage your medications, understand side effects, and ensure safety.</p>
+                                <button onclick="rsvpEvent('medication-class')" class="w-full bg-mvp-red hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-all">
+                                    <i class="fas fa-plus-circle mr-2"></i>Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Volunteer Hub Section -->
+            <section id="volunteer-hub" class="py-16 bg-gradient-to-br from-mvp-green/5 to-green-50">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-mvp-brown mb-4">Volunteer Hub</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Make a difference in your community by volunteering with MVP Healthcare initiatives
+                        </p>
+                    </div>
+
+                    <!-- Volunteer Impact Stats -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                        <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                            <div class="w-16 h-16 bg-mvp-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-users text-2xl text-mvp-green"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-mvp-brown mb-2">2,500+</div>
+                            <div class="text-gray-600">Active Volunteers</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                            <div class="w-16 h-16 bg-mvp-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-heart text-2xl text-mvp-red"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-mvp-brown mb-2">50K+</div>
+                            <div class="text-gray-600">Lives Impacted</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                            <div class="w-16 h-16 bg-mvp-brown/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-clock text-2xl text-mvp-brown"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-mvp-brown mb-2">100K+</div>
+                            <div class="text-gray-600">Volunteer Hours</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-award text-2xl text-purple-600"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-mvp-brown mb-2">25+</div>
+                            <div class="text-gray-600">Community Programs</div>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Opportunities -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-r from-mvp-red to-red-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-stethoscope text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-mvp-brown">Health Screening Events</h3>
+                                    <p class="text-mvp-green font-semibold">15 positions available</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                Help with community health screenings by assisting with registration, patient guidance, and event coordination.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm text-gray-600"><i class="fas fa-calendar mr-1"></i>Weekends</span>
+                                <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>4 hours</span>
+                            </div>
+                            <button onclick="volunteerApply('health-screening')" class="w-full bg-mvp-red hover:bg-red-700 text-white py-3 px-4 rounded-lg font-semibold transition-all">
+                                <i class="fas fa-hand-paper mr-2"></i>Volunteer Now
+                            </button>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-r from-mvp-green to-green-600 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-mvp-brown">Health Education Programs</h3>
+                                    <p class="text-mvp-green font-semibold">8 positions available</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                Teach community members about healthy lifestyle choices, nutrition, and disease prevention.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm text-gray-600"><i class="fas fa-calendar mr-1"></i>Flexible</span>
+                                <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>2-3 hours</span>
+                            </div>
+                            <button onclick="volunteerApply('health-education')" class="w-full bg-mvp-green hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-all">
+                                <i class="fas fa-hand-paper mr-2"></i>Volunteer Now
+                            </button>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 bg-gradient-to-r from-mvp-brown to-amber-700 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-hands-helping text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-mvp-brown">Senior Support Services</h3>
+                                    <p class="text-mvp-green font-semibold">12 positions available</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                Provide companionship and assistance to seniors with transportation, grocery shopping, and social activities.
+                            </p>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm text-gray-600"><i class="fas fa-calendar mr-1"></i>Weekly</span>
+                                <span class="text-sm text-gray-600"><i class="fas fa-clock mr-1"></i>3 hours</span>
+                            </div>
+                            <button onclick="volunteerApply('senior-support')" class="w-full bg-mvp-brown hover:bg-amber-800 text-white py-3 px-4 rounded-lg font-semibold transition-all">
+                                <i class="fas fa-hand-paper mr-2"></i>Volunteer Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Application CTA -->
+                    <div class="mt-12 text-center">
+                        <div class="bg-gradient-to-r from-mvp-red to-mvp-brown rounded-xl p-8 text-white">
+                            <h3 class="text-3xl font-bold mb-4">Ready to Make a Difference?</h3>
+                            <p class="text-xl mb-6 opacity-90">Join our volunteer network and help strengthen community health</p>
+                            <button onclick="openVolunteerApplication()" class="bg-mvp-green hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+                                <i class="fas fa-clipboard-list mr-2"></i>Complete Volunteer Application
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobile App Integration Section -->
+            <section id="mobile-app" class="py-16 bg-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-mvp-brown mb-4">MVP Mobile App</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Access your healthcare anytime, anywhere with the MVP Health Care mobile app
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <!-- App Features -->
+                        <div>
+                            <h3 class="text-3xl font-bold text-mvp-brown mb-6">Healthcare at Your Fingertips</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-mvp-red/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-id-card text-mvp-red"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Digital ID Card</h4>
+                                        <p class="text-gray-600">Carry your MVP Health Care ID card digitally and access it anytime.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-mvp-green/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-search text-mvp-green"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Find Providers</h4>
+                                        <p class="text-gray-600">Search for doctors, specialists, and healthcare facilities in your network.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-mvp-brown/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-prescription-bottle-alt text-mvp-brown"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Prescription Management</h4>
+                                        <p class="text-gray-600">View prescription history, find pharmacies, and manage refills.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-calendar-alt text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Appointment Scheduling</h4>
+                                        <p class="text-gray-600">Schedule, reschedule, or cancel appointments with your healthcare providers.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-file-medical text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Health Records</h4>
+                                        <p class="text-gray-600">Access your health records, test results, and medical history securely.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                        <i class="fas fa-comments text-green-600"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-bold text-mvp-brown mb-2">Secure Messaging</h4>
+                                        <p class="text-gray-600">Communicate securely with your healthcare team and get answers to questions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Download Buttons -->
+                            <div class="mt-8 flex flex-wrap gap-4">
+                                <button onclick="downloadApp('ios')" class="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center transition-all">
+                                    <i class="fab fa-apple text-2xl mr-3"></i>
+                                    <div class="text-left">
+                                        <div class="text-xs">Download on the</div>
+                                        <div class="font-semibold">App Store</div>
+                                    </div>
+                                </button>
+                                <button onclick="downloadApp('android')" class="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center transition-all">
+                                    <i class="fab fa-google-play text-2xl mr-3"></i>
+                                    <div class="text-left">
+                                        <div class="text-xs">Get it on</div>
+                                        <div class="font-semibold">Google Play</div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- App Preview -->
+                        <div class="text-center">
+                            <div class="relative inline-block">
+                                <div class="w-80 h-96 bg-gradient-to-br from-mvp-red to-mvp-brown rounded-3xl p-6 shadow-2xl">
+                                    <div class="bg-white h-full rounded-2xl p-4 flex flex-col">
+                                        <!-- App Header -->
+                                        <div class="flex items-center justify-between mb-4">
+                                            <div class="flex items-center">
+                                                <div class="w-8 h-8 bg-mvp-red rounded-lg flex items-center justify-center mr-2">
+                                                    <i class="fas fa-plus text-white text-sm"></i>
+                                                </div>
+                                                <span class="font-bold text-mvp-brown">MVP Health</span>
+                                            </div>
+                                            <i class="fas fa-user-circle text-2xl text-mvp-red"></i>
+                                        </div>
+
+                                        <!-- Quick Actions -->
+                                        <div class="grid grid-cols-2 gap-3 mb-4">
+                                            <div class="bg-mvp-red/10 rounded-lg p-3 text-center">
+                                                <i class="fas fa-id-card text-mvp-red text-xl mb-2"></i>
+                                                <div class="text-xs font-semibold text-mvp-brown">ID Card</div>
+                                            </div>
+                                            <div class="bg-mvp-green/10 rounded-lg p-3 text-center">
+                                                <i class="fas fa-search text-mvp-green text-xl mb-2"></i>
+                                                <div class="text-xs font-semibold text-mvp-brown">Find Care</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Recent Activity -->
+                                        <div class="flex-1">
+                                            <h4 class="text-sm font-bold text-mvp-brown mb-3">Recent Activity</h4>
+                                            <div class="space-y-2">
+                                                <div class="bg-gray-50 rounded-lg p-2">
+                                                    <div class="text-xs font-semibold text-mvp-brown">Appointment Scheduled</div>
+                                                    <div class="text-xs text-gray-600">Dr. Johnson - Feb 20</div>
+                                                </div>
+                                                <div class="bg-gray-50 rounded-lg p-2">
+                                                    <div class="text-xs font-semibold text-mvp-brown">Prescription Ready</div>
+                                                    <div class="text-xs text-gray-600">CVS Pharmacy</div>
+                                                </div>
+                                                <div class="bg-gray-50 rounded-lg p-2">
+                                                    <div class="text-xs font-semibold text-mvp-brown">Test Results</div>
+                                                    <div class="text-xs text-gray-600">Available to view</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Top Button -->
+            <div class="fixed bottom-6 right-6 z-50">
+                <button onclick="goHome()" class="bg-mvp-red hover:bg-red-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                    <i class="fas fa-home text-xl"></i>
+                </button>
+            </div>
+        </div>
+    `;
+    
+    // Add event listeners for MVP Healthcare interactions
+    addMVPHealthcareEventListeners();
 }
 
 function loadHyde() {
@@ -10073,3 +10763,426 @@ blackTechStyles.textContent = `
 `;
 
 document.head.appendChild(blackTechStyles);
+
+// MVP Healthcare Interactive Functions
+function addMVPHealthcareEventListeners() {
+    // Add any specific event listeners for MVP Healthcare section
+    console.log('MVP Healthcare event listeners added');
+}
+
+function scrollToMVPSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Update tab active state
+        document.querySelectorAll('.mvp-tab-btn').forEach(btn => {
+            btn.classList.remove('border-mvp-red', 'text-mvp-red');
+            btn.classList.add('border-transparent');
+        });
+        
+        // Find and activate the corresponding tab
+        const activeTab = document.querySelector(`button[onclick="scrollToMVPSection('${sectionId}')"]`);
+        if (activeTab) {
+            activeTab.classList.add('border-mvp-red', 'text-mvp-red');
+            activeTab.classList.remove('border-transparent');
+        }
+    }
+}
+
+function searchMVPProviders() {
+    showNotification('Searching MVP Healthcare provider network...', 'info');
+    
+    // Simulate search delay
+    setTimeout(() => {
+        showNotification('Found 47 providers matching your criteria!', 'success');
+    }, 1500);
+}
+
+function openProviderDetails(providerId) {
+    const providers = {
+        'dr-johnson': {
+            name: 'Dr. Sarah Johnson',
+            specialty: 'Family Medicine',
+            rating: '4.9',
+            bio: 'Dr. Johnson has over 15 years of experience in family medicine with a focus on preventive care and chronic disease management.',
+            address: '100 Medical Center Dr, Rochester, NY 14623',
+            phone: '(585) 555-0100',
+            acceptingPatients: true
+        },
+        'dr-martinez': {
+            name: 'Dr. Carlos Martinez',
+            specialty: 'Cardiology',
+            rating: '4.8',
+            bio: 'Leading cardiologist specializing in heart disease prevention, intervention cardiology, and cardiac rehabilitation.',
+            address: '250 Heart Center Blvd, Rochester, NY 14620',
+            phone: '(585) 555-0200',
+            acceptingPatients: true
+        },
+        'dr-washington': {
+            name: 'Dr. Kenya Washington',
+            specialty: 'Pediatrics',
+            rating: '4.9',
+            bio: 'Dedicated pediatrician providing comprehensive care for children from infancy through adolescence.',
+            address: '75 Children\'s Way, Rochester, NY 14621',
+            phone: '(585) 555-0300',
+            acceptingPatients: true
+        }
+    };
+
+    const provider = providers[providerId];
+    if (!provider) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-mvp-red to-mvp-brown text-white p-6 rounded-t-xl">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold">${provider.name}</h2>
+                        <p class="opacity-90">${provider.specialty}</p>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="text-white hover:text-gray-300">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h3 class="font-bold text-mvp-brown mb-3">Contact Information</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-mvp-red mr-2"></i>
+                                <span class="text-gray-700">${provider.address}</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-mvp-red mr-2"></i>
+                                <span class="text-gray-700">${provider.phone}</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <span class="text-gray-700">${provider.rating}/5.0 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-bold text-mvp-brown mb-3">Availability</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-mvp-green rounded-full mr-2"></div>
+                                <span class="text-gray-700">Accepting New Patients</span>
+                            </div>
+                            <div class="text-gray-600">Next Available: Tomorrow</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <h3 class="font-bold text-mvp-brown mb-3">About ${provider.name}</h3>
+                    <p class="text-gray-700">${provider.bio}</p>
+                </div>
+                
+                <div class="flex gap-4">
+                    <button onclick="bookAppointment('${providerId}')" class="flex-1 bg-mvp-red hover:bg-red-700 text-white py-3 px-6 rounded-lg font-semibold transition-all">
+                        <i class="fas fa-calendar mr-2"></i>Book Appointment
+                    </button>
+                    <button onclick="getDirections('${providerId}')" class="flex-1 bg-mvp-green hover:bg-green-600 text-white py-3 px-6 rounded-lg font-semibold transition-all">
+                        <i class="fas fa-directions mr-2"></i>Get Directions
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+function openServiceDetails(serviceId) {
+    const services = {
+        'primary-care': {
+            title: 'Primary Care Services',
+            description: 'Comprehensive primary healthcare including annual physicals, preventive care, and routine health maintenance.',
+            features: [
+                'Annual Physical Exams',
+                'Preventive Health Screenings',
+                'Chronic Disease Management',
+                'Vaccination Services',
+                'Health Risk Assessments',
+                'Family Planning Services'
+            ]
+        },
+        'specialist-care': {
+            title: 'Specialist Care Network',
+            description: 'Access to our extensive network of medical specialists and subspecialists.',
+            features: [
+                'Cardiology Services',
+                'Orthopedic Care',
+                'Dermatology',
+                'Gastroenterology',
+                'Endocrinology',
+                'Pulmonology'
+            ]
+        },
+        'urgent-care': {
+            title: 'Urgent Care Services',
+            description: 'Quick access to medical care for non-emergency conditions with extended hours.',
+            features: [
+                'Extended Hours Coverage',
+                'Minor Injury Treatment',
+                'Illness Diagnosis & Treatment',
+                'X-Ray & Lab Services',
+                'Prescription Services',
+                'No Appointment Necessary'
+            ]
+        },
+        'mental-health': {
+            title: 'Mental Health Services',
+            description: 'Comprehensive mental health support including counseling, therapy, and psychiatric care.',
+            features: [
+                'Individual Counseling',
+                'Group Therapy Sessions',
+                'Psychiatric Evaluations',
+                'Medication Management',
+                'Crisis Intervention',
+                'Family Therapy'
+            ]
+        },
+        'preventive-care': {
+            title: 'Preventive Care Programs',
+            description: 'Proactive healthcare services designed to prevent illness and maintain optimal health.',
+            features: [
+                'Health Screenings',
+                'Vaccination Programs',
+                'Wellness Coaching',
+                'Nutrition Counseling',
+                'Fitness Programs',
+                'Health Education'
+            ]
+        },
+        'pharmacy': {
+            title: 'Pharmacy Services',
+            description: 'Full-service pharmacy with prescription medications and health management tools.',
+            features: [
+                'Prescription Medications',
+                'Over-the-Counter Products',
+                'Medication Therapy Management',
+                'Refill Reminders',
+                'Drug Interaction Screening',
+                'Immunization Services'
+            ]
+        }
+    };
+
+    const service = services[serviceId];
+    if (!service) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-mvp-green to-green-600 text-white p-6 rounded-t-xl">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2xl font-bold">${service.title}</h2>
+                    <button onclick="this.closest('.fixed').remove()" class="text-white hover:text-gray-300">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <p class="text-gray-700 mb-6">${service.description}</p>
+                
+                <h3 class="font-bold text-mvp-brown mb-4">What's Included:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                    ${service.features.map(feature => `
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-mvp-green mr-2"></i>
+                            <span class="text-gray-700">${feature}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="flex gap-4">
+                    <button onclick="findServiceProviders('${serviceId}')" class="flex-1 bg-mvp-red hover:bg-red-700 text-white py-3 px-6 rounded-lg font-semibold transition-all">
+                        <i class="fas fa-search mr-2"></i>Find Providers
+                    </button>
+                    <button onclick="learnMoreService('${serviceId}')" class="flex-1 bg-mvp-green hover:bg-green-600 text-white py-3 px-6 rounded-lg font-semibold transition-all">
+                        <i class="fas fa-info-circle mr-2"></i>Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+function rsvpEvent(eventId) {
+    const events = {
+        'health-screening': 'Free Health Screening Event',
+        'fitness-workshop': 'Fitness & Wellness Workshop',
+        'parent-support': 'New Parent Support Group',
+        'medication-class': 'Medication Management Class'
+    };
+    
+    const eventName = events[eventId] || 'Community Event';
+    showNotification(`RSVP confirmed for ${eventName}!`, 'success');
+}
+
+function getDirections(locationId) {
+    // Open Google Maps directions (example implementation)
+    const locations = {
+        'community-center': 'Rochester Community Center, Rochester, NY',
+        'dr-johnson': '100 Medical Center Dr, Rochester, NY 14623',
+        'dr-martinez': '250 Heart Center Blvd, Rochester, NY 14620',
+        'dr-washington': '75 Children\'s Way, Rochester, NY 14621'
+    };
+    
+    const location = locations[locationId];
+    if (location) {
+        const encodedLocation = encodeURIComponent(location);
+        window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedLocation}`, '_blank');
+    }
+}
+
+function volunteerApply(opportunityId) {
+    const opportunities = {
+        'health-screening': 'Health Screening Events',
+        'health-education': 'Health Education Programs',
+        'senior-support': 'Senior Support Services'
+    };
+    
+    const opportunityName = opportunities[opportunityId] || 'Volunteer Opportunity';
+    showNotification(`Application started for ${opportunityName}!`, 'info');
+    
+    // Simulate redirect to volunteer application
+    setTimeout(() => {
+        showNotification('Redirecting to volunteer application form...', 'info');
+    }, 1000);
+}
+
+function openVolunteerApplication() {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-mvp-red to-mvp-brown text-white p-6 rounded-t-xl">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2xl font-bold">Volunteer Application</h2>
+                    <button onclick="this.closest('.fixed').remove()" class="text-white hover:text-gray-300">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <form onsubmit="submitVolunteerApplication(event)">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block font-semibold text-mvp-brown mb-2">First Name *</label>
+                            <input type="text" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-mvp-brown mb-2">Last Name *</label>
+                            <input type="text" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block font-semibold text-mvp-brown mb-2">Email Address *</label>
+                        <input type="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block font-semibold text-mvp-brown mb-2">Phone Number *</label>
+                        <input type="tel" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-mvp-green">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block font-semibold text-mvp-brown mb-2">Areas of Interest (select all that apply)</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Health Screening Events</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Health Education</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Senior Support</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Community Outreach</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block font-semibold text-mvp-brown mb-2">Availability</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Weekdays</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Weekends</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-2"> Evenings</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block font-semibold text-mvp-brown mb-2">Why do you want to volunteer with MVP Healthcare?</label>
+                        <textarea rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-mvp-green" placeholder="Tell us about your motivation to volunteer..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-mvp-red hover:bg-red-700 text-white py-3 px-6 rounded-lg font-semibold transition-all">
+                        <i class="fas fa-paper-plane mr-2"></i>Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+function submitVolunteerApplication(event) {
+    event.preventDefault();
+    showNotification('Volunteer application submitted successfully!', 'success');
+    event.target.closest('.fixed').remove();
+    
+    setTimeout(() => {
+        showNotification('Our team will contact you within 2-3 business days!', 'info');
+    }, 2000);
+}
+
+function downloadApp(platform) {
+    const appUrls = {
+        'ios': 'https://apps.apple.com/us/app/mvp-health-care/id1234567890',
+        'android': 'https://play.google.com/store/apps/details?id=com.mvphealthcare.mobile'
+    };
+    
+    showNotification(`Redirecting to ${platform.toUpperCase()} app store...`, 'info');
+    
+    // Simulate app store redirect
+    setTimeout(() => {
+        // window.open(appUrls[platform], '_blank');
+        showNotification('MVP Healthcare mobile app download started!', 'success');
+    }, 1000);
+}
+
+function openMVPApp() {
+    showNotification('Opening MVP Healthcare mobile app information...', 'info');
+    scrollToMVPSection('mobile-app');
+}
+
+function bookAppointment(providerId) {
+    showNotification('Redirecting to MVP Healthcare appointment booking system...', 'info');
+    
+    setTimeout(() => {
+        showNotification('Appointment booking system loaded!', 'success');
+    }, 1500);
+}
+
+function findServiceProviders(serviceId) {
+    showNotification(`Finding providers for ${serviceId.replace('-', ' ')} services...`, 'info');
+    
+    setTimeout(() => {
+        showNotification('Found 23 providers in your area!', 'success');
+    }, 1500);
+}
+
+function learnMoreService(serviceId) {
+    showNotification(`Loading detailed information about ${serviceId.replace('-', ' ')} services...`, 'info');
+}

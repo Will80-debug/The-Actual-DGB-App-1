@@ -305,7 +305,10 @@ app.get('/', (c) => {
                   'dark-green': '#2D5A27',
                   'medium-green': '#40916C',
                   'light-green': '#52B788',
-                  'cream': '#F8F6E8'
+                  'cream': '#F8F6E8',
+                  'mvp-red': '#C8102E',
+                  'mvp-green': '#00A859',
+                  'mvp-brown': '#4D342F'
                 }
               }
             }
