@@ -69,6 +69,9 @@ function navigateTo(section) {
         case 'youth-vibe':
             loadYouthVibe();
             break;
+        case 'black-tech':
+            loadBlackTech();
+            break;
         case 'senior-circle':
             loadSeniorCircle();
             break;
@@ -4217,6 +4220,643 @@ function loadLimitleeLiving() {
 
 function loadMelomics() {
     loadEconomicSection();
+}
+
+function loadBlackTech() {
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 text-white">
+                <!-- Background Hero Image -->
+                <div class="absolute inset-0 opacity-30">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8aeec252-b5f6-41fe-bc67-7e15da4fbc3d" 
+                         alt="Black Tech Innovation" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Content -->
+                <div class="relative z-10 container mx-auto px-4 py-16 text-center">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm flex items-center justify-center border-2 border-white/30">
+                            <i class="fas fa-microchip text-4xl"></i>
+                        </div>
+                        <h1 class="text-5xl font-bold mb-6">
+                            <span class="bg-gradient-to-r from-white via-blue-100 to-purple-100 text-transparent bg-clip-text">Black Tech</span>
+                        </h1>
+                        <p class="text-xl mb-8 text-blue-100">
+                            Your daily gateway to AI, policy, founders, opportunities, and tech innovation in the Black community
+                        </p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                <div class="text-2xl font-bold">Daily</div>
+                                <div class="text-sm opacity-80">Updates</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                <div class="text-2xl font-bold">100+</div>
+                                <div class="text-sm opacity-80">Resources</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                <div class="text-2xl font-bold">Live</div>
+                                <div class="text-sm opacity-80">Jobs Feed</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                <div class="text-2xl font-bold">AI</div>
+                                <div class="text-sm opacity-80">Powered</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Grid -->
+            <div class="container mx-auto px-4 py-8">
+                <!-- Category Navigation -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                    <button onclick="scrollToBlackTechSection('top-stories')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-blue-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-brain text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Top Stories</div>
+                        <div class="text-xs text-gray-600">AI + Tech News</div>
+                    </button>
+                    
+                    <button onclick="scrollToBlackTechSection('policy-watch')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-green-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Policy Watch</div>
+                        <div class="text-xs text-gray-600">Help Your Household</div>
+                    </button>
+                    
+                    <button onclick="scrollToBlackTechSection('founders')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-purple-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-rocket text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Founders</div>
+                        <div class="text-xs text-gray-600">Builders & Stories</div>
+                    </button>
+                    
+                    <button onclick="scrollToBlackTechSection('jobs')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-orange-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-briefcase text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Jobs & Internships</div>
+                        <div class="text-xs text-gray-600">Live Opportunities</div>
+                    </button>
+                    
+                    <button onclick="scrollToBlackTechSection('grants')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-yellow-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-dollar-sign text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Grants & Capital</div>
+                        <div class="text-xs text-gray-600">Funding Opportunities</div>
+                    </button>
+                    
+                    <button onclick="scrollToBlackTechSection('learn')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-teal-200 group">
+                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                        </div>
+                        <div class="font-semibold text-sm text-gray-800">Learn & Do</div>
+                        <div class="text-xs text-gray-600">Micro-Lessons</div>
+                    </button>
+                </div>
+
+                <!-- Daily Dashboard -->
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-8 text-white">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold flex items-center">
+                            <i class="fas fa-calendar-day mr-3"></i>
+                            Today's Black Tech Dashboard
+                        </h2>
+                        <div class="text-sm bg-white/20 px-3 py-1 rounded-full">
+                            <i class="fas fa-sync-alt mr-1"></i>
+                            Auto-Updated Daily
+                        </div>
+                    </div>
+                    <p class="text-blue-100 mb-6">Your personalized daily briefing on Black tech innovation, opportunities, and community impact.</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-newspaper text-yellow-300 mr-2"></i>
+                                <span class="font-semibold">Today's Headlines</span>
+                            </div>
+                            <p class="text-sm text-blue-100">5 trending AI & tech stories affecting the Black community</p>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-handshake text-green-300 mr-2"></i>
+                                <span class="font-semibold">New Opportunities</span>
+                            </div>
+                            <p class="text-sm text-blue-100">12 fresh job postings & 3 grant deadlines this week</p>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-lightbulb text-purple-300 mr-2"></i>
+                                <span class="font-semibold">Learning Focus</span>
+                            </div>
+                            <p class="text-sm text-blue-100">AI prompt engineering & digital privacy essentials</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Stories Section -->
+                <section id="top-stories" class="mb-12">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-3xl font-bold text-gray-800 flex items-center">
+                            <i class="fas fa-brain text-blue-600 mr-3"></i>
+                            Top Stories: AI + Tech for Us
+                        </h2>
+                        <div class="flex space-x-2">
+                            <button class="text-blue-600 hover:bg-blue-50 px-3 py-1 rounded text-sm font-medium">The Plug</button>
+                            <button class="text-purple-600 hover:bg-purple-50 px-3 py-1 rounded text-sm font-medium">AfroTech</button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Featured Story -->
+                        <div class="md:col-span-2 lg:col-span-1 bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-600">
+                            <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-6xl"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">BREAKING</span>
+                                    <span class="text-gray-500 text-sm ml-2">2 hours ago</span>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">AI Bias Lawsuit Settlement Creates $50M Fund for Black Tech Entrepreneurs</h3>
+                                <p class="text-gray-600 text-sm mb-4">Major tech company agrees to historic settlement funding Black-led AI startups and bias prevention research...</p>
+                                <button onclick="viewBlackTechStory('ai-bias-settlement')" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Read Full Story →</button>
+                            </div>
+                        </div>
+
+                        <!-- Story Cards -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="h-32 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">HBCU AI Research Centers Get $25M Federal Funding</h3>
+                                <p class="text-gray-600 text-sm mb-3">Howard, Spelman, and 8 other HBCUs launch AI ethics and innovation programs...</p>
+                                <button onclick="viewBlackTechStory('hbcu-ai-funding')" class="text-green-600 hover:text-green-800 font-medium text-sm">Learn More →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="h-32 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Black-Founded Health App Secures Series A</h3>
+                                <p class="text-gray-600 text-sm mb-3">AI-powered mental health platform raises $15M to address healthcare disparities...</p>
+                                <button onclick="viewBlackTechStory('health-app-funding')" class="text-purple-600 hover:text-purple-800 font-medium text-sm">Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Policy Watch Section -->
+                <section id="policy-watch" class="mb-12">
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-shield-alt text-green-600 mr-3"></i>
+                            Policy Watch: "Can this help my household?"
+                        </h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- ACP Update -->
+                            <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                                    <h3 class="font-bold text-red-800">ACP Program Ended (June 1, 2024)</h3>
+                                </div>
+                                <p class="text-red-700 mb-4 text-sm">The Affordable Connectivity Program is no longer accepting new applications or providing discounts.</p>
+                                <div class="bg-white rounded-lg p-4">
+                                    <h4 class="font-semibold text-gray-800 mb-2">What Now? 💡</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Check Lifeline eligibility (up to $9.25/mo discount)</li>
+                                        <li>• Look for carrier-specific low-income plans</li>
+                                        <li>• Contact local libraries for free internet access</li>
+                                        <li>• Apply for emergency broadband assistance programs</li>
+                                    </ul>
+                                    <button onclick="checkLifelineEligibility()" class="mt-3 bg-green-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-green-700">Check Lifeline Now →</button>
+                                </div>
+                            </div>
+
+                            <!-- Lifeline Program -->
+                            <div class="bg-green-50 border-l-4 border-green-500 rounded-lg p-6">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                    <h3 class="font-bold text-green-800">Lifeline Program Still Active</h3>
+                                </div>
+                                <p class="text-green-700 mb-4 text-sm">Get up to $9.25/month discount on phone or internet service (more on Tribal lands).</p>
+                                <div class="bg-white rounded-lg p-4">
+                                    <h4 class="font-semibold text-gray-800 mb-2">2025 Eligibility Checklist ✅</h4>
+                                    <div class="text-sm text-gray-700 space-y-2">
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="mr-2"> SNAP benefits
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="mr-2"> Medicaid
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="mr-2"> Federal Public Housing Assistance
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="mr-2"> Income at/below 135% of Federal Poverty Guidelines
+                                        </label>
+                                    </div>
+                                    <button onclick="applyLifelineProgram()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700">Apply Now →</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Policy Items -->
+                        <div class="grid md:grid-cols-3 gap-4 mt-6">
+                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                                <h4 class="font-semibold text-blue-800 mb-2">BEAD $42.45B Broadband</h4>
+                                <p class="text-blue-700 text-sm mb-3">Massive federal investment in broadband infrastructure coming to NY and nationwide.</p>
+                                <button onclick="viewPolicyDetails('bead-program')" class="text-blue-600 hover:text-blue-800 text-sm font-medium">NY Updates →</button>
+                            </div>
+
+                            <div class="bg-purple-50 rounded-lg p-4 border border-purple-200">
+                                <h4 class="font-semibold text-purple-800 mb-2">Net Neutrality Reinstated</h4>
+                                <p class="text-purple-700 text-sm mb-3">2024 rules prevent ISPs from blocking or throttling content.</p>
+                                <button onclick="viewPolicyDetails('net-neutrality')" class="text-purple-600 hover:text-purple-800 text-sm font-medium">Learn More →</button>
+                            </div>
+
+                            <div class="bg-orange-50 rounded-lg p-4 border border-orange-200">
+                                <h4 class="font-semibold text-orange-800 mb-2">Digital Discrimination Rules</h4>
+                                <p class="text-orange-700 text-sm mb-3">New 2024 rules to combat unfair internet service practices.</p>
+                                <button onclick="fileDiscriminationComplaint()" class="text-orange-600 hover:text-orange-800 text-sm font-medium">File Complaint →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Founders & Builders Section -->
+                <section id="founders" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-rocket text-purple-600 mr-3"></i>
+                        Founders & Builders
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Weekly Spotlight -->
+                        <div class="lg:col-span-2 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <span class="bg-yellow-400 text-purple-800 text-xs px-3 py-1 rounded-full font-bold">WEEKLY SPOTLIGHT</span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-3">Dr. Aisha Patel, AI Ethics Pioneer</h3>
+                                <p class="text-purple-100 mb-4">From Howard University PhD to founding TrustAI Labs, Dr. Patel is revolutionizing how AI systems detect and prevent bias in healthcare algorithms...</p>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button onclick="watchFounderVideo('aisha-patel')" class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition-all">
+                                            <i class="fas fa-play mr-2"></i>Watch Story
+                                        </button>
+                                        <button onclick="viewFounderPlaybook('aisha-patel')" class="border border-white/30 px-4 py-2 rounded-lg hover:bg-white/10 transition-all">
+                                            <i class="fas fa-book mr-2"></i>How She Built It
+                                        </button>
+                                    </div>
+                                    <div class="text-purple-200 text-sm">
+                                        <i class="fas fa-eye mr-1"></i>2.3K views
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Founder Cards -->
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-green-500">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                        JM
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold">Jamal Martinez</h4>
+                                        <p class="text-gray-600 text-xs">CodePath Co-Founder</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-700">Scaling tech education for underrepresented communities nationwide...</p>
+                                <button onclick="viewFounderProfile('jamal-martinez')" class="mt-2 text-green-600 text-sm font-medium">View Profile →</button>
+                            </div>
+
+                            <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-blue-500">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                        KW
+                                    </div>
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold">Kimberly Wilson</h4>
+                                        <p class="text-gray-600 text-xs">Student, MIT</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-700">19-year-old building AR tools for STEM education in underserved schools...</p>
+                                <button onclick="viewFounderProfile('kimberly-wilson')" class="mt-2 text-blue-600 text-sm font-medium">View Profile →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Jobs, Internships & Fellowships Section -->
+                <section id="jobs" class="mb-12">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-3xl font-bold text-gray-800 flex items-center">
+                            <i class="fas fa-briefcase text-orange-600 mr-3"></i>
+                            Jobs, Paid Internships & Fellowships
+                        </h2>
+                        <div class="flex space-x-2">
+                            <button onclick="filterJobs('all')" class="job-filter bg-orange-600 text-white px-3 py-1 rounded text-sm">All</button>
+                            <button onclick="filterJobs('remote')" class="job-filter bg-gray-200 text-gray-700 px-3 py-1 rounded text-sm">Remote</button>
+                            <button onclick="filterJobs('internships')" class="job-filter bg-gray-200 text-gray-700 px-3 py-1 rounded text-sm">Internships</button>
+                            <button onclick="filterJobs('apprenticeships')" class="job-filter bg-gray-200 text-gray-700 px-3 py-1 rounded text-sm">Apprenticeships</button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="jobs-grid">
+                        <!-- Job listings will be populated by filterJobs() -->
+                    </div>
+                    
+                    <div class="text-center mt-6">
+                        <button onclick="viewAllJobs()" class="bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-700">
+                            View All Opportunities <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Grants, Pitch Competitions & Capital Section -->
+                <section id="grants" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-dollar-sign text-yellow-600 mr-3"></i>
+                        Grants, Pitch Competitions & Capital
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-yellow-500 p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full font-medium">OPEN NOW</span>
+                                <span class="text-gray-500 text-sm ml-2">Deadline: Dec 15</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Black Founders Matter Micro-Grant</h3>
+                            <p class="text-gray-600 text-sm mb-4">Up to $5,000 for early-stage Black tech entrepreneurs. No equity required.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-yellow-600 font-bold">$1K - $5K</span>
+                                <button onclick="applyForGrant('bfm-micro')" class="text-yellow-600 hover:text-yellow-800 font-medium text-sm">3-min Guide →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-purple-500 p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded-full font-medium">WEEKLY</span>
+                                <span class="text-gray-500 text-sm ml-2">Every Thursday</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">TechStars Startup Weekend</h3>
+                            <p class="text-gray-600 text-sm mb-4">54-hour hackathon with $10K+ prizes and investor connections.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-purple-600 font-bold">$10K+ Prizes</span>
+                                <button onclick="registerForEvent('techstars-weekend')" class="text-purple-600 hover:text-purple-800 font-medium text-sm">Register →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-blue-500 p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">DEADLINE SOON</span>
+                                <span class="text-gray-500 text-sm ml-2">5 days left</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">HBCU Pitch Competition</h3>
+                            <p class="text-gray-600 text-sm mb-4">$50K grand prize for HBCU student entrepreneurs in AI/tech space.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-600 font-bold">Up to $50K</span>
+                                <button onclick="applyForGrant('hbcu-pitch')" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Apply Now →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Learn & Do Section -->
+                <section id="learn" class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-teal-600 mr-3"></i>
+                        Learn & Do: Micro-Lessons
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('get-online-less')">
+                            <div class="h-32 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                                <i class="fas fa-wifi text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Get Online for Less</h3>
+                                <p class="text-gray-600 text-sm mb-3">Post-ACP: Check Lifeline → pick carrier → apply</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-green-600 text-sm font-medium">90 seconds</span>
+                                    <i class="fas fa-arrow-right text-green-600"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('protect-data')">
+                            <div class="h-32 bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Protect Your Data</h3>
+                                <p class="text-gray-600 text-sm mb-3">2FA setup → password manager → secure social media</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-600 text-sm font-medium">60 seconds</span>
+                                    <i class="fas fa-arrow-right text-blue-600"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('ai-for-work')">
+                            <div class="h-32 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
+                                <i class="fas fa-robot text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Use AI for School & Work</h3>
+                                <p class="text-gray-600 text-sm mb-3">Copy-paste prompts for resumes, cover letters, grants</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-purple-600 text-sm font-medium">75 seconds</span>
+                                    <i class="fas fa-arrow-right text-purple-600"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('creators-corner')">
+                            <div class="h-32 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
+                                <i class="fas fa-camera text-white text-4xl"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Creators' Corner</h3>
+                                <p class="text-gray-600 text-sm mb-3">Safe AI tools + disclosure best practices</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-pink-600 text-sm font-medium">90 seconds</span>
+                                    <i class="fas fa-arrow-right text-pink-600"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Player 1 Academy Feature Card -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="p-8 text-white">
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <h2 class="text-3xl font-bold mb-2">Player 1 Academy—AI Training Hub</h2>
+                                    <p class="text-indigo-100">Hands-on AI/VR/AR learning for educators, youth & families</p>
+                                </div>
+                                <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap text-3xl"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                    <h3 class="font-bold mb-2 flex items-center">
+                                        <i class="fas fa-chalkboard-teacher mr-2"></i>
+                                        Educators & Schools
+                                    </h3>
+                                    <p class="text-indigo-100 text-sm mb-3">Professional development on responsible AI, classroom workflows, and policy alignment.</p>
+                                    <ul class="text-indigo-200 text-xs space-y-1">
+                                        <li>• AI ethics training for teachers</li>
+                                        <li>• Curriculum integration workshops</li>
+                                        <li>• Policy compliance guidance</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                                    <h3 class="font-bold mb-2 flex items-center">
+                                        <i class="fas fa-users mr-2"></i>
+                                        Youth & Families
+                                    </h3>
+                                    <p class="text-indigo-100 text-sm mb-3">Hands-on AI/VR/AR labs, career exploration, and micro-credentials.</p>
+                                    <ul class="text-indigo-200 text-xs space-y-1">
+                                        <li>• Interactive AI workshops</li>
+                                        <li>• VR/AR career simulations</li>
+                                        <li>• Industry-recognized certifications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-4">
+                                <button onclick="window.open('https://www.player1academy.org/aitrainingprograms', '_blank')" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-all">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    Explore Programs
+                                </button>
+                                <button onclick="learnMoreP1Academy()" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all">
+                                    <i class="fas fa-info-circle mr-2"></i>
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Events Section -->
+                <section class="mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-calendar-alt text-indigo-600 mr-3"></i>
+                        Events
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-indigo-500">
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">THIS WEEK</span>
+                                <span class="text-gray-500 text-sm">Dec 12-14</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">AfroTech Conference 2024</h3>
+                            <p class="text-gray-600 text-sm mb-4">The largest Black tech conference featuring startups, VCs, and Fortune 500 companies.</p>
+                            <button onclick="registerForEvent('afrotech-2024')" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">Register Now →</button>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full font-medium">MONTHLY</span>
+                                <span class="text-gray-500 text-sm">Every 3rd Thu</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">NSBE Rochester Meetup</h3>
+                            <p class="text-gray-600 text-sm mb-4">National Society of Black Engineers local chapter networking and tech talks.</p>
+                            <button onclick="registerForEvent('nsbe-meetup')" class="text-green-600 hover:text-green-800 font-medium text-sm">Join Next Meetup →</button>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
+                            <div class="flex justify-between items-start mb-3">
+                                <span class="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded-full font-medium">UPCOMING</span>
+                                <span class="text-gray-500 text-sm">Jan 15, 2025</span>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">Player 1 Academy Workshop</h3>
+                            <p class="text-gray-600 text-sm mb-4">Hands-on AI training session for youth and educators in Rochester.</p>
+                            <button onclick="registerForEvent('p1-workshop')" class="text-purple-600 hover:text-purple-800 font-medium text-sm">Save Your Spot →</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Community Q&A Section -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                            <i class="fas fa-question-circle text-teal-600 mr-3"></i>
+                            Community Q&A: "Ask an AI Coach"
+                        </h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-bold text-lg mb-4">Submit Your Question</h3>
+                                <form class="space-y-4">
+                                    <select class="w-full p-3 border rounded-lg">
+                                        <option>Select a topic...</option>
+                                        <option>College applications & AI tools</option>
+                                        <option>Small business automation</option>
+                                        <option>Job search with AI</option>
+                                        <option>Digital privacy & security</option>
+                                        <option>AI for creative projects</option>
+                                        <option>Tech career guidance</option>
+                                    </select>
+                                    <textarea class="w-full p-3 border rounded-lg h-24" placeholder="Ask your question anonymously..."></textarea>
+                                    <button type="button" onclick="submitCommunityQuestion()" class="bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700">
+                                        Submit Question
+                                    </button>
+                                </form>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-bold text-lg mb-4">Recent Q&A</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-white rounded-lg p-4 border border-teal-200">
+                                        <h4 class="font-semibold text-sm text-teal-800 mb-2">College Applications</h4>
+                                        <p class="text-gray-700 text-sm mb-2"><strong>Q:</strong> How can I use AI to write better college essays without cheating?</p>
+                                        <p class="text-gray-600 text-sm"><strong>A:</strong> Great question! AI can help brainstorm ideas and improve structure, but your voice should shine through...</p>
+                                        <button onclick="readFullAnswer('college-essay-ai')" class="text-teal-600 text-sm font-medium mt-2">Read Full Answer →</button>
+                                    </div>
+                                    
+                                    <div class="bg-white rounded-lg p-4 border border-teal-200">
+                                        <h4 class="font-semibold text-sm text-teal-800 mb-2">Small Business</h4>
+                                        <p class="text-gray-700 text-sm mb-2"><strong>Q:</strong> What's the best AI tool for managing my online store inventory?</p>
+                                        <p class="text-gray-600 text-sm"><strong>A:</strong> For small businesses, I recommend starting with these affordable options...</p>
+                                        <button onclick="readFullAnswer('inventory-ai')" class="text-teal-600 text-sm font-medium mt-2">Read Full Answer →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    `;
+
+    // Add event listeners and initialize daily updates
+    addBlackTechEventListeners();
+    initializeBlackTechDailyUpdates();
 }
 
 function loadLatinConnection() {
@@ -8420,4 +9060,607 @@ function toggleGoalComplete(id) {
         displayHealthGoals();
         showNotification(goal.completed ? 'Goal completed! 🎉' : 'Goal marked as incomplete', 'success');
     }
+}
+
+// Black Tech Interactive Functions
+function addBlackTechEventListeners() {
+    // Add smooth scrolling functionality
+    console.log('Black Tech event listeners initialized');
+}
+
+function scrollToBlackTechSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function viewBlackTechStory(storyId) {
+    const stories = {
+        'ai-bias-settlement': {
+            title: 'AI Bias Lawsuit Settlement Creates $50M Fund for Black Tech Entrepreneurs',
+            content: 'A landmark settlement in a major AI bias lawsuit has resulted in the creation of a $50 million fund specifically designed to support Black-led technology startups and AI bias prevention research. The settlement addresses years of documented algorithmic discrimination in hiring, lending, and criminal justice systems.',
+            source: 'The Plug',
+            readTime: '4 min read',
+            tags: ['AI Ethics', 'Legal', 'Funding']
+        },
+        'hbcu-ai-funding': {
+            title: 'HBCU AI Research Centers Get $25M Federal Funding',
+            content: 'The National Science Foundation announced a $25 million investment in AI research centers at Historically Black Colleges and Universities (HBCUs). Howard University, Spelman College, and eight other institutions will establish AI ethics and innovation programs focused on addressing bias in artificial intelligence systems.',
+            source: 'AfroTech',
+            readTime: '3 min read',
+            tags: ['Education', 'AI Research', 'HBCU']
+        },
+        'health-app-funding': {
+            title: 'Black-Founded Health App Secures Series A',
+            content: 'MindfulMelaninHealth, an AI-powered mental health platform founded by Dr. Kenya Johnson, has secured $15 million in Series A funding to address healthcare disparities in Black communities. The app uses culturally-aware AI to provide personalized mental health support.',
+            source: 'TechCrunch',
+            readTime: '5 min read',
+            tags: ['Healthcare', 'AI', 'Funding']
+        }
+    };
+
+    const story = stories[storyId];
+    if (story) {
+        showBlackTechModal(story.title, `
+            <div class="space-y-4">
+                <div class="flex items-center justify-between text-sm text-gray-600">
+                    <span class="font-medium">${story.source}</span>
+                    <span>${story.readTime}</span>
+                </div>
+                
+                <div class="flex space-x-2">
+                    ${story.tags.map(tag => `<span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">${tag}</span>`).join('')}
+                </div>
+                
+                <p class="text-gray-700 leading-relaxed">${story.content}</p>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">Why This Matters for Our Community</h4>
+                    <p class="text-blue-700 text-sm">This development represents significant progress in addressing systemic bias in technology and creating opportunities for Black entrepreneurs and researchers in the AI space.</p>
+                </div>
+                
+                <div class="flex space-x-3">
+                    <button onclick="shareStory('${storyId}')" class="flex-1 bg-blue-600 text-white py-2 rounded font-medium hover:bg-blue-700">
+                        <i class="fas fa-share mr-2"></i>Share Story
+                    </button>
+                    <button onclick="saveStory('${storyId}')" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium hover:bg-gray-50">
+                        <i class="fas fa-bookmark mr-2"></i>Save for Later
+                    </button>
+                </div>
+            </div>
+        `);
+    }
+}
+
+function checkLifelineEligibility() {
+    showBlackTechModal('Check Lifeline Eligibility', `
+        <div class="space-y-6">
+            <div class="text-center">
+                <i class="fas fa-check-circle text-green-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Lifeline Program Eligibility Checker</h3>
+                <p class="text-gray-600">Quick assessment to see if you qualify for up to $9.25/month discount</p>
+            </div>
+
+            <form class="space-y-4">
+                <div>
+                    <h4 class="font-semibold mb-3">Do you receive any of these benefits?</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3" name="benefits" value="snap">
+                            <div class="flex-1">
+                                <div class="font-medium">SNAP (Food Stamps)</div>
+                                <div class="text-sm text-gray-600">Supplemental Nutrition Assistance Program</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3" name="benefits" value="medicaid">
+                            <div class="flex-1">
+                                <div class="font-medium">Medicaid</div>
+                                <div class="text-sm text-gray-600">Government health insurance program</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3" name="benefits" value="housing">
+                            <div class="flex-1">
+                                <div class="font-medium">Federal Public Housing Assistance</div>
+                                <div class="text-sm text-gray-600">Section 8, public housing, etc.</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="mr-3" name="benefits" value="ssi">
+                            <div class="flex-1">
+                                <div class="font-medium">SSI</div>
+                                <div class="text-sm text-gray-600">Supplemental Security Income</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-3">Household Income (Optional)</h4>
+                    <select class="w-full p-2 border rounded">
+                        <option>Select household size first</option>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5+ people</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="processLifelineEligibility()" class="w-full bg-green-600 text-white py-3 rounded font-semibold hover:bg-green-700">
+                    Check My Eligibility
+                </button>
+            </form>
+        </div>
+    `);
+}
+
+function processLifelineEligibility() {
+    const benefits = document.querySelectorAll('input[name="benefits"]:checked');
+    const hasQualifyingBenefits = benefits.length > 0;
+    
+    showBlackTechModal('Your Lifeline Eligibility Result', `
+        <div class="text-center space-y-6">
+            <div class="w-20 h-20 ${hasQualifyingBenefits ? 'bg-green-500' : 'bg-yellow-500'} rounded-full mx-auto flex items-center justify-center">
+                <i class="fas ${hasQualifyingBenefits ? 'fa-check' : 'fa-clock'} text-white text-3xl"></i>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-bold mb-2 ${hasQualifyingBenefits ? 'text-green-800' : 'text-yellow-800'}">
+                    ${hasQualifyingBenefits ? 'You Likely Qualify!' : 'You May Still Qualify'}
+                </h3>
+                <p class="text-gray-600">
+                    ${hasQualifyingBenefits 
+                        ? 'Based on your benefits, you should qualify for Lifeline discounts.'
+                        : 'Check if your income qualifies you for Lifeline benefits.'}
+                </p>
+            </div>
+
+            <div class="bg-${hasQualifyingBenefits ? 'green' : 'yellow'}-50 p-4 rounded-lg text-left">
+                <h4 class="font-semibold mb-2">Next Steps:</h4>
+                <ul class="text-sm space-y-1 ${hasQualifyingBenefits ? 'text-green-700' : 'text-yellow-700'}">
+                    <li>• Visit the official Lifeline website</li>
+                    <li>• Choose an approved service provider</li>
+                    <li>• Complete the application with required documents</li>
+                    <li>• Start saving up to $9.25/month on your phone or internet bill</li>
+                </ul>
+            </div>
+
+            <div class="flex space-x-3">
+                <button onclick="window.open('https://www.lifelinesupport.org/', '_blank')" class="flex-1 bg-blue-600 text-white py-2 rounded font-medium">
+                    Apply Now
+                </button>
+                <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium">
+                    Close
+                </button>
+            </div>
+        </div>
+    `);
+}
+
+function viewPolicyDetails(policyId) {
+    const policies = {
+        'bead-program': {
+            title: 'BEAD Program: $42.45B Broadband Investment',
+            content: 'The Broadband Equity, Access, and Deployment (BEAD) Program is the largest federal investment in broadband infrastructure in history. New York is expected to receive over $2 billion to expand high-speed internet access to underserved communities.',
+            impact: 'This program will prioritize historically underserved areas, including many predominantly Black and Hispanic communities that have faced digital redlining.',
+            timeline: '2025-2027 deployment timeline with community input opportunities'
+        },
+        'net-neutrality': {
+            title: 'Net Neutrality Protections Restored',
+            content: 'The FCC reinstated comprehensive net neutrality rules in 2024, prohibiting internet service providers from blocking, throttling, or prioritizing content based on payment.',
+            impact: 'These rules ensure equal access to information and prevent ISPs from creating fast and slow lanes that could disproportionately affect communities with less economic power.',
+            timeline: 'Rules are now in effect nationwide'
+        }
+    };
+
+    const policy = policies[policyId];
+    if (policy) {
+        showBlackTechModal(policy.title, `
+            <div class="space-y-4">
+                <p class="text-gray-700">${policy.content}</p>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">Community Impact</h4>
+                    <p class="text-blue-700 text-sm">${policy.impact}</p>
+                </div>
+                
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Timeline</h4>
+                    <p class="text-gray-700 text-sm">${policy.timeline}</p>
+                </div>
+                
+                <button onclick="this.closest('.fixed').remove()" class="w-full bg-blue-600 text-white py-2 rounded font-medium hover:bg-blue-700">
+                    Got It
+                </button>
+            </div>
+        `);
+    }
+}
+
+function fileDiscriminationComplaint() {
+    showBlackTechModal('File Digital Discrimination Complaint', `
+        <div class="space-y-6">
+            <div class="text-center">
+                <i class="fas fa-balance-scale text-orange-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Report Digital Discrimination</h3>
+                <p class="text-gray-600">New 2024 FCC rules protect against unfair internet service practices</p>
+            </div>
+
+            <div class="bg-orange-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-orange-800 mb-2">You can file a complaint if your area experiences:</h4>
+                <ul class="text-orange-700 text-sm space-y-1">
+                    <li>• Slower internet speeds compared to nearby affluent neighborhoods</li>
+                    <li>• Higher prices for the same service level</li>
+                    <li>• Lack of fiber/high-speed options in your community</li>
+                    <li>• ISP refusal to provide service in your area</li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <input type="text" placeholder="Your ZIP code" class="w-full p-2 border rounded">
+                <input type="text" placeholder="Internet service provider" class="w-full p-2 border rounded">
+                <textarea placeholder="Describe the discrimination you've experienced..." class="w-full p-2 border rounded h-24"></textarea>
+            </div>
+
+            <div class="flex space-x-3">
+                <button onclick="submitDiscriminationComplaint()" class="flex-1 bg-orange-600 text-white py-2 rounded font-medium hover:bg-orange-700">
+                    Submit to FCC
+                </button>
+                <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    `);
+}
+
+function watchFounderVideo(founderId) {
+    showBlackTechModal('Founder Spotlight Video', `
+        <div class="space-y-4">
+            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg h-64 flex items-center justify-center text-white">
+                <div class="text-center">
+                    <i class="fas fa-play-circle text-6xl mb-4"></i>
+                    <p class="text-lg">Dr. Aisha Patel: From HBCU to AI Ethics Pioneer</p>
+                    <p class="text-sm opacity-80">Runtime: 8:42</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button onclick="this.closest('.fixed').remove()" class="bg-purple-600 text-white px-6 py-2 rounded font-medium hover:bg-purple-700">
+                    Watch Full Video on YouTube
+                </button>
+            </div>
+        </div>
+    `);
+}
+
+function viewFounderPlaybook(founderId) {
+    showBlackTechModal('How She Built It: Dr. Aisha Patel', `
+        <div class="space-y-6">
+            <div class="text-center">
+                <i class="fas fa-book text-purple-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold">The TrustAI Labs Playbook</h3>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-purple-800 mb-2">🎯 Phase 1: Research Foundation (Months 1-6)</h4>
+                    <ul class="text-purple-700 text-sm space-y-1">
+                        <li>• Identified healthcare AI bias problem during PhD research</li>
+                        <li>• Published 3 peer-reviewed papers on algorithmic fairness</li>
+                        <li>• Built MVP bias detection tool for medical imaging</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">💰 Phase 2: Funding Strategy (Months 6-12)</h4>
+                    <ul class="text-blue-700 text-sm space-y-1">
+                        <li>• Applied to SBIR grants for health tech</li>
+                        <li>• Joined Techstars healthcare accelerator</li>
+                        <li>• Raised $500K pre-seed from mission-aligned VCs</li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">🚀 Phase 3: Scale & Impact (Year 2+)</h4>
+                    <ul class="text-green-700 text-sm space-y-1">
+                        <li>• Partnered with 5 major hospital systems</li>
+                        <li>• Reduced diagnostic bias by 40% in pilot programs</li>
+                        <li>• Series A led by GV (Google Ventures): $15M</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-yellow-800 mb-2">🔑 Key Success Factors</h4>
+                <ul class="text-yellow-700 text-sm space-y-1">
+                    <li>• Deep technical expertise in AI and healthcare</li>
+                    <li>• Strong academic credentials and publications</li>
+                    <li>• Focus on measurable social impact</li>
+                    <li>• Strategic partnerships with healthcare institutions</li>
+                </ul>
+            </div>
+
+            <button onclick="this.closest('.fixed').remove()" class="w-full bg-purple-600 text-white py-2 rounded font-medium hover:bg-purple-700">
+                Download Full Playbook (PDF)
+            </button>
+        </div>
+    `);
+}
+
+function initializeBlackTechDailyUpdates() {
+    // Simulate daily update functionality
+    const today = new Date().toLocaleDateString();
+    const lastUpdate = localStorage.getItem('blacktech_last_update');
+    
+    if (lastUpdate !== today) {
+        localStorage.setItem('blacktech_last_update', today);
+        // In a real implementation, this would fetch fresh content from APIs
+        console.log('Black Tech daily content updated for', today);
+    }
+}
+
+// Additional Black Tech Interactive Functions
+function filterJobs(category) {
+    const jobsData = {
+        all: [
+            { title: 'AI Ethics Researcher', company: 'Partnership on AI', type: 'Full-time', location: 'Remote', salary: '$85K - $120K', tags: ['AI', 'Research', 'Remote'] },
+            { title: 'Software Engineer Intern', company: 'CodePath.org', type: 'Internship', location: 'New York, NY', salary: '$5K/month', tags: ['Internship', 'Coding', 'NYC'] },
+            { title: 'Data Science Apprentice', company: 'Blacks In Technology', type: 'Apprenticeship', location: 'Remote', salary: '$40K', tags: ['Apprenticeship', 'Data Science', 'Remote'] },
+            { title: 'Product Manager', company: 'The Plug', type: 'Full-time', location: 'San Francisco, CA', salary: '$110K - $140K', tags: ['Product', 'Management', 'SF'] },
+            { title: 'UX Designer Fellow', company: 'Black Women Talk Tech', type: 'Fellowship', location: 'Atlanta, GA', salary: '$60K', tags: ['Fellowship', 'Design', 'Atlanta'] },
+            { title: 'Frontend Developer', company: 'AfroTech Startup', type: 'Full-time', location: 'Remote', salary: '$75K - $100K', tags: ['Frontend', 'JavaScript', 'Remote'] }
+        ]
+    };
+
+    jobsData.remote = jobsData.all.filter(job => job.tags.includes('Remote'));
+    jobsData.internships = jobsData.all.filter(job => job.type === 'Internship');
+    jobsData.apprenticeships = jobsData.all.filter(job => job.type === 'Apprenticeship');
+
+    const jobs = jobsData[category] || jobsData.all;
+    const jobsGrid = document.getElementById('jobs-grid');
+    
+    // Update filter buttons
+    document.querySelectorAll('.job-filter').forEach(btn => {
+        btn.className = 'job-filter bg-gray-200 text-gray-700 px-3 py-1 rounded text-sm';
+    });
+    event.target.className = 'job-filter bg-orange-600 text-white px-3 py-1 rounded text-sm';
+
+    jobsGrid.innerHTML = jobs.map(job => `
+        <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-orange-500 hover:shadow-xl transition-all">
+            <div class="flex items-center justify-between mb-2">
+                <span class="bg-orange-100 text-orange-600 text-xs px-2 py-1 rounded-full font-medium">${job.type}</span>
+                <span class="text-gray-500 text-xs">${job.location}</span>
+            </div>
+            <h3 class="font-bold text-lg mb-1">${job.title}</h3>
+            <p class="text-gray-600 text-sm mb-2">${job.company}</p>
+            <p class="text-gray-800 font-semibold mb-3">${job.salary}</p>
+            <div class="flex space-x-1 mb-3">
+                ${job.tags.slice(0, 2).map(tag => `<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">${tag}</span>`).join('')}
+            </div>
+            <button onclick="viewJobDetails('${job.title}')" class="text-orange-600 hover:text-orange-800 font-medium text-sm">
+                View Details →
+            </button>
+        </div>
+    `).join('');
+}
+
+function viewJobDetails(jobTitle) {
+    showBlackTechModal(`Job Details: ${jobTitle}`, `
+        <div class="space-y-4">
+            <div class="text-center">
+                <i class="fas fa-briefcase text-orange-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold">${jobTitle}</h3>
+            </div>
+            <div class="bg-orange-50 p-4 rounded-lg">
+                <p class="text-orange-700">This position offers great opportunities for growth in the Black tech community. Apply through our partner organizations for priority consideration.</p>
+            </div>
+            <div class="flex space-x-3">
+                <button onclick="applyForJob('${jobTitle}')" class="flex-1 bg-orange-600 text-white py-2 rounded font-medium">Apply Now</button>
+                <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium">Close</button>
+            </div>
+        </div>
+    `);
+}
+
+function applyForGrant(grantId) {
+    const grants = {
+        'bfm-micro': {
+            title: 'Black Founders Matter Micro-Grant',
+            guide: '1. Prepare your pitch deck (5 slides max)\n2. Complete the online application\n3. Submit financial projections\n4. Wait 2-3 weeks for decision'
+        },
+        'hbcu-pitch': {
+            title: 'HBCU Pitch Competition',
+            guide: '1. Verify HBCU student status\n2. Prepare 3-minute pitch video\n3. Submit business plan summary\n4. Complete application before deadline'
+        }
+    };
+
+    const grant = grants[grantId];
+    if (grant) {
+        showBlackTechModal(`${grant.title} - 3-Minute Apply Guide`, `
+            <div class="space-y-4">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-yellow-800 mb-2">Quick Application Steps:</h4>
+                    <pre class="text-yellow-700 text-sm whitespace-pre-wrap">${grant.guide}</pre>
+                </div>
+                <div class="flex space-x-3">
+                    <button onclick="startGrantApplication('${grantId}')" class="flex-1 bg-yellow-600 text-white py-2 rounded font-medium">Start Application</button>
+                    <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium">Close</button>
+                </div>
+            </div>
+        `);
+    }
+}
+
+function openMicroLesson(lessonId) {
+    const lessons = {
+        'get-online-less': {
+            title: 'Get Online for Less (Post-ACP)',
+            steps: [
+                { step: 1, action: 'Check Lifeline eligibility', time: '30 sec', detail: 'Visit lifelinesupport.org and check if you qualify' },
+                { step: 2, action: 'Pick a carrier', time: '30 sec', detail: 'Choose from approved providers in your area' },
+                { step: 3, action: 'Apply online', time: '30 sec', detail: 'Complete application with required documents' }
+            ]
+        },
+        'protect-data': {
+            title: 'Protect Your Data',
+            steps: [
+                { step: 1, action: 'Turn on 2FA', time: '20 sec', detail: 'Enable two-factor authentication on all major accounts' },
+                { step: 2, action: 'Add password manager', time: '20 sec', detail: 'Install free password manager like Bitwarden' },
+                { step: 3, action: 'Lock social DMs', time: '20 sec', detail: 'Change privacy settings to prevent unknown contacts' }
+            ]
+        },
+        'ai-for-work': {
+            title: 'Use AI for School & Work',
+            steps: [
+                { step: 1, action: 'Get prompt templates', time: '25 sec', detail: 'Copy ready-to-use prompts for resumes and cover letters' },
+                { step: 2, action: 'Customize for you', time: '25 sec', detail: 'Fill in your specific details and experience' },
+                { step: 3, action: 'Review & refine', time: '25 sec', detail: 'Always review AI output and make it your own' }
+            ]
+        },
+        'creators-corner': {
+            title: 'Creators\' Corner: Safe AI Tools',
+            steps: [
+                { step: 1, action: 'Choose safe AI tools', time: '30 sec', detail: 'Use reputable platforms that protect your data' },
+                { step: 2, action: 'Add disclosure labels', time: '30 sec', detail: 'Always label AI-generated content clearly' },
+                { step: 3, action: 'Keep human touch', time: '30 sec', detail: 'Add your personal style and voice to AI output' }
+            ]
+        }
+    };
+
+    const lesson = lessons[lessonId];
+    if (lesson) {
+        showBlackTechModal(lesson.title, `
+            <div class="space-y-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full mx-auto flex items-center justify-center text-white text-2xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="text-gray-600">Step-by-step micro-lesson with real outcomes</p>
+                </div>
+
+                <div class="space-y-4">
+                    ${lesson.steps.map(step => `
+                        <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-lg border-l-4 border-teal-500">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-bold text-teal-800">Step ${step.step}: ${step.action}</span>
+                                <span class="bg-teal-100 text-teal-600 text-xs px-2 py-1 rounded-full">${step.time}</span>
+                            </div>
+                            <p class="text-teal-700 text-sm">${step.detail}</p>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-green-800 mb-2">💡 Pro Tip</h4>
+                    <p class="text-green-700 text-sm">Bookmark this page and come back daily for new micro-lessons that build real-world skills!</p>
+                </div>
+
+                <button onclick="this.closest('.fixed').remove()" class="w-full bg-teal-600 text-white py-3 rounded font-medium hover:bg-teal-700">
+                    Got it! 🎉
+                </button>
+            </div>
+        `);
+    }
+}
+
+function learnMoreP1Academy() {
+    showBlackTechModal('Player 1 Academy: AI/VR/AR Learning Model', `
+        <div class="space-y-6">
+            <div class="text-center">
+                <i class="fas fa-graduation-cap text-indigo-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-bold">Transforming Education Through Technology</h3>
+            </div>
+
+            <div class="bg-indigo-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-indigo-800 mb-2">🎯 Mission</h4>
+                <p class="text-indigo-700 text-sm">Player 1 Academy bridges the digital divide by providing hands-on AI, VR, and AR training that prepares communities for the future of work and learning.</p>
+            </div>
+
+            <div class="bg-purple-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-purple-800 mb-2">🚀 Unique Approach</h4>
+                <ul class="text-purple-700 text-sm space-y-1">
+                    <li>• Immersive VR/AR learning environments</li>
+                    <li>• Culturally responsive AI curriculum</li>
+                    <li>• Community-centered career development</li>
+                    <li>• Industry partnership for real opportunities</li>
+                </ul>
+            </div>
+
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-green-800 mb-2">📈 Impact</h4>
+                <ul class="text-green-700 text-sm space-y-1">
+                    <li>• 500+ educators trained in AI integration</li>
+                    <li>• 1,200+ youth engaged in tech career programs</li>
+                    <li>• 85% job placement rate in tech roles</li>
+                    <li>• Partnership with 20+ school districts</li>
+                </ul>
+            </div>
+
+            <div class="flex space-x-3">
+                <button onclick="window.open('https://www.player1academy.org/aitrainingprograms', '_blank')" class="flex-1 bg-indigo-600 text-white py-2 rounded font-medium">
+                    Visit Programs
+                </button>
+                <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-700 py-2 rounded font-medium">
+                    Close
+                </button>
+            </div>
+        </div>
+    `);
+}
+
+function submitCommunityQuestion() {
+    showBlackTechModal('Question Submitted Successfully!', `
+        <div class="text-center space-y-4">
+            <div class="w-16 h-16 bg-green-500 rounded-full mx-auto flex items-center justify-center text-white text-2xl">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold">Your Question is in the Queue!</h3>
+            <p class="text-gray-600">Our AI coaches will review and provide a comprehensive answer within 24-48 hours.</p>
+            <div class="bg-teal-50 p-4 rounded-lg">
+                <p class="text-teal-700 text-sm">✨ <strong>What happens next:</strong> Human-reviewed answers ensure quality and cultural relevance. Check back tomorrow!</p>
+            </div>
+            <button onclick="this.closest('.fixed').remove()" class="bg-teal-600 text-white px-6 py-2 rounded font-medium">
+                Got it!
+            </button>
+        </div>
+    `);
+}
+
+// Initialize jobs section with all jobs when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(() => {
+        if (document.getElementById('jobs-grid')) {
+            filterJobs('all');
+        }
+    }, 100);
+});
+
+function showBlackTechModal(title, content) {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-gray-800">${title}</h2>
+                    <button onclick="this.closest('.fixed').remove()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                ${content}
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // Add click outside to close
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    });
 }

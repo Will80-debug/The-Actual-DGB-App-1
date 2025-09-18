@@ -541,6 +541,23 @@ app.get('/', (c) => {
                         </div>
                     </div>
 
+                    <!-- Black Tech -->
+                    <div class="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 text-white rounded-lg p-6 hover:from-blue-700 hover:via-indigo-800 hover:to-purple-900 transition-all duration-300 cursor-pointer shadow-lg relative overflow-hidden" onclick="navigateTo('black-tech')">
+                        <!-- Background Image -->
+                        <div class="absolute inset-0 opacity-20">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8aeec252-b5f6-41fe-bc67-7e15da4fbc3d" 
+                                 alt="Black Tech Innovation" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-white/30 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                                <i class="fas fa-microchip text-3xl text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Black Tech</h4>
+                            <p class="text-sm opacity-90">AI, policy, founders, jobs, grants & daily tech updates for the community</p>
+                        </div>
+                    </div>
+
                     <!-- Senior Circle -->
                     <div class="bg-forest-green text-white rounded-lg p-6 hover:bg-dark-green transition-colors cursor-pointer shadow-lg relative overflow-hidden" onclick="navigateTo('senior-circle')">
                         <!-- Background Image -->
