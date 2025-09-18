@@ -1,0 +1,442 @@
+[
+  {
+    "row": 2,
+    "name": "Adaptt Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 3,
+    "name": "Sweet Ida Mae Pantry",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 4,
+    "name": "BIPOC PEEEEK",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 5,
+    "name": "Sickle Cell Advocates of Rochester(SCAR)",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 6,
+    "name": "Barakah Muslim Charity",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 7,
+    "name": "ROC the Peace",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 8,
+    "name": "Women\u00e2\u20ac\u2122s Foundation of Genesee Valley, Inc",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 9,
+    "name": "Recovery Houses of Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 10,
+    "name": "Reentry and Community Development Center",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 11,
+    "name": "Breathe Deep",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 12,
+    "name": "The Fatherhood Connection",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 13,
+    "name": "Our Local History",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 14,
+    "name": "Baden Street Settlement",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 15,
+    "name": "Ibero",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 16,
+    "name": "COLM",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 17,
+    "name": "The Father Laurence Tracy Advocacy Center",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 18,
+    "name": "The Black Agenda Group Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 19,
+    "name": "Common Ground Health",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 20,
+    "name": "Mentors Inspiring Boys and Girls",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 21,
+    "name": "Player 1 Academy",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 22,
+    "name": "Latino Migrant Ministry",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 23,
+    "name": "Wayne County YAP",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 24,
+    "name": "Health ConnectOne",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 25,
+    "name": "Rochester ABOVE",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 26,
+    "name": "HBN",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 27,
+    "name": "HOPE 585",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 28,
+    "name": "Volunteers of America",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 29,
+    "name": "Volunteer Legal Services of Project of Monroe County",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 30,
+    "name": "Sankofa Family Counseling",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 31,
+    "name": "Center For Teen Empowerment",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 32,
+    "name": "Worker Justice Center of New York",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 33,
+    "name": "Interdenominational Health Coalition Ministry",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 34,
+    "name": "Black Women\u00e2\u20ac\u2122s Leadership Forum",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 35,
+    "name": "Free The People ROC",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 36,
+    "name": "Citizens Action Network of NY",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 37,
+    "name": "Liberating Through Literacy",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 38,
+    "name": "Greater Rochester Parent Leadership Training Institute (PLTI)",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 39,
+    "name": "National Parent Leadership Institute/NPLI",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 40,
+    "name": "Diverse Mosaics",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 41,
+    "name": "ROC The Future Alliance",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 42,
+    "name": "Rochester Black Agenda Group",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 43,
+    "name": "RISE Up Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 44,
+    "name": "Black Physicians Network",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 45,
+    "name": "Rochester Black Nurses Association",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 46,
+    "name": "HCR Home Care of Rochester \u00e2\u20ac\u201c Black Seniors In Home Project",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 47,
+    "name": "Lifespan",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 48,
+    "name": "Jordan Health",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 49,
+    "name": "St. Joseph\u00e2\u20ac\u2122s Neighborhood Center",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 50,
+    "name": "YMCA of Greater Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 51,
+    "name": "YWCA of Rochester & Monroe County",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 52,
+    "name": "ABC",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 53,
+    "name": "Urban League",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 54,
+    "name": "Leadership Rochester",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 55,
+    "name": "Latinx Leaders Roundtable",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  },
+  {
+    "row": 56,
+    "name": "In October 2021, the Latinx Leaders Roundtable issued The Rochester Latinx Agenda. The report is the result of over 70 volunteers working together over one year. The Latinx Agenda provides background, analysis, and recommendations on: Arts & Culture, Housing, the Faith Community, Education, Health, the LGBTQi+ Community, Positive Youth Development, Economic Development, Language Access and Civic Engagement.\n\nThe most common barriers discussed in the report are lack of language access and the lack of cultural competency in the area\u00e2\u20ac\u2122s largest private and public institutions. The report also highlights the need for additional studies to better understand the depth of the problems highlighted and how best to resolve them. This completed report is the first step in a collaborative effort with the broader community to address these barriers and take advantage of current and future opportunities.",
+    "website": NaN,
+    "address": NaN,
+    "phone": NaN,
+    "category": NaN
+  }
+]
