@@ -3680,6 +3680,199 @@ function addYouthVibeEventListeners() {
             </div>
         `);
     };
+
+    window.beginAssessment = function() {
+        showYouthVibeModal('🚀 Youth Empowerment Assessment', `
+            <div class="space-y-6">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto flex items-center justify-center text-white text-2xl mb-4">
+                        🎯
+                    </div>
+                    <p class="text-gray-600">Let's discover your passions and create your personalized pathway!</p>
+                </div>
+
+                <!-- Assessment Questions -->
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold mb-2">1. What gets you most excited? (Select all that apply)</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="music"> 🎵 Music & Audio Production
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="visual"> 🎨 Visual Arts & Design
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="tech"> 💻 Technology & Coding
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="business"> 💼 Entrepreneurship & Business
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="community"> 🤝 Community & Social Impact
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" value="sports"> ⚽ Sports & Fitness
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2">2. How do you prefer to learn?</h4>
+                        <select class="w-full p-2 border rounded">
+                            <option>Hands-on experiences</option>
+                            <option>Video tutorials</option>
+                            <option>Reading and research</option>
+                            <option>Working with mentors</option>
+                            <option>Group projects</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2">3. What's your biggest goal right now?</h4>
+                        <select class="w-full p-2 border rounded">
+                            <option>Build creative skills</option>
+                            <option>Start my own business</option>
+                            <option>Get into college</option>
+                            <option>Find job opportunities</option>
+                            <option>Make a difference in my community</option>
+                            <option>Connect with like-minded people</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2">4. Age Group:</h4>
+                        <div class="flex space-x-2">
+                            <button class="age-btn flex-1 p-2 border rounded hover:bg-purple-50" data-age="13-15">13-15</button>
+                            <button class="age-btn flex-1 p-2 border rounded hover:bg-purple-50" data-age="16-18">16-18</button>
+                            <button class="age-btn flex-1 p-2 border rounded hover:bg-purple-50" data-age="19-24">19-24</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex space-x-3 mt-6">
+                    <button onclick="generatePersonalizedPlan()" class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold">
+                        Generate My Plan 🚀
+                    </button>
+                    <button onclick="this.closest('.fixed').remove()" class="flex-1 border border-gray-300 text-gray-600 py-3 rounded-lg font-semibold hover:bg-gray-50">
+                        Maybe Later
+                    </button>
+                </div>
+            </div>
+        `);
+
+        // Add age selection functionality
+        setTimeout(() => {
+            const ageBtns = document.querySelectorAll('.age-btn');
+            ageBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    ageBtns.forEach(b => b.classList.remove('bg-purple-500', 'text-white'));
+                    this.classList.add('bg-purple-500', 'text-white');
+                });
+            });
+        }, 100);
+    };
+
+    window.generatePersonalizedPlan = function() {
+        // Get selected interests
+        const interests = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+        const learningStyle = document.querySelector('select').value;
+        const goal = document.querySelectorAll('select')[1].value;
+        const selectedAge = document.querySelector('.age-btn.bg-purple-500')?.dataset.age || '16-18';
+
+        showYouthVibeModal('🎉 Your Personalized Youth Empowerment Plan', `
+            <div class="space-y-6">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-full mx-auto flex items-center justify-center text-white text-3xl mb-4">
+                        ✨
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Your Journey Starts Here!</h3>
+                    <p class="text-gray-600">Based on your responses, here's your customized roadmap:</p>
+                </div>
+
+                <!-- Personalized Recommendations -->
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg">
+                    <h4 class="font-bold mb-3 flex items-center">
+                        <span class="w-6 h-6 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm mr-2">1</span>
+                        Your Focus Areas
+                    </h4>
+                    <div class="space-y-2">
+                        ${interests.length > 0 ? interests.map(interest => {
+                            const icons = {
+                                music: '🎵 Music & Audio Production - Join our beat challenges and producer spotlights',
+                                visual: '🎨 Visual Arts - Check out our daily art showcases and digital studio',
+                                tech: '💻 Technology - Explore our tech tips and coding resources',
+                                business: '💼 Business - Access entrepreneurship guides and startup stories',
+                                community: '🤝 Community Impact - Connect with local volunteer opportunities',
+                                sports: '⚽ Sports - Follow our sports highlights and fitness challenges'
+                            };
+                            return `<p class="text-sm">• ${icons[interest] || interest}</p>`;
+                        }).join('') : '<p class="text-sm">• Explore all our creative categories to find your passion!</p>'}
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg">
+                    <h4 class="font-bold mb-3 flex items-center">
+                        <span class="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm mr-2">2</span>
+                        Recommended Next Steps
+                    </h4>
+                    <div class="space-y-2 text-sm">
+                        <p>• <strong>Daily Check-ins:</strong> Visit the ${selectedAge === '13-15' ? 'Explore & Create' : selectedAge === '16-18' ? 'Build & Connect' : 'Launch & Lead'} section daily</p>
+                        <p>• <strong>Weekly Challenges:</strong> Participate in our beat challenges and creative contests</p>
+                        <p>• <strong>Community Connection:</strong> Join peer discussions and mentor sessions</p>
+                        <p>• <strong>Skill Building:</strong> Access our curated tutorials and workshops</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg">
+                    <h4 class="font-bold mb-3 flex items-center">
+                        <span class="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-sm mr-2">3</span>
+                        Your Rochester Resources
+                    </h4>
+                    <div class="space-y-2 text-sm">
+                        <p>• <strong>Local Scene:</strong> Stay updated with Rochester's youth events and opportunities</p>
+                        <p>• <strong>Mentorship:</strong> Connect with local creators and professionals in your field</p>
+                        <p>• <strong>Opportunities:</strong> Access internships, workshops, and community programs</p>
+                    </div>
+                </div>
+
+                <div class="flex space-x-3">
+                    <button onclick="savePersonalizedPlan()" class="flex-1 bg-gradient-to-r from-green-500 to-blue-500 text-white py-3 rounded-lg font-semibold">
+                        Save My Plan 📱
+                    </button>
+                    <button onclick="this.closest('.fixed').remove()" class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-semibold">
+                        Start Exploring! 🚀
+                    </button>
+                </div>
+            </div>
+        `);
+    };
+
+    window.savePersonalizedPlan = function() {
+        showYouthVibeModal('💾 Plan Saved Successfully!', `
+            <div class="text-center space-y-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-blue-500 rounded-full mx-auto flex items-center justify-center text-white text-2xl">
+                    ✅
+                </div>
+                <h3 class="text-xl font-bold">Your personalized plan is ready!</h3>
+                <p class="text-gray-600">We've created your custom Youth Vibe dashboard. Check back daily for new content tailored to your interests!</p>
+                
+                <div class="bg-green-50 p-4 rounded-lg text-left">
+                    <h4 class="font-semibold mb-2">Quick Access Tips:</h4>
+                    <ul class="text-sm space-y-1 text-gray-700">
+                        <li>• Bookmark this page for easy access</li>
+                        <li>• Check the Daily Dashboard every morning</li>
+                        <li>• Participate in weekly challenges</li>
+                        <li>• Connect with peers in your age group</li>
+                    </ul>
+                </div>
+
+                <button onclick="this.closest('.fixed').remove()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-lg font-semibold">
+                    Start My Journey! 🎉
+                </button>
+            </div>
+        `);
+    };
 }
 
 // Music & Creators Interactive Functions
