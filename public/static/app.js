@@ -4324,8 +4324,15 @@ function loadBlackTech() {
                 </div>
 
                 <!-- Daily Dashboard -->
-                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-8 text-white">
-                    <div class="flex items-center justify-between mb-4">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 mb-8 text-white relative overflow-hidden">
+                    <!-- Background Imagery -->
+                    <div class="absolute inset-0 opacity-20">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8aeec252-b5f6-41fe-bc67-7e15da4fbc3d" 
+                             alt="Tech Dashboard Background" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
                         <h2 class="text-2xl font-bold flex items-center">
                             <i class="fas fa-calendar-day mr-3"></i>
                             Today's Black Tech Dashboard
@@ -4380,8 +4387,10 @@ function loadBlackTech() {
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Featured Story -->
                         <div class="md:col-span-2 lg:col-span-1 bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-600">
-                            <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                                <i class="fas fa-robot text-white text-6xl"></i>
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                     alt="AI Bias Research" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-6">
                                 <div class="flex items-center mb-2">
@@ -4396,8 +4405,10 @@ function loadBlackTech() {
 
                         <!-- Story Cards -->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                            <div class="h-32 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-                                <i class="fas fa-graduation-cap text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                     alt="HBCU AI Research" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">HBCU AI Research Centers Get $25M Federal Funding</h3>
@@ -4407,8 +4418,10 @@ function loadBlackTech() {
                         </div>
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                            <div class="h-32 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
-                                <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                     alt="Health App Innovation" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">Black-Founded Health App Secures Series A</h3>
@@ -4421,7 +4434,12 @@ function loadBlackTech() {
 
                 <!-- Policy Watch Section -->
                 <section id="policy-watch" class="mb-12">
-                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8">
+                    <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 relative overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-10">
+                            <div class="w-full h-full bg-gradient-to-br from-green-200 to-blue-200" style="background-image: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0)), radial-gradient(circle at 80% 20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0)), radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0))"></div>
+                        </div>
+                        <div class="relative">
                         <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
                             <i class="fas fa-shield-alt text-green-600 mr-3"></i>
                             Policy Watch: "Can this help my household?"
@@ -4507,8 +4525,14 @@ function loadBlackTech() {
                     
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Weekly Spotlight -->
-                        <div class="lg:col-span-2 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-xl overflow-hidden">
-                            <div class="p-6">
+                        <div class="lg:col-span-2 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-xl overflow-hidden relative">
+                            <!-- Background Image -->
+                            <div class="absolute inset-0 opacity-20">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                     alt="Dr. Aisha Patel Background" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="relative p-6">
                                 <div class="flex items-center mb-4">
                                     <span class="bg-yellow-400 text-purple-800 text-xs px-3 py-1 rounded-full font-bold">WEEKLY SPOTLIGHT</span>
                                 </div>
@@ -4535,8 +4559,10 @@ function loadBlackTech() {
                         <div class="space-y-4">
                             <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-green-500">
                                 <div class="flex items-center mb-2">
-                                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                        JM
+                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                             alt="Jamal Martinez" 
+                                             class="w-full h-full object-cover">
                                     </div>
                                     <div class="ml-3">
                                         <h4 class="font-semibold">Jamal Martinez</h4>
@@ -4549,8 +4575,10 @@ function loadBlackTech() {
 
                             <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-blue-500">
                                 <div class="flex items-center mb-2">
-                                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                        KW
+                                    <div class="w-10 h-10 rounded-full overflow-hidden">
+                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                             alt="Kimberly Wilson" 
+                                             class="w-full h-full object-cover">
                                     </div>
                                     <div class="ml-3">
                                         <h4 class="font-semibold">Kimberly Wilson</h4>
@@ -4579,6 +4607,57 @@ function loadBlackTech() {
                         </div>
                     </div>
                     
+                    <!-- Job Categories with Images -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8588f525-a6cf-4326-bc1e-aaa91c669f08" 
+                                     alt="Software Engineering" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h4 class="font-semibold text-sm">Software Engineering</h4>
+                                <p class="text-xs text-gray-600">25+ positions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8588f525-a6cf-4326-bc1e-aaa91c669f08" 
+                                     alt="UX Design" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h4 class="font-semibold text-sm">UX/UI Design</h4>
+                                <p class="text-xs text-gray-600">12+ positions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8588f525-a6cf-4326-bc1e-aaa91c669f08" 
+                                     alt="Data Science" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h4 class="font-semibold text-sm">Data Science</h4>
+                                <p class="text-xs text-gray-600">18+ positions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/8588f525-a6cf-4326-bc1e-aaa91c669f08" 
+                                     alt="Product Management" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-3 text-center">
+                                <h4 class="font-semibold text-sm">Product Management</h4>
+                                <p class="text-xs text-gray-600">8+ positions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4" id="jobs-grid">
                         <!-- Job listings will be populated by filterJobs() -->
                     </div>
@@ -4598,7 +4677,13 @@ function loadBlackTech() {
                     </h2>
                     
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-yellow-500 p-6">
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-yellow-500 overflow-hidden">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0476b48b-2be5-47db-ba07-c91ff8c1766d" 
+                                     alt="Micro Grant Opportunity" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full font-medium">OPEN NOW</span>
                                 <span class="text-gray-500 text-sm ml-2">Deadline: Dec 15</span>
@@ -4611,7 +4696,13 @@ function loadBlackTech() {
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-purple-500 p-6">
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-purple-500 overflow-hidden">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0476b48b-2be5-47db-ba07-c91ff8c1766d" 
+                                     alt="Startup Weekend" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded-full font-medium">WEEKLY</span>
                                 <span class="text-gray-500 text-sm ml-2">Every Thursday</span>
@@ -4624,7 +4715,13 @@ function loadBlackTech() {
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-blue-500 p-6">
+                        <div class="bg-white rounded-xl shadow-lg border-l-4 border-blue-500 overflow-hidden">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0476b48b-2be5-47db-ba07-c91ff8c1766d" 
+                                     alt="HBCU Pitch Competition" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">DEADLINE SOON</span>
                                 <span class="text-gray-500 text-sm ml-2">5 days left</span>
@@ -4648,8 +4745,10 @@ function loadBlackTech() {
                     
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('get-online-less')">
-                            <div class="h-32 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
-                                <i class="fas fa-wifi text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0b60722e-f01f-492b-9e63-8065a3cc5c19" 
+                                     alt="Get Online for Less" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">Get Online for Less</h3>
@@ -4662,8 +4761,10 @@ function loadBlackTech() {
                         </div>
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('protect-data')">
-                            <div class="h-32 bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center">
-                                <i class="fas fa-shield-alt text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0b60722e-f01f-492b-9e63-8065a3cc5c19" 
+                                     alt="Protect Your Data" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">Protect Your Data</h3>
@@ -4676,8 +4777,10 @@ function loadBlackTech() {
                         </div>
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('ai-for-work')">
-                            <div class="h-32 bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center">
-                                <i class="fas fa-robot text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0b60722e-f01f-492b-9e63-8065a3cc5c19" 
+                                     alt="AI for School and Work" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">Use AI for School & Work</h3>
@@ -4690,8 +4793,10 @@ function loadBlackTech() {
                         </div>
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all" onclick="openMicroLesson('creators-corner')">
-                            <div class="h-32 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center">
-                                <i class="fas fa-camera text-white text-4xl"></i>
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/0b60722e-f01f-492b-9e63-8065a3cc5c19" 
+                                     alt="Creators Corner" 
+                                     class="w-full h-full object-cover">
                             </div>
                             <div class="p-4">
                                 <h3 class="font-semibold mb-2">Creators' Corner</h3>
@@ -4707,8 +4812,14 @@ function loadBlackTech() {
 
                 <!-- Player 1 Academy Feature Card -->
                 <section class="mb-12">
-                    <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl overflow-hidden shadow-2xl">
-                        <div class="p-8 text-white">
+                    <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-2xl overflow-hidden shadow-2xl relative">
+                        <!-- Background Image -->
+                        <div class="absolute inset-0 opacity-25">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dd409365-ed54-4749-a645-968dcb49367d" 
+                                 alt="Player 1 Academy VR Learning" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative p-8 text-white">
                             <div class="flex items-center justify-between mb-6">
                                 <div>
                                     <h2 class="text-3xl font-bold mb-2">Player 1 Academy—AI Training Hub</h2>
@@ -4769,7 +4880,13 @@ function loadBlackTech() {
                     </h2>
                     
                     <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-indigo-500">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-indigo-500">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dd409365-ed54-4749-a645-968dcb49367d" 
+                                     alt="AfroTech Conference" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex justify-between items-start mb-3">
                                 <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">THIS WEEK</span>
                                 <span class="text-gray-500 text-sm">Dec 12-14</span>
@@ -4779,7 +4896,13 @@ function loadBlackTech() {
                             <button onclick="registerForEvent('afrotech-2024')" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">Register Now →</button>
                         </div>
 
-                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-green-500">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dd409365-ed54-4749-a645-968dcb49367d" 
+                                     alt="NSBE Meetup" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex justify-between items-start mb-3">
                                 <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full font-medium">MONTHLY</span>
                                 <span class="text-gray-500 text-sm">Every 3rd Thu</span>
@@ -4789,7 +4912,13 @@ function loadBlackTech() {
                             <button onclick="registerForEvent('nsbe-meetup')" class="text-green-600 hover:text-green-800 font-medium text-sm">Join Next Meetup →</button>
                         </div>
 
-                        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-purple-500">
+                            <div class="h-40 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dd409365-ed54-4749-a645-968dcb49367d" 
+                                     alt="Player 1 Academy Workshop" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
                             <div class="flex justify-between items-start mb-3">
                                 <span class="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded-full font-medium">UPCOMING</span>
                                 <span class="text-gray-500 text-sm">Jan 15, 2025</span>
@@ -4803,7 +4932,12 @@ function loadBlackTech() {
 
                 <!-- Community Q&A Section -->
                 <section class="mb-12">
-                    <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8">
+                    <div class="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-2xl p-8 relative overflow-hidden">
+                        <!-- Background Icon Pattern -->
+                        <div class="absolute top-4 right-4 opacity-10">
+                            <i class="fas fa-comments text-teal-300 text-9xl"></i>
+                        </div>
+                        <div class="relative">
                         <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
                             <i class="fas fa-question-circle text-teal-600 mr-3"></i>
                             Community Q&A: "Ask an AI Coach"
