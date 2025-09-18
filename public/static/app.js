@@ -4317,7 +4317,7 @@ function loadBlackTech() {
                     <button onclick="scrollToBlackTechSection('policy-watch')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-green-200 group relative overflow-hidden">
                         <!-- Background Overlay -->
                         <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6cb42892-b319-407f-89bf-e221e7942ee7" 
                                  alt="Policy Background" 
                                  class="w-full h-full object-cover">
                         </div>
@@ -4333,7 +4333,7 @@ function loadBlackTech() {
                     <button onclick="scrollToBlackTechSection('founders')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-purple-200 group relative overflow-hidden">
                         <!-- Background Overlay -->
                         <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6cb42892-b319-407f-89bf-e221e7942ee7" 
                                  alt="Founders Background" 
                                  class="w-full h-full object-cover">
                         </div>
@@ -4365,7 +4365,7 @@ function loadBlackTech() {
                     <button onclick="scrollToBlackTechSection('grants')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-yellow-200 group relative overflow-hidden">
                         <!-- Background Overlay -->
                         <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6cb42892-b319-407f-89bf-e221e7942ee7" 
                                  alt="Grants Background" 
                                  class="w-full h-full object-cover">
                         </div>
@@ -4557,7 +4557,7 @@ function loadBlackTech() {
                         <!-- Featured Story -->
                         <div class="md:col-span-2 lg:col-span-1 bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-600">
                             <div class="h-48 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="AI Bias Research" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4575,7 +4575,7 @@ function loadBlackTech() {
                         <!-- Story Cards -->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                             <div class="h-32 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="HBCU AI Research" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4588,7 +4588,7 @@ function loadBlackTech() {
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                             <div class="h-32 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="Health App Innovation" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4602,7 +4602,7 @@ function loadBlackTech() {
                         <!-- Additional Story Cards -->
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                             <div class="h-32 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="Black Woman CEO Announcement" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4615,7 +4615,7 @@ function loadBlackTech() {
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                             <div class="h-32 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="Quantum Computing Research" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4628,7 +4628,7 @@ function loadBlackTech() {
 
                         <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                             <div class="h-32 overflow-hidden">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/56036c7e-1982-4edb-96d5-3944c76d8a62" 
                                      alt="Tech IPO Celebration" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4757,7 +4757,7 @@ function loadBlackTech() {
                         <div class="lg:col-span-2 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-xl overflow-hidden relative">
                             <!-- Background Image -->
                             <div class="absolute inset-0 opacity-20">
-                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4b31cd0c-098e-4894-84c0-7a583e04a2bd" 
                                      alt="Dr. Aisha Patel Background" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -4789,7 +4789,7 @@ function loadBlackTech() {
                             <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-green-500">
                                 <div class="flex items-center mb-2">
                                     <div class="w-10 h-10 rounded-full overflow-hidden">
-                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4b31cd0c-098e-4894-84c0-7a583e04a2bd" 
                                              alt="Jamal Martinez" 
                                              class="w-full h-full object-cover">
                                     </div>
@@ -4805,7 +4805,7 @@ function loadBlackTech() {
                             <div class="bg-white rounded-lg shadow-lg p-4 border-l-4 border-blue-500">
                                 <div class="flex items-center mb-2">
                                     <div class="w-10 h-10 rounded-full overflow-hidden">
-                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/78a7b63e-aec4-4753-81dc-b172ade4a72d" 
+                                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4b31cd0c-098e-4894-84c0-7a583e04a2bd" 
                                              alt="Kimberly Wilson" 
                                              class="w-full h-full object-cover">
                                     </div>
