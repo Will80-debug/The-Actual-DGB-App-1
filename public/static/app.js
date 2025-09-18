@@ -4249,21 +4249,45 @@ function loadBlackTech() {
                         
                         <!-- Quick Stats -->
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                                <div class="text-2xl font-bold">Daily</div>
-                                <div class="text-sm opacity-80">Updates</div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden group hover:bg-white/20 transition-all">
+                                <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <i class="fas fa-sync-alt text-white text-6xl transform rotate-45"></i>
+                                </div>
+                                <div class="relative">
+                                    <div class="text-2xl font-bold">Daily</div>
+                                    <div class="text-sm opacity-80">Updates</div>
+                                    <div class="text-xs text-blue-200 mt-1">Auto-Refresh</div>
+                                </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                                <div class="text-2xl font-bold">100+</div>
-                                <div class="text-sm opacity-80">Resources</div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden group hover:bg-white/20 transition-all">
+                                <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <i class="fas fa-database text-white text-6xl transform rotate-12"></i>
+                                </div>
+                                <div class="relative">
+                                    <div class="text-2xl font-bold">150+</div>
+                                    <div class="text-sm opacity-80">Resources</div>
+                                    <div class="text-xs text-green-200 mt-1">Growing Daily</div>
+                                </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                                <div class="text-2xl font-bold">Live</div>
-                                <div class="text-sm opacity-80">Jobs Feed</div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden group hover:bg-white/20 transition-all">
+                                <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <i class="fas fa-broadcast-tower text-white text-6xl transform -rotate-12"></i>
+                                </div>
+                                <div class="relative">
+                                    <div class="text-2xl font-bold">Live</div>
+                                    <div class="text-sm opacity-80">Jobs Feed</div>
+                                    <div class="text-xs text-yellow-200 mt-1">Real-Time</div>
+                                </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                                <div class="text-2xl font-bold">AI</div>
-                                <div class="text-sm opacity-80">Powered</div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden group hover:bg-white/20 transition-all">
+                                <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <i class="fas fa-brain text-white text-6xl transform rotate-6"></i>
+                                </div>
+                                <div class="relative">
+                                    <div class="text-2xl font-bold">AI</div>
+                                    <div class="text-sm opacity-80">Powered</div>
+                                    <div class="text-xs text-purple-200 mt-1">Smart Curation</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -4274,52 +4298,100 @@ function loadBlackTech() {
             <div class="container mx-auto px-4 py-8">
                 <!-- Category Navigation -->
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-                    <button onclick="scrollToBlackTechSection('top-stories')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-blue-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-brain text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('top-stories')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-blue-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                                 alt="AI Tech Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Top Stories</div>
-                        <div class="text-xs text-gray-600">AI + Tech News</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-brain text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Top Stories</div>
+                            <div class="text-xs text-gray-600">AI + Tech News</div>
+                        </div>
                     </button>
                     
-                    <button onclick="scrollToBlackTechSection('policy-watch')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-green-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-shield-alt text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('policy-watch')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-green-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                                 alt="Policy Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Policy Watch</div>
-                        <div class="text-xs text-gray-600">Help Your Household</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Policy Watch</div>
+                            <div class="text-xs text-gray-600">Help Your Household</div>
+                        </div>
                     </button>
                     
-                    <button onclick="scrollToBlackTechSection('founders')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-purple-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-rocket text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('founders')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-purple-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                                 alt="Founders Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Founders</div>
-                        <div class="text-xs text-gray-600">Builders & Stories</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-rocket text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Founders</div>
+                            <div class="text-xs text-gray-600">Builders & Stories</div>
+                        </div>
                     </button>
                     
-                    <button onclick="scrollToBlackTechSection('jobs')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-orange-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-briefcase text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('jobs')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-orange-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/658bf18c-ec72-4a05-9ffb-19c705e4164e" 
+                                 alt="Jobs Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Jobs & Internships</div>
-                        <div class="text-xs text-gray-600">Live Opportunities</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-briefcase text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Jobs & Internships</div>
+                            <div class="text-xs text-gray-600">Live Opportunities</div>
+                        </div>
                     </button>
                     
-                    <button onclick="scrollToBlackTechSection('grants')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-yellow-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-dollar-sign text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('grants')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-yellow-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/169bc19d-bc45-46f2-9bb7-04bb59762971" 
+                                 alt="Grants Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Grants & Capital</div>
-                        <div class="text-xs text-gray-600">Funding Opportunities</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-dollar-sign text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Grants & Capital</div>
+                            <div class="text-xs text-gray-600">Funding Opportunities</div>
+                        </div>
                     </button>
                     
-                    <button onclick="scrollToBlackTechSection('learn')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-teal-200 group">
-                        <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                            <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    <button onclick="scrollToBlackTechSection('learn')" class="bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all border-2 border-transparent hover:border-teal-200 group relative overflow-hidden">
+                        <!-- Background Overlay -->
+                        <div class="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/658bf18c-ec72-4a05-9ffb-19c705e4164e" 
+                                 alt="Learning Background" 
+                                 class="w-full h-full object-cover">
                         </div>
-                        <div class="font-semibold text-sm text-gray-800">Learn & Do</div>
-                        <div class="text-xs text-gray-600">Micro-Lessons</div>
+                        <div class="relative">
+                            <div class="w-12 h-12 mx-auto mb-2 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
+                            </div>
+                            <div class="font-semibold text-sm text-gray-800">Learn & Do</div>
+                            <div class="text-xs text-gray-600">Micro-Lessons</div>
+                        </div>
                     </button>
                 </div>
 
@@ -4344,32 +4416,129 @@ function loadBlackTech() {
                     </div>
                     <p class="text-blue-100 mb-6">Your personalized daily briefing on Black tech innovation, opportunities, and community impact.</p>
                     
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-newspaper text-yellow-300 mr-2"></i>
-                                <span class="font-semibold">Today's Headlines</span>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/c91432a5-c46e-4d20-b929-56e9d3ac51f6" 
+                                     alt="Dashboard Stats" 
+                                     class="w-full h-full object-cover">
                             </div>
-                            <p class="text-sm text-blue-100">5 trending AI & tech stories affecting the Black community</p>
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-newspaper text-yellow-300 mr-2"></i>
+                                    <span class="font-semibold">Today's Headlines</span>
+                                </div>
+                                <p class="text-sm text-blue-100">5 trending AI & tech stories affecting the Black community</p>
+                                <div class="text-2xl font-bold text-yellow-300 mt-2">5 Stories</div>
+                            </div>
                         </div>
                         
-                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-handshake text-green-300 mr-2"></i>
-                                <span class="font-semibold">New Opportunities</span>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/c91432a5-c46e-4d20-b929-56e9d3ac51f6" 
+                                     alt="Dashboard Stats" 
+                                     class="w-full h-full object-cover">
                             </div>
-                            <p class="text-sm text-blue-100">12 fresh job postings & 3 grant deadlines this week</p>
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-handshake text-green-300 mr-2"></i>
+                                    <span class="font-semibold">New Opportunities</span>
+                                </div>
+                                <p class="text-sm text-blue-100">Fresh job postings & grant deadlines this week</p>
+                                <div class="text-2xl font-bold text-green-300 mt-2">15 Open</div>
+                            </div>
                         </div>
                         
-                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                            <div class="flex items-center mb-2">
-                                <i class="fas fa-lightbulb text-purple-300 mr-2"></i>
-                                <span class="font-semibold">Learning Focus</span>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/c91432a5-c46e-4d20-b929-56e9d3ac51f6" 
+                                     alt="Dashboard Stats" 
+                                     class="w-full h-full object-cover">
                             </div>
-                            <p class="text-sm text-blue-100">AI prompt engineering & digital privacy essentials</p>
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-lightbulb text-purple-300 mr-2"></i>
+                                    <span class="font-semibold">Learning Focus</span>
+                                </div>
+                                <p class="text-sm text-blue-100">AI prompt engineering & digital privacy essentials</p>
+                                <div class="text-2xl font-bold text-purple-300 mt-2">4 Lessons</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/c91432a5-c46e-4d20-b929-56e9d3ac51f6" 
+                                     alt="Dashboard Stats" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="relative">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-users text-cyan-300 mr-2"></i>
+                                    <span class="font-semibold">Community</span>
+                                </div>
+                                <p class="text-sm text-blue-100">Active members in Rochester Black tech network</p>
+                                <div class="text-2xl font-bold text-cyan-300 mt-2">1.2K Users</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Featured Video Section -->
+                <section class="mb-12">
+                    <div class="bg-gradient-to-r from-gray-900 via-purple-900 to-indigo-900 rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="p-8">
+                            <div class="flex items-center justify-between mb-6">
+                                <h2 class="text-2xl font-bold text-white">🎥 Featured: Black Tech Leaders Roundtable</h2>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">LIVE NOW</span>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-3 gap-6">
+                                <!-- Main Video -->
+                                <div class="md:col-span-2">
+                                    <div class="relative bg-black rounded-lg overflow-hidden aspect-video">
+                                        <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-600/50 to-blue-600/50">
+                                            <div class="text-center text-white">
+                                                <i class="fas fa-play-circle text-6xl mb-4 opacity-80 hover:opacity-100 cursor-pointer transition-all"></i>
+                                                <p class="text-lg font-semibold">The Future of Black Excellence in AI</p>
+                                                <p class="text-sm opacity-80">Featuring CEOs from major tech companies</p>
+                                            </div>
+                                        </div>
+                                        <!-- Video overlay with realistic video controls -->
+                                        <div class="absolute bottom-4 left-4 right-4">
+                                            <div class="bg-black/70 rounded-lg p-2 flex items-center space-x-2">
+                                                <div class="w-8 h-1 bg-red-500 rounded"></div>
+                                                <div class="w-64 h-1 bg-gray-600 rounded"></div>
+                                                <span class="text-white text-xs">12:34 / 45:21</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Video Info & Related -->
+                                <div class="space-y-4">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <h3 class="font-bold text-white mb-2">👥 Today's Speakers</h3>
+                                        <div class="space-y-2 text-sm text-gray-300">
+                                            <div>• Dr. Aisha Patel, TrustAI Labs</div>
+                                            <div>• Marcus Johnson, CodePath CEO</div>
+                                            <div>• Kimberly Chen, Google AI Ethics</div>
+                                            <div>• Jerome Williams, Microsoft Azure</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <h3 class="font-bold text-white mb-2">📊 Live Stats</h3>
+                                        <div class="space-y-2 text-sm text-gray-300">
+                                            <div>👁️ 2.3K viewers</div>
+                                            <div>💬 145 comments</div>
+                                            <div>👍 89% positive sentiment</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <!-- Top Stories Section -->
                 <section id="top-stories" class="mb-12">
@@ -4429,6 +4598,56 @@ function loadBlackTech() {
                                 <button onclick="viewBlackTechStory('health-app-funding')" class="text-purple-600 hover:text-purple-800 font-medium text-sm">Details →</button>
                             </div>
                         </div>
+
+                        <!-- Additional Story Cards -->
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                     alt="Black Woman CEO Announcement" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">First Black Woman CEO at Major AI Company</h3>
+                                <p class="text-gray-600 text-sm mb-3">Historic appointment marks breakthrough in tech leadership diversity...</p>
+                                <button onclick="viewBlackTechStory('ceo-appointment')" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">Read More →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                     alt="Quantum Computing Research" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Black Researchers Lead Quantum Breakthrough</h3>
+                                <p class="text-gray-600 text-sm mb-3">Team develops new quantum algorithm for financial modeling applications...</p>
+                                <button onclick="viewBlackTechStory('quantum-research')" class="text-cyan-600 hover:text-cyan-800 font-medium text-sm">Explore →</button>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/27c54ff2-06ea-425a-bd86-8f500ee7d3c6" 
+                                     alt="Tech IPO Celebration" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold mb-2">Black-Led Fintech IPO Breaks Records</h3>
+                                <p class="text-gray-600 text-sm mb-3">Company valued at $2.1B in historic NYSE debut, largest Black-founded tech IPO...</p>
+                                <button onclick="viewBlackTechStory('fintech-ipo')" class="text-green-600 hover:text-green-800 font-medium text-sm">View Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Live News Ticker -->
+                    <div class="mt-6 bg-black/90 text-white rounded-lg p-3 overflow-hidden">
+                        <div class="flex items-center">
+                            <span class="bg-red-600 text-white px-2 py-1 rounded text-xs font-bold mr-3">LIVE</span>
+                            <div class="marquee">
+                                <span class="text-sm">🚀 Breaking: Black-founded AI startup raises $25M Series B • 💼 Apple announces diversity initiative with HBCU partnerships • 🏆 Rochester tech entrepreneur wins national innovation award • 📱 New app connects Black professionals globally</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -4447,7 +4666,11 @@ function loadBlackTech() {
                         
                         <div class="grid md:grid-cols-2 gap-6">
                             <!-- ACP Update -->
-                            <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                            <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-20 h-20 opacity-10">
+                                    <i class="fas fa-exclamation-triangle text-red-500 text-6xl transform rotate-12"></i>
+                                </div>
+                                <div class="relative">
                                 <div class="flex items-center mb-3">
                                     <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
                                     <h3 class="font-bold text-red-800">ACP Program Ended (June 1, 2024)</h3>
@@ -4464,9 +4687,14 @@ function loadBlackTech() {
                                     <button onclick="checkLifelineEligibility()" class="mt-3 bg-green-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-green-700">Check Lifeline Now →</button>
                                 </div>
                             </div>
+                        </div>
 
                             <!-- Lifeline Program -->
-                            <div class="bg-green-50 border-l-4 border-green-500 rounded-lg p-6">
+                            <div class="bg-green-50 border-l-4 border-green-500 rounded-lg p-6 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-20 h-20 opacity-10">
+                                    <i class="fas fa-check-circle text-green-500 text-6xl transform -rotate-12"></i>
+                                </div>
+                                <div class="relative">
                                 <div class="flex items-center mb-3">
                                     <i class="fas fa-check-circle text-green-500 mr-2"></i>
                                     <h3 class="font-bold text-green-800">Lifeline Program Still Active</h3>
@@ -4491,6 +4719,7 @@ function loadBlackTech() {
                                     <button onclick="applyLifelineProgram()" class="mt-3 bg-blue-600 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-700">Apply Now →</button>
                                 </div>
                             </div>
+                        </div>
                         </div>
 
                         <!-- Additional Policy Items -->
@@ -9798,3 +10027,49 @@ function showBlackTechModal(title, content) {
         }
     });
 }
+
+// Add CSS animations for enhanced visual effects
+const blackTechStyles = document.createElement('style');
+blackTechStyles.textContent = `
+    .marquee {
+        animation: scroll-left 30s linear infinite;
+        white-space: nowrap;
+    }
+    
+    @keyframes scroll-left {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
+    
+    .pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite alternate;
+    }
+    
+    @keyframes pulse-glow {
+        from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        to { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.3); }
+    }
+    
+    .float-animation {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .gradient-border {
+        position: relative;
+        background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #f59e0b);
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+    }
+`;
+
+document.head.appendChild(blackTechStyles);
