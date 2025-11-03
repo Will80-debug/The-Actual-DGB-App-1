@@ -479,5 +479,6 @@ The Digital Green Book honors Victor Hugo Green's original "Negro Motorist Green
 The Digital Green Book serves as both a practical resource platform and a digital heritage preserve, ensuring that Rochester's Black community history, achievements, and resources remain accessible for generations to come.
 
 ---
+      
 
 *Built with community, for community. Honoring our past, celebrating our present, building our future. 🌿*
