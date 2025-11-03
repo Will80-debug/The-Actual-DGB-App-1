@@ -4911,10 +4911,14 @@ function loadLimitleeLiving() {
         <div class="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-green-50">
             <!-- Hero Section with Accessible Design -->
             <div class="relative overflow-hidden bg-gradient-to-r from-purple-700 via-blue-700 to-green-600 text-white">
-                <!-- Background Pattern -->
-                <div class="absolute inset-0 opacity-10">
-                    <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);"></div>
+                <!-- Hero Background Image -->
+                <div class="absolute inset-0 opacity-25">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/61e9ba3f-51bd-44b4-97af-376bd7fb09ac.png" 
+                         alt="Diverse disability community celebration" 
+                         class="w-full h-full object-cover">
                 </div>
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-700/80 via-blue-700/80 to-green-600/80"></div>
                 
                 <div class="relative z-10 px-4 py-16">
                     <div class="max-w-6xl mx-auto text-center">
@@ -5089,9 +5093,14 @@ function loadLimitleeLiving() {
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
                         <!-- Independent Living Services -->
                         <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-purple-200 overflow-hidden" role="listitem">
-                            <div class="h-3 bg-gradient-to-r from-purple-500 to-blue-500"></div>
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/290c71b6-5b8c-4b79-b36f-f670b91bbb87.png" 
+                                     alt="Independent living center peer support" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div>
+                            </div>
                             <div class="p-6">
-                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
                                     <i class="fas fa-home text-3xl text-purple-700"></i>
                                 </div>
                                 <h3 class="text-xl font-bold text-purple-900 mb-3">Independent Living Centers</h3>
@@ -5119,9 +5128,14 @@ function loadLimitleeLiving() {
 
                         <!-- Vocational Rehabilitation -->
                         <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-green-200 overflow-hidden" role="listitem">
-                            <div class="h-3 bg-gradient-to-r from-green-500 to-purple-500"></div>
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/97e74313-6299-46a9-8f89-7b6f9b19c6a1.png" 
+                                     alt="Vocational rehabilitation job training" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-transparent"></div>
+                            </div>
                             <div class="p-6">
-                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
                                     <i class="fas fa-briefcase text-3xl text-green-700"></i>
                                 </div>
                                 <h3 class="text-xl font-bold text-green-900 mb-3">Vocational Rehabilitation</h3>
@@ -5134,9 +5148,14 @@ function loadLimitleeLiving() {
 
                         <!-- Assistive Technology -->
                         <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-indigo-200 overflow-hidden" role="listitem">
-                            <div class="h-3 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/b9084c8e-b75c-4715-bd5c-75259bb2530e.png" 
+                                     alt="Assistive technology demonstration" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent"></div>
+                            </div>
                             <div class="p-6">
-                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
                                     <i class="fas fa-laptop-medical text-3xl text-indigo-700"></i>
                                 </div>
                                 <h3 class="text-xl font-bold text-indigo-900 mb-3">Assistive Technology</h3>
@@ -5149,9 +5168,14 @@ function loadLimitleeLiving() {
 
                         <!-- Peer Support Networks -->
                         <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-pink-200 overflow-hidden" role="listitem">
-                            <div class="h-3 bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/962138ad-db16-4a70-8e5c-456db00177f3.png" 
+                                     alt="Peer support group meeting" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-pink-900/80 to-transparent"></div>
+                            </div>
                             <div class="p-6">
-                                <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                                <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
                                     <i class="fas fa-users text-3xl text-pink-700"></i>
                                 </div>
                                 <h3 class="text-xl font-bold text-pink-900 mb-3">Peer Support Networks</h3>
