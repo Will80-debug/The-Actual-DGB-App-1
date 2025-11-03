@@ -6222,7 +6222,322 @@ function loadBlackTech() {
 }
 
 function loadLatinConnection() {
-    loadGenericSection('latin-connection', 'Latin Connection', 'fas fa-globe-americas', 'Resources for the Latino community');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-red-50 via-yellow-50 to-green-50">
+            <!-- Hero Section - Conexión Latina -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-red-600 via-yellow-500 to-green-600 text-white">
+                <!-- Hero Background Image -->
+                <div class="absolute inset-0 opacity-30">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/17c4a537-2830-4f23-b86a-781ac3220a89.png" 
+                         alt="Comunidad Latina de Rochester" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-gradient-to-r from-red-600/85 via-yellow-500/85 to-green-600/85"></div>
+                
+                <div class="relative z-10 px-4 py-16">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <!-- Cultural Icon -->
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border-4 border-white/30">
+                            <i class="fas fa-globe-americas text-6xl"></i>
+                        </div>
+                        
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                            Latin Connection
+                        </h1>
+                        <p class="text-3xl font-light mb-2 italic">Conexión Latina</p>
+                        <div class="w-32 h-1 bg-white mx-auto mb-6 rounded-full"></div>
+                        
+                        <p class="text-2xl md:text-3xl font-light mb-4">
+                            Recursos y Servicios para la Comunidad Latina de Rochester
+                        </p>
+                        <p class="text-xl mb-8 opacity-90">
+                            Resources and Services for Rochester's Latino Community
+                        </p>
+                        
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold">43,000+</div>
+                                <div class="text-sm opacity-90">Latinos en Monroe County</div>
+                                <div class="text-xs opacity-75 mt-1">16% de la población</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold">100%</div>
+                                <div class="text-sm opacity-90">Servicios Bilingües</div>
+                                <div class="text-xs opacity-75 mt-1">Español e Inglés</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                                <div class="text-3xl font-bold">24/7</div>
+                                <div class="text-sm opacity-90">Línea de Ayuda</div>
+                                <div class="text-xs opacity-75 mt-1">Apoyo Comunitario</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Access Buttons -->
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <button onclick="scrollToLatinSection('recursos')" class="bg-white text-red-700 hover:bg-red-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg">
+                                <i class="fas fa-hands-helping mr-2"></i>Recursos / Resources
+                            </button>
+                            <button onclick="scrollToLatinSection('servicios')" class="border-2 border-white text-white hover:bg-white hover:text-red-700 font-semibold py-3 px-8 rounded-lg transition-all">
+                                <i class="fas fa-briefcase mr-2"></i>Servicios / Services
+                            </button>
+                            <button onclick="scrollToLatinSection('cultura')" class="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold py-3 px-8 rounded-lg transition-all">
+                                <i class="fas fa-music mr-2"></i>Cultura / Culture
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Toggle & Emergency Bar -->
+            <div class="sticky top-0 z-40 bg-white shadow-md border-b-4 border-red-500">
+                <div class="max-w-6xl mx-auto px-4 py-3">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <button onclick="toggleLanguage('es')" class="px-4 py-2 rounded-lg font-semibold transition-all bg-red-600 text-white hover:bg-red-700">
+                                <i class="fas fa-language mr-2"></i>Español
+                            </button>
+                            <button onclick="toggleLanguage('en')" class="px-4 py-2 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700 hover:bg-gray-300">
+                                <i class="fas fa-language mr-2"></i>English
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm">
+                            <a href="tel:211" class="flex items-center gap-2 text-red-700 font-semibold hover:text-red-900">
+                                <i class="fas fa-phone"></i>
+                                <span>Línea 211 (Ayuda 24/7)</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="bg-white shadow-lg sticky top-16 z-30">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex overflow-x-auto no-scrollbar">
+                        <button onclick="scrollToLatinSection('recursos')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-hands-helping mr-2"></i>Recursos
+                        </button>
+                        <button onclick="scrollToLatinSection('servicios')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-briefcase mr-2"></i>Servicios
+                        </button>
+                        <button onclick="scrollToLatinSection('educacion')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-graduation-cap mr-2"></i>Educación
+                        </button>
+                        <button onclick="scrollToLatinSection('empleo')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-briefcase mr-2"></i>Empleo
+                        </button>
+                        <button onclick="scrollToLatinSection('salud')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-heartbeat mr-2"></i>Salud
+                        </button>
+                        <button onclick="scrollToLatinSection('inmigración')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-passport mr-2"></i>Inmigración
+                        </button>
+                        <button onclick="scrollToLatinSection('negocios')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-store mr-2"></i>Negocios
+                        </button>
+                        <button onclick="scrollToLatinSection('cultura')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-music mr-2"></i>Cultura
+                        </button>
+                        <button onclick="scrollToLatinSection('juventud')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-users mr-2"></i>Juventud
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Resources Section -->
+            <section id="recursos" class="py-16 bg-white">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-red-900 mb-4">Organizaciones Comunitarias</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Community Organizations Serving Rochester's Latino Families
+                        </p>
+                    </div>
+
+                    <!-- Featured Organization: Ibero-American Action League -->
+                    <div class="bg-gradient-to-r from-red-600 to-yellow-600 rounded-xl p-8 text-white mb-12 shadow-2xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-hands-helping text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-3xl font-bold">Ibero-American Action League</h3>
+                                        <p class="text-xl opacity-90">Liga de Acción Iberoamericana</p>
+                                    </div>
+                                </div>
+                                <p class="text-lg mb-6 opacity-95">
+                                    La organización latina líder en Rochester, sirviendo a más de 7,000 familias anualmente con servicios integrales.
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check-circle mr-2"></i>
+                                        <span>Educación y Desarrollo Juvenil</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check-circle mr-2"></i>
+                                        <span>Servicios de Inmigración</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check-circle mr-2"></i>
+                                        <span>Desarrollo Económico</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-check-circle mr-2"></i>
+                                        <span>Servicios Comunitarios</span>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <a href="tel:585-256-8900" class="bg-white text-red-700 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all">
+                                        <i class="fas fa-phone mr-2"></i>(585) 256-8900
+                                    </a>
+                                    <button onclick="getDirections('817 E Main St, Rochester, NY 14605')" class="border-2 border-white hover:bg-white hover:text-red-700 px-6 py-3 rounded-lg font-semibold transition-all">
+                                        <i class="fas fa-map-marker-alt mr-2"></i>Direcciones
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6323af9b-f002-4291-aaeb-5b191a19060a.png" 
+                                     alt="Servicios comunitarios latinos" 
+                                     class="rounded-lg shadow-2xl">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resource Categories Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Family Services -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-red-200 overflow-hidden">
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6323af9b-f002-4291-aaeb-5b191a19060a.png" 
+                                     alt="Servicios Familiares" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-red-900/80 to-transparent"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-home text-3xl text-red-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-red-900 mb-3">Servicios Familiares<br/><span class="text-base font-normal text-gray-600">Family Services</span></h3>
+                                <p class="text-gray-600 mb-4">Apoyo integral para familias latinas incluyendo consejería, recursos y programas de bienestar</p>
+                                <button onclick="openLatinCategory('family-services')" class="text-red-700 hover:text-red-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Education & Youth -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-yellow-200 overflow-hidden">
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/1b2f42af-fcfb-4817-9592-df6314e16438.png" 
+                                     alt="Educación y Juventud" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-yellow-900/80 to-transparent"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-graduation-cap text-3xl text-yellow-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-yellow-900 mb-3">Educación y Juventud<br/><span class="text-base font-normal text-gray-600">Education & Youth</span></h3>
+                                <p class="text-gray-600 mb-4">Programas educativos, tutoría bilingüe, preparación universitaria y desarrollo juvenil</p>
+                                <button onclick="openLatinCategory('education-youth')" class="text-yellow-700 hover:text-yellow-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Business & Employment -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-green-200 overflow-hidden">
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4ba952a2-fdf0-4685-9f73-f4e3c371e938.png" 
+                                     alt="Negocios y Empleo" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-green-900/80 to-transparent"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-store text-3xl text-green-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-900 mb-3">Negocios y Empleo<br/><span class="text-base font-normal text-gray-600">Business & Employment</span></h3>
+                                <p class="text-gray-600 mb-4">Desarrollo empresarial, capacitación laboral y oportunidades de empleo</p>
+                                <button onclick="openLatinCategory('business-employment')" class="text-green-700 hover:text-green-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Immigration Services -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-blue-200 overflow-hidden">
+                            <div class="h-48 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+                                <i class="fas fa-passport text-8xl text-white opacity-20"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-passport text-3xl text-blue-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-3">Servicios de Inmigración<br/><span class="text-base font-normal text-gray-600">Immigration Services</span></h3>
+                                <p class="text-gray-600 mb-4">Asistencia legal de inmigración, DACA, ciudadanía y recursos para inmigrantes</p>
+                                <button onclick="openLatinCategory('immigration')" class="text-blue-700 hover:text-blue-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Health Services -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-pink-200 overflow-hidden">
+                            <div class="h-48 bg-gradient-to-r from-pink-400 to-pink-600 flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-8xl text-white opacity-20"></i>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-heartbeat text-3xl text-pink-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-pink-900 mb-3">Servicios de Salud<br/><span class="text-base font-normal text-gray-600">Health Services</span></h3>
+                                <p class="text-gray-600 mb-4">Atención médica culturalmente apropiada, clínicas bilingües y programas de salud</p>
+                                <button onclick="openLatinCategory('health-services')" class="text-pink-700 hover:text-pink-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cultural Arts -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-purple-200 overflow-hidden">
+                            <div class="h-48 relative overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a64ba00a-2eb3-4983-bbaa-281ca08e5f5d.png" 
+                                     alt="Arte y Cultura" 
+                                     class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 -mt-16 relative z-10 border-4 border-white">
+                                    <i class="fas fa-music text-3xl text-purple-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-purple-900 mb-3">Arte y Cultura<br/><span class="text-base font-normal text-gray-600">Arts & Culture</span></h3>
+                                <p class="text-gray-600 mb-4">Celebraciones culturales, música, danza, arte y preservación del patrimonio latino</p>
+                                <button onclick="openLatinCategory('arts-culture')" class="text-purple-700 hover:text-purple-900 font-semibold">
+                                    Ver Más <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Home Button -->
+            <div class="fixed bottom-6 right-6 z-50">
+                <button onclick="goHome()" class="bg-red-700 hover:bg-red-800 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110">
+                    <i class="fas fa-home text-xl"></i>
+                </button>
+            </div>
+        </div>
+    `;
+    
+    // Add event listeners for Latin Connection interactions
+    addLatinConnectionEventListeners();
 }
 
 // Generic section loader
@@ -11799,4 +12114,568 @@ function contactProvider(providerName) {
 function getDirections(address) {
     const encodedAddress = encodeURIComponent(address);
     window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, '_blank');
+}
+
+// ============================================
+// LATIN CONNECTION FUNCTIONS
+// ============================================
+
+// Initialize Latin Connection event listeners
+function addLatinConnectionEventListeners() {
+    // Smooth scroll for all navigation buttons
+    document.querySelectorAll('[data-latin-scroll]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-latin-scroll');
+            scrollToLatinSection(targetId);
+        });
+    });
+
+    // Language toggle buttons
+    document.querySelectorAll('[data-language]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-language');
+            toggleLanguage(lang);
+        });
+    });
+
+    // Category card click handlers
+    document.querySelectorAll('[data-latin-category]').forEach(card => {
+        card.addEventListener('click', function() {
+            const categoryId = this.getAttribute('data-latin-category');
+            openLatinCategory(categoryId);
+        });
+    });
+
+    // Initialize with English language
+    toggleLanguage('en');
+}
+
+// Smooth scroll to Latin Connection sections with tab highlighting
+function scrollToLatinSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        // Smooth scroll to section
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Update active tab styling
+        document.querySelectorAll('[data-latin-scroll]').forEach(btn => {
+            btn.classList.remove('bg-red-600', 'text-white');
+            btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-red-50');
+        });
+        
+        const activeBtn = document.querySelector(`[data-latin-scroll="${sectionId}"]`);
+        if (activeBtn) {
+            activeBtn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-red-50');
+            activeBtn.classList.add('bg-red-600', 'text-white');
+        }
+    }
+}
+
+// Toggle between Spanish and English content
+function toggleLanguage(lang) {
+    // Update all language-specific elements
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+        el.style.display = lang === 'en' ? 'block' : 'none';
+    });
+    
+    document.querySelectorAll('[data-lang-es]').forEach(el => {
+        el.style.display = lang === 'es' ? 'block' : 'none';
+    });
+
+    // Update language toggle buttons
+    const enBtn = document.querySelector('[data-language="en"]');
+    const esBtn = document.querySelector('[data-language="es"]');
+    
+    if (enBtn && esBtn) {
+        if (lang === 'en') {
+            enBtn.classList.remove('bg-white', 'text-gray-700');
+            enBtn.classList.add('bg-red-600', 'text-white');
+            esBtn.classList.remove('bg-red-600', 'text-white');
+            esBtn.classList.add('bg-white', 'text-gray-700');
+        } else {
+            esBtn.classList.remove('bg-white', 'text-gray-700');
+            esBtn.classList.add('bg-red-600', 'text-white');
+            enBtn.classList.remove('bg-red-600', 'text-white');
+            enBtn.classList.add('bg-white', 'text-gray-700');
+        }
+    }
+}
+
+// Open detailed Latin category modal with Rochester-specific resources
+function openLatinCategory(categoryId) {
+    const categories = {
+        'family-services': {
+            title: 'Family Services / Servicios Familiares',
+            titleEs: 'Servicios Familiares',
+            description: 'Comprehensive family support services including counseling, emergency assistance, immigration support, and community resources.',
+            descriptionEs: 'Servicios integrales de apoyo familiar incluyendo consejería, asistencia de emergencia, apoyo de inmigración y recursos comunitarios.',
+            icon: 'fa-users',
+            color: 'red',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6323af9b-f002-4291-aaeb-5b191a19060a.png',
+            services: [
+                'Bilingual Family Counseling / Consejería Familiar Bilingüe',
+                'Emergency Financial Assistance / Asistencia Financiera de Emergencia',
+                'Immigration Legal Support / Apoyo Legal de Inmigración',
+                'Food & Housing Assistance / Asistencia de Alimentos y Vivienda',
+                'Parent Education Programs / Programas de Educación para Padres',
+                'Youth & Teen Services / Servicios para Jóvenes y Adolescentes'
+            ],
+            providers: [
+                {
+                    name: 'Ibero-American Action League',
+                    nameEs: 'Liga de Acción Iberoamericana',
+                    phone: '(585) 256-8900',
+                    address: '817 E Main St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 8:30 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 8:30 AM - 5:00 PM',
+                    services: 'Comprehensive family services, immigration support, youth programs',
+                    servicesEs: 'Servicios familiares integrales, apoyo de inmigración, programas juveniles',
+                    website: 'www.ibero.org'
+                },
+                {
+                    name: 'Catholic Family Center',
+                    nameEs: 'Centro Familiar Católico',
+                    phone: '(585) 546-7220',
+                    address: '87 N Clinton Ave, Rochester, NY 14604',
+                    hours: 'Mon-Fri 8:30 AM - 4:30 PM',
+                    hoursEs: 'Lun-Vie 8:30 AM - 4:30 PM',
+                    services: 'Bilingual counseling, refugee services, emergency assistance',
+                    servicesEs: 'Consejería bilingüe, servicios para refugiados, asistencia de emergencia',
+                    website: 'www.cfcrochester.org'
+                },
+                {
+                    name: 'Action for a Better Community (ABC)',
+                    nameEs: 'Acción para una Mejor Comunidad',
+                    phone: '(585) 325-5116',
+                    address: '550 East Main St, Rochester, NY 14604',
+                    hours: 'Mon-Fri 8:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 8:00 AM - 5:00 PM',
+                    services: 'Spanish-speaking advocates, utility assistance, weatherization',
+                    servicesEs: 'Defensores hispanohablantes, asistencia de servicios públicos, climatización',
+                    website: 'www.abcinfo.org'
+                }
+            ]
+        },
+        'education-youth': {
+            title: 'Education & Youth / Educación y Juventud',
+            titleEs: 'Educación y Juventud',
+            description: 'Educational programs, tutoring, college preparation, youth development, and bilingual learning support.',
+            descriptionEs: 'Programas educativos, tutoría, preparación universitaria, desarrollo juvenil y apoyo de aprendizaje bilingüe.',
+            icon: 'fa-graduation-cap',
+            color: 'yellow',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/1b2f42af-fcfb-4817-9592-df6314e16438.png',
+            services: [
+                'Bilingual Tutoring / Tutoría Bilingüe',
+                'College Preparation / Preparación Universitaria',
+                'ESL/English Classes / Clases de ESL/Inglés',
+                'After-School Programs / Programas Después de la Escuela',
+                'STEM Education / Educación STEM',
+                'Leadership Development / Desarrollo de Liderazgo'
+            ],
+            providers: [
+                {
+                    name: 'Ibero Youth Programs',
+                    nameEs: 'Programas Juveniles de Ibero',
+                    phone: '(585) 256-8900',
+                    address: '817 E Main St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 3:00 PM - 8:00 PM',
+                    hoursEs: 'Lun-Vie 3:00 PM - 8:00 PM',
+                    services: 'After-school tutoring, summer programs, college prep',
+                    servicesEs: 'Tutoría después de la escuela, programas de verano, preparación universitaria',
+                    website: 'www.ibero.org/youth'
+                },
+                {
+                    name: 'Baden Street Settlement',
+                    nameEs: 'Centro Comunitario Baden Street',
+                    phone: '(585) 325-4910',
+                    address: '152 Baden St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 2:30 PM - 7:30 PM',
+                    hoursEs: 'Lun-Vie 2:30 PM - 7:30 PM',
+                    services: 'Youth programs, bilingual homework help, arts & culture',
+                    servicesEs: 'Programas juveniles, ayuda bilingüe con tareas, artes y cultura',
+                    website: 'www.badenstreet.org'
+                },
+                {
+                    name: 'GEAR UP Rochester',
+                    nameEs: 'GEAR UP Rochester',
+                    phone: '(585) 242-7950',
+                    address: '131 W Broad St, Rochester, NY 14614',
+                    hours: 'Mon-Fri 8:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 8:00 AM - 5:00 PM',
+                    services: 'College planning, financial aid support, academic mentoring',
+                    servicesEs: 'Planificación universitaria, apoyo de ayuda financiera, mentoría académica',
+                    website: 'www.gearup.rochester.edu'
+                }
+            ]
+        },
+        'business-employment': {
+            title: 'Business & Employment / Negocios y Empleo',
+            titleEs: 'Negocios y Empleo',
+            description: 'Small business support, entrepreneurship programs, job training, employment services, and economic development resources.',
+            descriptionEs: 'Apoyo a pequeñas empresas, programas de emprendimiento, capacitación laboral, servicios de empleo y recursos de desarrollo económico.',
+            icon: 'fa-briefcase',
+            color: 'green',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/4ba952a2-fdf0-4685-9f73-f4e3c371e938.png',
+            services: [
+                'Small Business Development / Desarrollo de Pequeñas Empresas',
+                'Job Training & Placement / Capacitación y Colocación Laboral',
+                'Entrepreneurship Workshops / Talleres de Emprendimiento',
+                'Microloans & Financing / Microcréditos y Financiamiento',
+                'Resume & Interview Prep / Preparación de CV y Entrevistas',
+                'Professional Networking / Redes Profesionales'
+            ],
+            providers: [
+                {
+                    name: 'Rochester Hispanic Business Association',
+                    nameEs: 'Asociación de Negocios Hispanos de Rochester',
+                    phone: '(585) 697-0080',
+                    address: 'PO Box 10386, Rochester, NY 14610',
+                    hours: 'By Appointment / Por Cita',
+                    hoursEs: 'Por Cita',
+                    services: 'Business networking, mentorship, advocacy, procurement assistance',
+                    servicesEs: 'Redes de negocios, mentoría, defensa, asistencia de adquisiciones',
+                    website: 'www.rhbainc.com'
+                },
+                {
+                    name: 'Small Business Development Center (SBDC)',
+                    nameEs: 'Centro de Desarrollo de Pequeñas Empresas',
+                    phone: '(585) 232-6120',
+                    address: '100 Chestnut St, Rochester, NY 14604',
+                    hours: 'Mon-Fri 8:30 AM - 4:30 PM',
+                    hoursEs: 'Lun-Vie 8:30 AM - 4:30 PM',
+                    services: 'Spanish-language business counseling, startup support, funding assistance',
+                    servicesEs: 'Consejería empresarial en español, apoyo para nuevas empresas, asistencia de financiamiento',
+                    website: 'www.monroecountysbdc.org'
+                },
+                {
+                    name: 'Ibero Employment Services',
+                    nameEs: 'Servicios de Empleo de Ibero',
+                    phone: '(585) 256-8900',
+                    address: '817 E Main St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 9:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 9:00 AM - 5:00 PM',
+                    services: 'Job placement, skills training, career counseling, resume help',
+                    servicesEs: 'Colocación laboral, capacitación, consejería profesional, ayuda con CV',
+                    website: 'www.ibero.org/employment'
+                }
+            ]
+        },
+        'immigration': {
+            title: 'Immigration Services / Servicios de Inmigración',
+            titleEs: 'Servicios de Inmigración',
+            description: 'Legal immigration assistance, DACA support, citizenship preparation, visa applications, and family reunification services.',
+            descriptionEs: 'Asistencia legal de inmigración, apoyo DACA, preparación para ciudadanía, solicitudes de visa y servicios de reunificación familiar.',
+            icon: 'fa-passport',
+            color: 'blue',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6323af9b-f002-4291-aaeb-5b191a19060a.png',
+            services: [
+                'Immigration Legal Consultations / Consultas Legales de Inmigración',
+                'DACA Renewal Assistance / Asistencia de Renovación DACA',
+                'Citizenship Application / Solicitud de Ciudadanía',
+                'Family Reunification / Reunificación Familiar',
+                'Work Permits / Permisos de Trabajo',
+                'Deportation Defense / Defensa de Deportación'
+            ],
+            providers: [
+                {
+                    name: 'Ibero Immigration Services',
+                    nameEs: 'Servicios de Inmigración de Ibero',
+                    phone: '(585) 256-8900',
+                    address: '817 E Main St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 9:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 9:00 AM - 5:00 PM',
+                    services: 'DOJ accredited representatives, full immigration services, DACA support',
+                    servicesEs: 'Representantes acreditados por DOJ, servicios completos de inmigración, apoyo DACA',
+                    website: 'www.ibero.org/immigration'
+                },
+                {
+                    name: 'Volunteer Legal Services Project',
+                    nameEs: 'Proyecto de Servicios Legales Voluntarios',
+                    phone: '(585) 232-3051',
+                    address: '1 W Main St, Suite 500, Rochester, NY 14614',
+                    hours: 'Mon-Fri 9:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 9:00 AM - 5:00 PM',
+                    services: 'Free legal consultations, pro bono representation, citizenship classes',
+                    servicesEs: 'Consultas legales gratuitas, representación pro bono, clases de ciudadanía',
+                    website: 'www.vlsprochester.org'
+                },
+                {
+                    name: 'Catholic Family Center - Immigration',
+                    nameEs: 'Centro Familiar Católico - Inmigración',
+                    phone: '(585) 546-7220',
+                    address: '87 N Clinton Ave, Rochester, NY 14604',
+                    hours: 'Mon-Fri 8:30 AM - 4:30 PM',
+                    hoursEs: 'Lun-Vie 8:30 AM - 4:30 PM',
+                    services: 'Refugee resettlement, asylum support, document translation',
+                    servicesEs: 'Reasentamiento de refugiados, apoyo de asilo, traducción de documentos',
+                    website: 'www.cfcrochester.org'
+                }
+            ]
+        },
+        'health-services': {
+            title: 'Health Services / Servicios de Salud',
+            titleEs: 'Servicios de Salud',
+            description: 'Medical care, mental health services, health insurance enrollment, maternal health, and wellness programs with Spanish-speaking providers.',
+            descriptionEs: 'Atención médica, servicios de salud mental, inscripción de seguro médico, salud materna y programas de bienestar con proveedores que hablan español.',
+            icon: 'fa-heartbeat',
+            color: 'pink',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/6323af9b-f002-4291-aaeb-5b191a19060a.png',
+            services: [
+                'Spanish-Speaking Medical Care / Atención Médica en Español',
+                'Mental Health Counseling / Consejería de Salud Mental',
+                'Health Insurance Enrollment / Inscripción de Seguro Médico',
+                'Maternal & Child Health / Salud Maternal e Infantil',
+                'Dental Services / Servicios Dentales',
+                'Wellness & Prevention / Bienestar y Prevención'
+            ],
+            providers: [
+                {
+                    name: 'Mary\'s Place',
+                    nameEs: 'Casa de María',
+                    phone: '(585) 262-3570',
+                    address: '1240 Lyell Ave, Rochester, NY 14606',
+                    hours: 'Mon-Fri 8:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 8:00 AM - 5:00 PM',
+                    services: 'Free medical clinic, bilingual staff, maternal health, pediatrics',
+                    servicesEs: 'Clínica médica gratuita, personal bilingüe, salud materna, pediatría',
+                    website: 'www.marysplaceroc.org'
+                },
+                {
+                    name: 'Ibero Salud Program',
+                    nameEs: 'Programa de Salud de Ibero',
+                    phone: '(585) 256-8900',
+                    address: '817 E Main St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 9:00 AM - 5:00 PM',
+                    hoursEs: 'Lun-Vie 9:00 AM - 5:00 PM',
+                    services: 'Health insurance navigation, wellness programs, health education',
+                    servicesEs: 'Navegación de seguro médico, programas de bienestar, educación de salud',
+                    website: 'www.ibero.org/health'
+                },
+                {
+                    name: 'Westside Health Services',
+                    nameEs: 'Servicios de Salud Westside',
+                    phone: '(585) 325-3120',
+                    address: '1200 Buffalo Rd, Rochester, NY 14624',
+                    hours: 'Mon-Sat 8:00 AM - 7:00 PM',
+                    hoursEs: 'Lun-Sáb 8:00 AM - 7:00 PM',
+                    services: 'Bilingual medical services, dental, mental health, pharmacy',
+                    servicesEs: 'Servicios médicos bilingües, dentales, salud mental, farmacia',
+                    website: 'www.westsidehealth.org'
+                }
+            ]
+        },
+        'arts-culture': {
+            title: 'Arts & Culture / Arte y Cultura',
+            titleEs: 'Arte y Cultura',
+            description: 'Cultural events, traditional dance, music programs, art exhibitions, and celebrations of Latino heritage and traditions.',
+            descriptionEs: 'Eventos culturales, danza tradicional, programas de música, exhibiciones de arte y celebraciones de herencia y tradiciones latinas.',
+            icon: 'fa-music',
+            color: 'purple',
+            image: 'https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a64ba00a-2eb3-4983-bbaa-281ca08e5f5d.png',
+            services: [
+                'Puerto Rican Festival / Festival Puertorriqueño',
+                'Traditional Dance Classes / Clases de Danza Tradicional',
+                'Latin Music Events / Eventos de Música Latina',
+                'Art Exhibitions / Exhibiciones de Arte',
+                'Cultural Workshops / Talleres Culturales',
+                'Heritage Celebrations / Celebraciones de Herencia'
+            ],
+            providers: [
+                {
+                    name: 'Puerto Rican Festival',
+                    nameEs: 'Festival Puertorriqueño',
+                    phone: '(585) 697-2260',
+                    address: 'Parque Clinton, 618 Joseph Ave, Rochester, NY',
+                    hours: 'Annual Event - August',
+                    hoursEs: 'Evento Anual - Agosto',
+                    services: 'Three-day cultural celebration with music, food, dance, and community',
+                    servicesEs: 'Celebración cultural de tres días con música, comida, baile y comunidad',
+                    website: 'www.prfestival.com'
+                },
+                {
+                    name: 'Latinx Artists Circle',
+                    nameEs: 'Círculo de Artistas Latinx',
+                    phone: '(585) 271-3342',
+                    address: '1320 University Ave, Rochester, NY 14607',
+                    hours: 'Events Vary / Eventos Varían',
+                    hoursEs: 'Eventos Varían',
+                    services: 'Art exhibitions, artist collaborations, cultural programming',
+                    servicesEs: 'Exhibiciones de arte, colaboraciones de artistas, programación cultural',
+                    website: 'Contact via social media'
+                },
+                {
+                    name: 'Baden Street Settlement - Cultural Programs',
+                    nameEs: 'Baden Street - Programas Culturales',
+                    phone: '(585) 325-4910',
+                    address: '152 Baden St, Rochester, NY 14605',
+                    hours: 'Mon-Fri 9:00 AM - 7:00 PM',
+                    hoursEs: 'Lun-Vie 9:00 AM - 7:00 PM',
+                    services: 'Dance classes, music programs, cultural celebrations, youth arts',
+                    servicesEs: 'Clases de baile, programas de música, celebraciones culturales, artes juveniles',
+                    website: 'www.badenstreet.org'
+                }
+            ]
+        }
+    };
+
+    const category = categories[categoryId];
+    if (!category) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 overflow-y-auto';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-${category.color}-600 via-${category.color}-500 to-${category.color}-400 text-white p-8">
+                <!-- Background Image -->
+                <div class="absolute inset-0 opacity-20">
+                    <img src="${category.image}" 
+                         alt="${category.title}" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <i class="fas ${category.icon} text-4xl mr-4"></i>
+                            <div>
+                                <h2 class="text-3xl font-bold" data-lang-en>${category.title}</h2>
+                                <h2 class="text-3xl font-bold" data-lang-es style="display:none;">${category.titleEs}</h2>
+                            </div>
+                        </div>
+                        <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 transition-all">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                    
+                    <p class="text-white/95 text-lg" data-lang-en>${category.description}</p>
+                    <p class="text-white/95 text-lg" data-lang-es style="display:none;">${category.descriptionEs}</p>
+                </div>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-8">
+                <!-- Services Section -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-${category.color}-600 mr-3"></i>
+                        <span data-lang-en>Services Available</span>
+                        <span data-lang-es style="display:none;">Servicios Disponibles</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        ${category.services.map(service => `
+                            <div class="flex items-start bg-${category.color}-50 rounded-lg p-3 border-l-4 border-${category.color}-500">
+                                <i class="fas fa-check text-${category.color}-600 mr-2 mt-1"></i>
+                                <span class="text-gray-700">${service}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <!-- Providers Section -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-${category.color}-600 mr-3"></i>
+                        <span data-lang-en>Service Providers in Rochester</span>
+                        <span data-lang-es style="display:none;">Proveedores de Servicios en Rochester</span>
+                    </h3>
+                    <div class="space-y-4">
+                        ${category.providers.map(provider => `
+                            <div class="bg-gradient-to-r from-${category.color}-50 to-white rounded-xl p-6 border-2 border-${category.color}-200 hover:border-${category.color}-400 transition-all shadow-sm hover:shadow-md">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="font-bold text-${category.color}-900 text-xl" data-lang-en>${provider.name}</h4>
+                                        <h4 class="font-bold text-${category.color}-900 text-xl" data-lang-es style="display:none;">${provider.nameEs}</h4>
+                                    </div>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-${category.color}-600 text-white whitespace-nowrap ml-2">
+                                        <span data-lang-en>Bilingual</span>
+                                        <span data-lang-es style="display:none;">Bilingüe</span>
+                                    </span>
+                                </div>
+                                
+                                <div class="space-y-2 text-gray-700 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-phone text-${category.color}-600 mr-3 w-5"></i>
+                                        <a href="tel:${provider.phone}" class="hover:text-${category.color}-700 font-medium">${provider.phone}</a>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt text-${category.color}-600 mr-3 mt-1 w-5"></i>
+                                        <span>${provider.address}</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-clock text-${category.color}-600 mr-3 w-5"></i>
+                                        <span data-lang-en>${provider.hours}</span>
+                                        <span data-lang-es style="display:none;">${provider.hoursEs}</span>
+                                    </div>
+                                    ${provider.website ? `
+                                        <div class="flex items-center">
+                                            <i class="fas fa-globe text-${category.color}-600 mr-3 w-5"></i>
+                                            <a href="https://${provider.website}" target="_blank" class="hover:text-${category.color}-700 underline">${provider.website}</a>
+                                        </div>
+                                    ` : ''}
+                                </div>
+                                
+                                <div class="bg-white rounded-lg p-3 mb-4 border border-${category.color}-200">
+                                    <p class="text-sm text-gray-700" data-lang-en><strong>Services:</strong> ${provider.services}</p>
+                                    <p class="text-sm text-gray-700" data-lang-es style="display:none;"><strong>Servicios:</strong> ${provider.servicesEs}</p>
+                                </div>
+                                
+                                <div class="flex gap-3">
+                                    <button onclick="window.location.href='tel:${provider.phone}'" class="flex-1 bg-${category.color}-600 hover:bg-${category.color}-700 text-white py-3 px-4 rounded-lg transition-all font-medium">
+                                        <i class="fas fa-phone mr-2"></i>
+                                        <span data-lang-en>Call Now</span>
+                                        <span data-lang-es style="display:none;">Llamar Ahora</span>
+                                    </button>
+                                    <button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(provider.address)}', '_blank')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg transition-all font-medium">
+                                        <i class="fas fa-directions mr-2"></i>
+                                        <span data-lang-en">Directions</span>
+                                        <span data-lang-es style="display:none;">Direcciones</span>
+                                    </button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <!-- Emergency Help Section -->
+                <div class="mt-8 bg-red-50 border-2 border-red-300 rounded-xl p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-phone-volume text-red-600 text-3xl mr-4 mt-1"></i>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-red-900 text-lg mb-2" data-lang-en>Need Immediate Help?</h4>
+                            <h4 class="font-bold text-red-900 text-lg mb-2" data-lang-es style="display:none;">¿Necesita Ayuda Inmediata?</h4>
+                            <p class="text-red-800 mb-3" data-lang-en>Call 211 for free, confidential help connecting to community resources. Spanish-speaking operators available 24/7.</p>
+                            <p class="text-red-800 mb-3" data-lang-es style="display:none;">Llame al 211 para obtener ayuda gratuita y confidencial para conectarse con recursos comunitarios. Operadores que hablan español disponibles 24/7.</p>
+                            <a href="tel:211" class="inline-block bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg transition-all font-bold">
+                                <i class="fas fa-phone mr-2"></i>
+                                <span data-lang-en>Call 211 Now</span>
+                                <span data-lang-es style="display:none;">Llamar al 211 Ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+    
+    // Initialize language toggle for modal content
+    const currentLang = document.querySelector('[data-language="en"]')?.classList.contains('bg-red-600') ? 'en' : 'es';
+    toggleModalLanguage(modal, currentLang);
+}
+
+// Toggle language specifically for modal content
+function toggleModalLanguage(modal, lang) {
+    modal.querySelectorAll('[data-lang-en]').forEach(el => {
+        el.style.display = lang === 'en' ? 'block' : 'none';
+    });
+    
+    modal.querySelectorAll('[data-lang-es]').forEach(el => {
+        el.style.display = lang === 'es' ? 'block' : 'none';
+    });
 }
