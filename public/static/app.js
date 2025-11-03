@@ -5242,22 +5242,22 @@ function loadSeniorCircle() {
                             
                             <!-- Resource Categories -->
                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('health')">
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openSeniorResourceCategory('health')">
                                     <i class="fas fa-heartbeat text-4xl text-purple-600 mb-3"></i>
                                     <h3 class="font-bold text-gray-900 text-lg">Health</h3>
                                 </div>
                                 
-                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('housing')">
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openSeniorResourceCategory('housing')">
                                     <i class="fas fa-home text-4xl text-purple-600 mb-3"></i>
                                     <h3 class="font-bold text-gray-900 text-lg">Housing</h3>
                                 </div>
                                 
-                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('tech')">
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openSeniorResourceCategory('tech')">
                                     <i class="fas fa-laptop text-4xl text-purple-600 mb-3"></i>
                                     <h3 class="font-bold text-gray-900 text-lg">Tech Help</h3>
                                 </div>
                                 
-                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('finance')">
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openSeniorResourceCategory('finance')">
                                     <i class="fas fa-dollar-sign text-4xl text-purple-600 mb-3"></i>
                                     <h3 class="font-bold text-gray-900 text-lg">Finance</h3>
                                 </div>
@@ -8307,232 +8307,6 @@ function showNotification(message, type = 'success') {
 // ================================
 
 // Enhanced MVP Healthcare loader with comprehensive interactive features
-function loadMVPHealthcare() {
-    const contentArea = document.getElementById('content-area');
-    contentArea.innerHTML = `
-        <section class="py-8 bg-gradient-to-br from-mvp-red/5 via-white to-mvp-green/5 min-h-screen">
-            <div class="container mx-auto px-4">
-                <!-- Enhanced MVP Healthcare Header -->
-                <div class="bg-white rounded-xl shadow-2xl overflow-hidden mb-8 border-l-4 border-mvp-red">
-                    <div class="bg-gradient-to-r from-mvp-red to-red-600 text-white p-6 md:p-8">
-                        <div class="flex items-center justify-between flex-wrap gap-4">
-                            <div class="flex items-center space-x-4">
-                                <div class="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-lg">
-                                    <i class="fas fa-hospital text-2xl text-mvp-red"></i>
-                                </div>
-                                <div>
-                                    <h2 class="text-3xl md:text-4xl font-bold">MVP Healthcare</h2>
-                                    <p class="text-white/90 text-lg">Your Health. Our Priority. Community-Focused Care.</p>
-                                    <p class="text-white/80 text-sm">Comprehensive Healthcare Solutions for Rochester</p>
-                                </div>
-                            </div>
-                            <button onclick="goHome()" class="bg-white/20 backdrop-blur-md text-white px-6 py-3 rounded-xl hover:bg-white/30 transition-all border border-white/30">
-                                <i class="fas fa-arrow-left mr-2"></i>Back to Home
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Actions Dashboard -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-mvp-green hover:shadow-xl transition-all cursor-pointer" onclick="openMVPPatientPortal()">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-mvp-green/20 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-user-md text-mvp-green text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800">Patient Portal</h3>
-                                <p class="text-gray-600 text-sm">Access your health records</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition-all cursor-pointer" onclick="findMVPProviders()">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-search text-blue-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800">Find Providers</h3>
-                                <p class="text-gray-600 text-sm">Locate doctors & specialists</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-purple-500 hover:shadow-xl transition-all cursor-pointer" onclick="scheduleMVPAppointment()">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-calendar-plus text-purple-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800">Schedule Visit</h3>
-                                <p class="text-gray-600 text-sm">Book appointments</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-orange-500 hover:shadow-xl transition-all cursor-pointer" onclick="showMVPInsurance()">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-shield-alt text-orange-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800">Insurance Info</h3>
-                                <p class="text-gray-600 text-sm">Plans & coverage</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MVP Health Services -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                    <!-- Primary Services -->
-                    <div class="bg-white rounded-xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">
-                            <i class="fas fa-heartbeat mr-3 text-mvp-red"></i>
-                            Primary Care Services
-                        </h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-mvp-green/20 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-stethoscope text-mvp-green"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Annual Wellness Exams</h4>
-                                    <p class="text-gray-600 text-sm">Comprehensive health screenings and preventive care</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-prescription-bottle-alt text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Chronic Care Management</h4>
-                                    <p class="text-gray-600 text-sm">Diabetes, hypertension, and heart disease care</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-syringe text-purple-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Immunizations</h4>
-                                    <p class="text-gray-600 text-sm">Adult and pediatric vaccination programs</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Specialist Services -->
-                    <div class="bg-white rounded-xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6">
-                            <i class="fas fa-user-md mr-3 text-mvp-red"></i>
-                            Specialist Care
-                        </h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-heart text-red-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Cardiology</h4>
-                                    <p class="text-gray-600 text-sm">Heart health and cardiovascular care</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-brain text-green-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Mental Health</h4>
-                                    <p class="text-gray-600 text-sm">Counseling and psychiatric services</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
-                                <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
-                                    <i class="fas fa-eye text-indigo-600"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">Vision Care</h4>
-                                    <p class="text-gray-600 text-sm">Eye exams and optical services</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Community Health Programs -->
-                <div class="bg-gradient-to-r from-mvp-green to-green-600 rounded-xl p-8 text-white mb-8">
-                    <h3 class="text-2xl font-bold mb-6">Community Health & Wellness Programs</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                            <i class="fas fa-running text-3xl mb-4"></i>
-                            <h4 class="text-lg font-bold mb-2">Fitness Programs</h4>
-                            <p class="text-white/90 text-sm">Free community fitness classes and wellness workshops</p>
-                        </div>
-                        <div class="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                            <i class="fas fa-apple-alt text-3xl mb-4"></i>
-                            <h4 class="text-lg font-bold mb-2">Nutrition Education</h4>
-                            <p class="text-white/90 text-sm">Healthy cooking classes and dietary counseling</p>
-                        </div>
-                        <div class="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                            <i class="fas fa-users text-3xl mb-4"></i>
-                            <h4 class="text-lg font-bold mb-2">Support Groups</h4>
-                            <p class="text-white/90 text-sm">Peer support for health conditions and wellness goals</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MVP Locations & Contact -->
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">
-                        <i class="fas fa-map-marker-alt mr-3 text-mvp-red"></i>
-                        MVP Healthcare Locations in Rochester
-                    </h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="p-6 bg-gray-50 rounded-lg">
-                            <h4 class="text-lg font-bold text-gray-800 mb-3">Downtown Medical Center</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><i class="fas fa-map-marker-alt mr-2"></i>123 East Avenue, Rochester, NY 14604</p>
-                                <p><i class="fas fa-phone mr-2"></i>(585) 123-4567</p>
-                                <p><i class="fas fa-clock mr-2"></i>Mon-Fri: 8:00 AM - 6:00 PM</p>
-                            </div>
-                            <button onclick="getMVPDirections('downtown')" class="mt-4 bg-mvp-red text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
-                                Get Directions
-                            </button>
-                        </div>
-                        
-                        <div class="p-6 bg-gray-50 rounded-lg">
-                            <h4 class="text-lg font-bold text-gray-800 mb-3">Northwest Family Practice</h4>
-                            <div class="space-y-2 text-gray-600">
-                                <p><i class="fas fa-map-marker-alt mr-2"></i>456 Ridge Road West, Rochester, NY 14615</p>
-                                <p><i class="fas fa-phone mr-2"></i>(585) 987-6543</p>
-                                <p><i class="fas fa-clock mr-2"></i>Mon-Fri: 7:30 AM - 5:30 PM</p>
-                            </div>
-                            <button onclick="getMVPDirections('northwest')" class="mt-4 bg-mvp-red text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
-                                Get Directions
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Emergency & Urgent Care -->
-                <div class="bg-red-50 border-l-4 border-mvp-red rounded-lg p-6 mt-8">
-                    <div class="flex items-center">
-                        <i class="fas fa-exclamation-triangle text-mvp-red mr-3 text-xl"></i>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Emergency & Urgent Care</h4>
-                            <p class="text-gray-700 mt-2">
-                                For life-threatening emergencies, call 911 or go to the nearest emergency room.
-                                For urgent but non-emergency care, visit our Urgent Care Center or call our 24/7 nurse hotline at (585) MVP-CARE.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    `;
-}
 
 // MVP Healthcare Interactive Functions
 function openMVPPatientPortal() {
@@ -9680,7 +9454,7 @@ function playAudioNarration(year) {
     showNotification(`Playing audio narration for ${year}`, 'success');
 }
 
-function start360Tour(year) {
+function start360TourByYear(year) {
     showNotification(`Starting 360° tour for ${year}`, 'success');
 }
 
@@ -11917,14 +11691,6 @@ function scrollToMVPSection(sectionId) {
     }
 }
 
-function searchMVPProviders() {
-    showNotification('Searching MVP Healthcare provider network...', 'info');
-    
-    // Simulate search delay
-    setTimeout(() => {
-        showNotification('Found 47 providers matching your criteria!', 'success');
-    }, 1500);
-}
 
 function openProviderDetails(providerId) {
     const providers = {
@@ -12160,7 +11926,7 @@ function rsvpEvent(eventId) {
     showNotification(`RSVP confirmed for ${eventName}!`, 'success');
 }
 
-function getDirections(locationId) {
+function getDirectionsById(locationId) {
     // Open Google Maps directions (example implementation)
     const locations = {
         'community-center': 'Rochester Community Center, Rochester, NY',
@@ -13399,8 +13165,8 @@ function joinFriendshipCircle() {
     showNotification('Connecting you to friendship circles...', 'info');
 }
 
-// Open resource category
-function openResourceCategory(category) {
+// Open senior resource category
+function openSeniorResourceCategory(category) {
     const categories = {
         'health': 'Health Resources - Medical services, prescriptions, and wellness programs',
         'housing': 'Housing Resources - Senior living, affordable housing, and home modifications',
