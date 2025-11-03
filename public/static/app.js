@@ -4903,7 +4903,510 @@ function showYouthVibeModal(title, content) {
 }
 
 function loadSeniorCircle() {
-    loadGenericSection('senior-circle', 'Senior Circle', 'fas fa-users', 'Resources for senior citizens');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-500 text-white">
+                <!-- Hero Background Image -->
+                <div class="absolute inset-0 opacity-30">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dfde5018-b618-4e70-8150-4cb6ecf4c786.png" 
+                         alt="Seniors enjoying outdoor chair yoga" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-600/90 via-amber-600/85 to-yellow-500/80"></div>
+                
+                <div class="relative z-10 px-4 py-20">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <!-- Icon -->
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border-4 border-white/30">
+                            <i class="fas fa-heart text-6xl"></i>
+                        </div>
+                        
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                            Senior Circle
+                        </h1>
+                        <div class="w-32 h-1 bg-white mx-auto mb-6 rounded-full"></div>
+                        
+                        <p class="text-2xl md:text-3xl font-light mb-6 max-w-4xl mx-auto">
+                            Your Digital Companion for Living Life to the Fullest 🌟
+                        </p>
+                        
+                        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Welcome to Senior Circle – the ultimate resource hub designed just for you. Whether you want to stay active, discover new health and wellness breakthroughs, or find reliable transportation to get you where you need to go – we've got you covered.
+                        </p>
+                        
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 max-w-4xl mx-auto border border-white/20">
+                            <p class="text-xl font-medium">
+                                Aging isn't about slowing down – it's about leveling up. Senior Circle is here to keep you healthy, independent, and connected to what matters most.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="sticky top-0 z-40 bg-white shadow-md border-b-2 border-orange-200">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex flex-wrap gap-2 py-4 justify-center">
+                        <button onclick="scrollToSeniorSection('health-wellness')" class="px-6 py-3 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-all font-medium text-lg">
+                            <i class="fas fa-heartbeat mr-2"></i>Health & Wellness
+                        </button>
+                        <button onclick="scrollToSeniorSection('transportation')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition-all font-medium text-lg border-2 border-orange-200">
+                            <i class="fas fa-car mr-2"></i>Transportation
+                        </button>
+                        <button onclick="scrollToSeniorSection('community')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition-all font-medium text-lg border-2 border-orange-200">
+                            <i class="fas fa-users mr-2"></i>Community
+                        </button>
+                        <button onclick="scrollToSeniorSection('resources')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition-all font-medium text-lg border-2 border-orange-200">
+                            <i class="fas fa-book mr-2"></i>Resources
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="max-w-6xl mx-auto px-4 py-12">
+                
+                <!-- Health & Wellness Section -->
+                <section id="health-wellness" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-orange-200">
+                        <div class="bg-gradient-to-r from-orange-600 to-amber-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-heartbeat text-5xl mr-4"></i>
+                                <h2 class="text-4xl font-bold">Health & Wellness</h2>
+                            </div>
+                            <p class="text-xl">Stay active, healthy, and vibrant every day</p>
+                        </div>
+                        
+                        <div class="p-8">
+                            <!-- Featured Image -->
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dfde5018-b618-4e70-8150-4cb6ecf4c786.png" 
+                                     alt="Seniors enjoying chair yoga outdoors" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <!-- What's Included -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-600">
+                                    <i class="fas fa-dumbbell text-3xl text-orange-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Daily Fitness & Yoga</h3>
+                                    <p class="text-gray-700 text-lg">Chair yoga, gentle stretching, and low-impact exercises designed for all fitness levels</p>
+                                </div>
+                                
+                                <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-600">
+                                    <i class="fas fa-apple-alt text-3xl text-orange-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Nutrition Guides</h3>
+                                    <p class="text-gray-700 text-lg">Energy-boosting meal plans, vitamin guides, and healthy eating tips for seniors</p>
+                                </div>
+                                
+                                <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-600">
+                                    <i class="fas fa-spa text-3xl text-orange-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Meditation & Mindfulness</h3>
+                                    <p class="text-gray-700 text-lg">Stress reduction techniques, breathing exercises, and mental wellness practices</p>
+                                </div>
+                                
+                                <div class="bg-orange-50 rounded-xl p-6 border-l-4 border-orange-600">
+                                    <i class="fas fa-stethoscope text-3xl text-orange-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Healthcare Programs</h3>
+                                    <p class="text-gray-700 text-lg">Latest updates on senior-friendly healthcare and wellness programs</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Nutrition Image -->
+                            <div class="mb-8">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4">Nutrition for Energy & Vitality</h3>
+                                <div class="rounded-xl overflow-hidden shadow-lg">
+                                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a4394a99-c674-48b7-b30c-ec9ad19649b6.png" 
+                                         alt="Healthy nutritious food for seniors" 
+                                         class="w-full h-64 object-cover">
+                                </div>
+                            </div>
+                            
+                            <!-- Video Tutorial -->
+                            <div class="bg-gradient-to-r from-orange-100 to-amber-100 rounded-xl p-6 border-2 border-orange-300">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-play text-white text-2xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                            <i class="fas fa-video mr-2 text-orange-600"></i>5-Minute Morning Yoga for Seniors
+                                        </h3>
+                                        <p class="text-gray-700 text-lg mb-4">Start your day with gentle stretches and movements designed for seniors. Perfect for all fitness levels!</p>
+                                        <button onclick="playSeniorVideo('morning-yoga')" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg transition-all font-medium text-lg">
+                                            <i class="fas fa-play-circle mr-2"></i>Watch Tutorial
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Transportation Section -->
+                <section id="transportation" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-200">
+                        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-car text-5xl mr-4"></i>
+                                <h2 class="text-4xl font-bold">Transportation Made Easy</h2>
+                            </div>
+                            <p class="text-xl">Safe, reliable, and convenient travel options</p>
+                        </div>
+                        
+                        <div class="p-8">
+                            <!-- Featured Image -->
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/7def1b63-3c8c-44b9-a76b-ef0248073508.png" 
+                                     alt="Senior using safe rideshare service" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <!-- Transportation Options -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                                <div class="bg-blue-50 rounded-xl p-6 text-center border-2 border-blue-200 hover:border-blue-400 transition-all cursor-pointer" onclick="openTransportService('rideshare')">
+                                    <i class="fas fa-car-side text-5xl text-blue-600 mb-4"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Rideshare Services</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Uber, Lyft, and senior-friendly ride options</p>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all font-medium">
+                                        Learn More
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-blue-50 rounded-xl p-6 text-center border-2 border-blue-200 hover:border-blue-400 transition-all cursor-pointer" onclick="openTransportService('shuttle')">
+                                    <i class="fas fa-bus text-5xl text-blue-600 mb-4"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Community Shuttles</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Free and low-cost shuttle services</p>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all font-medium">
+                                        View Schedule
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-blue-50 rounded-xl p-6 text-center border-2 border-blue-200 hover:border-blue-400 transition-all cursor-pointer" onclick="openTransportService('medical')">
+                                    <i class="fas fa-ambulance text-5xl text-blue-600 mb-4"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Medical Transport</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Non-emergency medical appointments</p>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-all font-medium">
+                                        Get Info
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- How-To Video -->
+                            <div class="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-xl p-6 border-2 border-blue-300">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-play text-white text-2xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                            <i class="fas fa-video mr-2 text-blue-600"></i>How to Schedule Transportation
+                                        </h3>
+                                        <p class="text-gray-700 text-lg mb-4">Step-by-step guide to booking rides safely and easily. Learn how to use rideshare apps with confidence!</p>
+                                        <button onclick="playSeniorVideo('transport-tutorial')" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all font-medium text-lg">
+                                            <i class="fas fa-play-circle mr-2"></i>Watch Demo
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Infographic -->
+                            <div class="mt-8 bg-white rounded-xl p-6 border-2 border-blue-200">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Easy Steps to Book a Ride</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">1</div>
+                                        <h4 class="font-bold text-gray-900 mb-2 text-lg">Open App</h4>
+                                        <p class="text-gray-700">Launch your rideshare app</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">2</div>
+                                        <h4 class="font-bold text-gray-900 mb-2 text-lg">Enter Destination</h4>
+                                        <p class="text-gray-700">Type where you want to go</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">3</div>
+                                        <h4 class="font-bold text-gray-900 mb-2 text-lg">Choose Ride</h4>
+                                        <p class="text-gray-700">Select your ride option</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">4</div>
+                                        <h4 class="font-bold text-gray-900 mb-2 text-lg">Confirm & Go</h4>
+                                        <p class="text-gray-700">Confirm and meet your driver</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Community Connections Section -->
+                <section id="community" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-200">
+                        <div class="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-users text-5xl mr-4"></i>
+                                <h2 class="text-4xl font-bold">Community Connections</h2>
+                            </div>
+                            <p class="text-xl">Stay socially connected and engaged</p>
+                        </div>
+                        
+                        <div class="p-8">
+                            <!-- Featured Image -->
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/76a939b6-db6d-4ab2-b8a9-e77a5bab2cf6.png" 
+                                     alt="Seniors enjoying community cooking class" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <!-- Community Features -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-calendar-alt text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Upcoming Events</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Workshops, social gatherings, and educational meetups</p>
+                                    <button onclick="viewSeniorEvents()" class="text-green-600 hover:text-green-700 font-medium text-lg">
+                                        View Calendar <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-hands-helping text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Volunteer Opportunities</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Give back to your community and stay active</p>
+                                    <button onclick="viewVolunteerOps()" class="text-green-600 hover:text-green-700 font-medium text-lg">
+                                        Explore <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-graduation-cap text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Lifelong Learning</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Classes, lectures, and educational programs</p>
+                                    <button onclick="viewLearningPrograms()" class="text-green-600 hover:text-green-700 font-medium text-lg">
+                                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-user-friends text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Friendship Circles</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Connect with others who share your interests</p>
+                                    <button onclick="joinFriendshipCircle()" class="text-green-600 hover:text-green-700 font-medium text-lg">
+                                        Join Now <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Community Video -->
+                            <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-xl p-6 border-2 border-green-300">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-play text-white text-2xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                            <i class="fas fa-video mr-2 text-green-600"></i>Community Activities Highlight Reel
+                                        </h3>
+                                        <p class="text-gray-700 text-lg mb-4">See what fun activities our Senior Circle community has been enjoying! From cooking classes to art workshops and social gatherings.</p>
+                                        <button onclick="playSeniorVideo('community-highlights')" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg transition-all font-medium text-lg">
+                                            <i class="fas fa-play-circle mr-2"></i>Watch Highlights
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Everyday Resources Section -->
+                <section id="resources" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-purple-200">
+                        <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-book text-5xl mr-4"></i>
+                                <h2 class="text-4xl font-bold">Everyday Resources</h2>
+                            </div>
+                            <p class="text-xl">Tools and guides to make life easier</p>
+                        </div>
+                        
+                        <div class="p-8">
+                            <!-- Tech Help Image -->
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/5b3623fc-1117-4178-b090-a2c41ef789e1.png" 
+                                     alt="Senior learning to use technology" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <!-- Resource Categories -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('health')">
+                                    <i class="fas fa-heartbeat text-4xl text-purple-600 mb-3"></i>
+                                    <h3 class="font-bold text-gray-900 text-lg">Health</h3>
+                                </div>
+                                
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('housing')">
+                                    <i class="fas fa-home text-4xl text-purple-600 mb-3"></i>
+                                    <h3 class="font-bold text-gray-900 text-lg">Housing</h3>
+                                </div>
+                                
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('tech')">
+                                    <i class="fas fa-laptop text-4xl text-purple-600 mb-3"></i>
+                                    <h3 class="font-bold text-gray-900 text-lg">Tech Help</h3>
+                                </div>
+                                
+                                <div class="bg-purple-50 rounded-xl p-6 text-center border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openResourceCategory('finance')">
+                                    <i class="fas fa-dollar-sign text-4xl text-purple-600 mb-3"></i>
+                                    <h3 class="font-bold text-gray-900 text-lg">Finance</h3>
+                                </div>
+                            </div>
+                            
+                            <!-- Tech Help Guides -->
+                            <div class="bg-purple-50 rounded-xl p-6 mb-8 border-2 border-purple-200">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                                    <i class="fas fa-mobile-alt mr-2 text-purple-600"></i>Tech Help Guides
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <button onclick="openTechGuide('smartphone')" class="bg-white hover:bg-purple-50 text-left p-4 rounded-lg border-2 border-purple-200 transition-all">
+                                        <i class="fas fa-mobile-alt text-2xl text-purple-600 mb-2"></i>
+                                        <h4 class="font-bold text-gray-900 text-lg">Using Smartphones</h4>
+                                        <p class="text-gray-700">Basic phone navigation</p>
+                                    </button>
+                                    
+                                    <button onclick="openTechGuide('email')" class="bg-white hover:bg-purple-50 text-left p-4 rounded-lg border-2 border-purple-200 transition-all">
+                                        <i class="fas fa-envelope text-2xl text-purple-600 mb-2"></i>
+                                        <h4 class="font-bold text-gray-900 text-lg">Email Basics</h4>
+                                        <p class="text-gray-700">Send and receive emails</p>
+                                    </button>
+                                    
+                                    <button onclick="openTechGuide('video-calls')" class="bg-white hover:bg-purple-50 text-left p-4 rounded-lg border-2 border-purple-200 transition-all">
+                                        <i class="fas fa-video text-2xl text-purple-600 mb-2"></i>
+                                        <h4 class="font-bold text-gray-900 text-lg">Video Calls</h4>
+                                        <p class="text-gray-700">Connect with family</p>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Video Tutorial -->
+                            <div class="bg-gradient-to-r from-purple-100 to-indigo-100 rounded-xl p-6 border-2 border-purple-300">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fas fa-play text-white text-2xl"></i>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                            <i class="fas fa-video mr-2 text-purple-600"></i>Making Video Calls to Stay in Touch
+                                        </h3>
+                                        <p class="text-gray-700 text-lg mb-4">Simple step-by-step guide to video calling your loved ones. Learn Zoom, FaceTime, and WhatsApp video calls with ease!</p>
+                                        <button onclick="playSeniorVideo('video-calls-tutorial')" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-all font-medium text-lg">
+                                            <i class="fas fa-play-circle mr-2"></i>Watch Tutorial
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional Resources -->
+                            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="bg-white rounded-xl p-6 border-2 border-purple-200 hover:border-purple-400 transition-all">
+                                    <i class="fas fa-gavel text-3xl text-purple-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Legal Resources</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Estate planning, wills, and legal aid</p>
+                                    <button onclick="openLegalResources()" class="text-purple-600 hover:text-purple-700 font-medium text-lg">
+                                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 border-2 border-purple-200 hover:border-purple-400 transition-all">
+                                    <i class="fas fa-home text-3xl text-purple-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Housing Options</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Independent living and senior housing</p>
+                                    <button onclick="openHousingOptions()" class="text-purple-600 hover:text-purple-700 font-medium text-lg">
+                                        Explore <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                                
+                                <div class="bg-white rounded-xl p-6 border-2 border-purple-200 hover:border-purple-400 transition-all">
+                                    <i class="fas fa-chart-line text-3xl text-purple-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Financial Planning</h3>
+                                    <p class="text-gray-700 text-lg mb-4">Retirement planning and budgeting</p>
+                                    <button onclick="openFinancialPlanning()" class="text-purple-600 hover:text-purple-700 font-medium text-lg">
+                                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Senior Circle -->
+                <section class="mb-16">
+                    <div class="bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-2xl shadow-xl p-12">
+                        <div class="text-center mb-8">
+                            <i class="fas fa-star text-6xl mb-4"></i>
+                            <h2 class="text-4xl font-bold mb-4">Why Choose Senior Circle?</h2>
+                            <p class="text-xl max-w-3xl mx-auto leading-relaxed">
+                                Because every season of life should be your best season yet. Senior Circle isn't just another app – it's your personal guide to living well, staying independent, and connecting with people who care.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+                                <i class="fas fa-check-circle text-5xl mb-4"></i>
+                                <h3 class="text-2xl font-bold mb-2">Easy to Use</h3>
+                                <p class="text-lg">Large text, simple navigation, designed for seniors</p>
+                            </div>
+                            
+                            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+                                <i class="fas fa-shield-alt text-5xl mb-4"></i>
+                                <h3 class="text-2xl font-bold mb-2">Safe & Secure</h3>
+                                <p class="text-lg">Your privacy and safety are our top priorities</p>
+                            </div>
+                            
+                            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
+                                <i class="fas fa-hands-helping text-5xl mb-4"></i>
+                                <h3 class="text-2xl font-bold mb-2">Always Supported</h3>
+                                <p class="text-lg">Help available whenever you need it</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="text-3xl font-bold mb-6">✨ Your next adventure starts here.</p>
+                            <button onclick="scrollToSeniorSection('health-wellness')" class="bg-white text-orange-600 px-12 py-4 rounded-lg hover:bg-gray-100 transition-all font-bold text-xl">
+                                Get Started Now <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Emergency Contact Section -->
+                <section class="mb-16">
+                    <div class="bg-red-50 border-2 border-red-300 rounded-xl p-8">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-phone-volume text-red-600 text-5xl mt-1"></i>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-red-900 mb-3">Need Immediate Help?</h3>
+                                <p class="text-red-800 text-lg mb-4">If you have an emergency, call 911 immediately. For non-emergency assistance and community resources, dial 211.</p>
+                                <div class="flex gap-4">
+                                    <a href="tel:911" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition-all font-bold text-xl">
+                                        <i class="fas fa-phone mr-2"></i>Call 911
+                                    </a>
+                                    <a href="tel:211" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition-all font-bold text-xl">
+                                        <i class="fas fa-info-circle mr-2"></i>Call 211
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    `;
+    
+    // Initialize event listeners
+    setTimeout(addSeniorCircleEventListeners, 100);
 }
 
 function loadLimitleeLiving() {
@@ -12678,4 +13181,337 @@ function toggleModalLanguage(modal, lang) {
     modal.querySelectorAll('[data-lang-es]').forEach(el => {
         el.style.display = lang === 'es' ? 'block' : 'none';
     });
+}
+
+// ============================================
+// SENIOR CIRCLE FUNCTIONS
+// ============================================
+
+// Initialize Senior Circle event listeners
+function addSeniorCircleEventListeners() {
+    // Event listeners are already attached via onclick in HTML
+    console.log('Senior Circle page loaded successfully');
+}
+
+// Smooth scroll to Senior Circle sections
+function scrollToSeniorSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Update active tab styling
+        const buttons = document.querySelectorAll('[onclick^="scrollToSeniorSection"]');
+        buttons.forEach(btn => {
+            if (btn.getAttribute('onclick').includes(sectionId)) {
+                btn.className = 'px-6 py-3 rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition-all font-medium text-lg';
+            } else {
+                btn.className = 'px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-orange-50 transition-all font-medium text-lg border-2 border-orange-200';
+            }
+        });
+    }
+}
+
+// Play senior video tutorials
+function playSeniorVideo(videoType) {
+    const videos = {
+        'morning-yoga': {
+            title: '5-Minute Morning Yoga for Seniors',
+            description: 'Gentle stretches and movements to start your day right. Perfect for all fitness levels.',
+            duration: '5:23'
+        },
+        'transport-tutorial': {
+            title: 'How to Schedule Transportation',
+            description: 'Step-by-step guide to booking rides safely using rideshare apps.',
+            duration: '8:15'
+        },
+        'community-highlights': {
+            title: 'Community Activities Highlight Reel',
+            description: 'See our Senior Circle community in action - cooking classes, art workshops, and social gatherings!',
+            duration: '6:42'
+        },
+        'video-calls-tutorial': {
+            title: 'Making Video Calls to Stay in Touch',
+            description: 'Simple guide to video calling loved ones using Zoom, FaceTime, and WhatsApp.',
+            duration: '7:30'
+        }
+    };
+    
+    const video = videos[videoType];
+    if (!video) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+    
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full" onclick="event.stopPropagation()">
+            <div class="bg-gradient-to-r from-orange-600 to-amber-600 text-white p-6 rounded-t-2xl">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">${video.title}</h2>
+                        <p class="text-white/90 text-lg">${video.description}</p>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <!-- Video Player Placeholder -->
+                <div class="bg-gradient-to-br from-orange-100 to-amber-100 rounded-xl aspect-video flex items-center justify-center mb-6 border-4 border-orange-300">
+                    <div class="text-center">
+                        <i class="fas fa-play-circle text-8xl text-orange-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Video Tutorial</h3>
+                        <p class="text-gray-700 text-lg mb-4">Duration: ${video.duration}</p>
+                        <p class="text-gray-600 max-w-md mx-auto">
+                            This is a demo video player. In the full version, you would see the actual instructional video here.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <button class="flex-1 bg-orange-600 hover:bg-orange-700 text-white py-3 px-6 rounded-lg transition-all font-medium text-lg">
+                        <i class="fas fa-play mr-2"></i>Play Video
+                    </button>
+                    <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-6 rounded-lg transition-all font-medium text-lg">
+                        <i class="fas fa-bookmark mr-2"></i>Save for Later
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+// Open transportation service details
+function openTransportService(serviceType) {
+    const services = {
+        'rideshare': {
+            title: 'Rideshare Services',
+            icon: 'fa-car-side',
+            description: 'Safe and reliable rideshare options for seniors',
+            providers: [
+                { name: 'Uber', phone: 'App or Website', details: 'Senior-friendly rides with assistance' },
+                { name: 'Lyft', phone: 'App or Website', details: 'Comfortable rides with helpful drivers' },
+                { name: 'GoGoGrandparent', phone: '(855) 464-6872', details: 'Rideshare without a smartphone - call to book!' }
+            ]
+        },
+        'shuttle': {
+            title: 'Community Shuttles',
+            icon: 'fa-bus',
+            description: 'Free and low-cost shuttle services in Monroe County',
+            providers: [
+                { name: 'RTS Access', phone: '(585) 288-1700', details: 'Door-to-door service for eligible seniors' },
+                { name: 'Lifespan Senior Center Shuttle', phone: '(585) 244-8400', details: 'Transportation to senior centers and activities' },
+                { name: 'Church & Community Shuttles', phone: 'Various', details: 'Check with your local senior center' }
+            ]
+        },
+        'medical': {
+            title: 'Medical Transportation',
+            icon: 'fa-ambulance',
+            description: 'Non-emergency medical appointment transportation',
+            providers: [
+                { name: 'Medicaid Transportation', phone: '(844) 666-6270', details: 'Free rides to medical appointments for Medicaid members' },
+                { name: 'American Red Cross', phone: '(585) 241-4400', details: 'Transportation assistance for medical needs' },
+                { name: 'Private Medical Transport', phone: '(585) 546-6740', details: 'Wheelchair-accessible medical transport' }
+            ]
+        }
+    };
+    
+    const service = services[serviceType];
+    if (!service) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 overflow-y-auto';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+    
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full" onclick="event.stopPropagation()">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-t-2xl">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas ${service.icon} text-5xl mr-4"></i>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">${service.title}</h2>
+                            <p class="text-white/90 text-lg">${service.description}</p>
+                        </div>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Available Services:</h3>
+                <div class="space-y-4">
+                    ${service.providers.map(provider => `
+                        <div class="bg-blue-50 rounded-xl p-6 border-2 border-blue-200">
+                            <h4 class="text-xl font-bold text-gray-900 mb-3">${provider.name}</h4>
+                            <div class="space-y-2 text-gray-700 mb-4">
+                                <div class="flex items-center text-lg">
+                                    <i class="fas fa-phone text-blue-600 mr-3 w-5"></i>
+                                    <span class="font-medium">${provider.phone}</span>
+                                </div>
+                                <div class="flex items-start text-lg">
+                                    <i class="fas fa-info-circle text-blue-600 mr-3 mt-1 w-5"></i>
+                                    <span>${provider.details}</span>
+                                </div>
+                            </div>
+                            ${provider.phone !== 'App or Website' && provider.phone !== 'Various' ? `
+                                <a href="tel:${provider.phone.replace(/[^0-9]/g, '')}" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg transition-all font-medium">
+                                    <i class="fas fa-phone mr-2"></i>Call Now
+                                </a>
+                            ` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+// View senior events
+function viewSeniorEvents() {
+    showNotification('Loading upcoming community events...', 'info');
+}
+
+// View volunteer opportunities
+function viewVolunteerOps() {
+    showNotification('Loading volunteer opportunities...', 'info');
+}
+
+// View learning programs
+function viewLearningPrograms() {
+    showNotification('Loading lifelong learning programs...', 'info');
+}
+
+// Join friendship circle
+function joinFriendshipCircle() {
+    showNotification('Connecting you to friendship circles...', 'info');
+}
+
+// Open resource category
+function openResourceCategory(category) {
+    const categories = {
+        'health': 'Health Resources - Medical services, prescriptions, and wellness programs',
+        'housing': 'Housing Resources - Senior living, affordable housing, and home modifications',
+        'tech': 'Technology Help - Smartphone guides, internet basics, and video calls',
+        'finance': 'Financial Resources - Budgeting, benefits, and financial planning'
+    };
+    
+    showNotification(categories[category] || 'Loading resources...', 'info');
+}
+
+// Open tech guide
+function openTechGuide(guideType) {
+    const guides = {
+        'smartphone': {
+            title: 'Using Your Smartphone',
+            icon: 'fa-mobile-alt',
+            steps: [
+                'Turn on your phone by pressing and holding the power button',
+                'Unlock with your passcode, fingerprint, or face ID',
+                'Tap on app icons to open them',
+                'Swipe up from bottom to see all your apps',
+                'Double-tap home button to switch between apps',
+                'Adjust text size in Settings > Display > Text Size'
+            ]
+        },
+        'email': {
+            title: 'Email Basics',
+            icon: 'fa-envelope',
+            steps: [
+                'Open your email app (Gmail, Outlook, or Mail)',
+                'Tap the compose button (usually a pencil or plus icon)',
+                'Enter recipient\'s email address',
+                'Type your subject and message',
+                'Tap Send when ready',
+                'Check your inbox regularly for new messages'
+            ]
+        },
+        'video-calls': {
+            title: 'Making Video Calls',
+            icon: 'fa-video',
+            steps: [
+                'Download Zoom, FaceTime, or WhatsApp',
+                'Open the app and sign in',
+                'Find your contact in the list',
+                'Tap the video call button',
+                'Allow camera and microphone access',
+                'Enjoy your conversation - tap red button to end'
+            ]
+        }
+    };
+    
+    const guide = guides[guideType];
+    if (!guide) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4 overflow-y-auto';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+    
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full" onclick="event.stopPropagation()">
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 rounded-t-2xl">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <i class="fas ${guide.icon} text-4xl mr-4"></i>
+                        <h2 class="text-3xl font-bold">${guide.title}</h2>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Step-by-Step Guide:</h3>
+                <div class="space-y-4">
+                    ${guide.steps.map((step, index) => `
+                        <div class="flex items-start bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                            <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg mr-4 flex-shrink-0">
+                                ${index + 1}
+                            </div>
+                            <p class="text-gray-700 text-lg pt-2">${step}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="mt-8 bg-purple-100 rounded-xl p-6 border-2 border-purple-300">
+                    <p class="text-gray-800 text-lg">
+                        <i class="fas fa-lightbulb text-purple-600 mr-2"></i>
+                        <strong>Need more help?</strong> Visit your local senior center for one-on-one tech assistance, or call 211 for technology training resources.
+                    </p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+// Open legal resources
+function openLegalResources() {
+    showNotification('Loading legal resources and assistance programs...', 'info');
+}
+
+// Open housing options
+function openHousingOptions() {
+    showNotification('Loading senior housing and independent living options...', 'info');
+}
+
+// Open financial planning
+function openFinancialPlanning() {
+    showNotification('Loading financial planning and retirement resources...', 'info');
 }
