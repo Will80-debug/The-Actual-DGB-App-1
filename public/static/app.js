@@ -3251,7 +3251,566 @@ function loadMVPHealthcare() {
 }
 
 function loadHyde() {
-    loadGenericSection('hyde', 'Hyde', 'fas fa-brain', 'Culturally relevant mental health resources');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-blue-50 via-teal-50 to-green-50">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-blue-600 via-teal-600 to-green-600 text-white">
+                <!-- Hero Background Image -->
+                <div class="absolute inset-0 opacity-25">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a65ce159-5471-40d2-96c6-cc2e40be9970.png" 
+                         alt="Supportive mental health therapy setting" 
+                         class="w-full h-full object-cover">
+                </div>
+                <!-- Overlay Gradient -->
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 via-teal-600/85 to-green-600/80"></div>
+                
+                <div class="relative z-10 px-4 py-20">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <!-- Icon -->
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border-4 border-white/30">
+                            <i class="fas fa-brain text-6xl"></i>
+                        </div>
+                        
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4">Hyde</h1>
+                        <div class="w-32 h-1 bg-white mx-auto mb-6 rounded-full"></div>
+                        
+                        <p class="text-2xl md:text-3xl font-light mb-6 max-w-4xl mx-auto">
+                            AI-Centered Mental Health Support with Privacy by Design
+                        </p>
+                        
+                        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                            Combining multimodal AI (text + voice), personalized care plans, AI-moderated peer groups, and proactive crisis prevention protocols. Hyde augments wellbeing and facilitates rapid handoff to human professionals when needed.
+                        </p>
+                        
+                        <div class="bg-yellow-500/90 backdrop-blur-md rounded-xl p-4 max-w-4xl mx-auto border-2 border-yellow-300 mb-8">
+                            <p class="text-yellow-900 font-medium text-lg">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                <strong>Important:</strong> Hyde is not a medical device nor a replacement for licensed care. If you're in crisis, call 988 (Suicide & Crisis Lifeline) or 911 immediately.
+                            </p>
+                        </div>
+                        
+                        <div class="flex flex-wrap gap-4 justify-center">
+                            <button onclick="scrollToHydeSection('features')" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all font-bold text-xl shadow-lg">
+                                <i class="fas fa-rocket mr-2"></i>Explore Features
+                            </button>
+                            <button onclick="scrollToHydeSection('voice')" class="bg-blue-800 hover:bg-blue-900 text-white px-8 py-4 rounded-lg transition-all font-bold text-xl shadow-lg">
+                                <i class="fas fa-microphone mr-2"></i>Voice AI
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-200">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex flex-wrap gap-2 py-4 justify-center">
+                        <button onclick="scrollToHydeSection('features')" class="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all font-medium">
+                            <i class="fas fa-star mr-2"></i>Features
+                        </button>
+                        <button onclick="scrollToHydeSection('voice')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-blue-50 transition-all font-medium border-2 border-blue-200">
+                            <i class="fas fa-microphone mr-2"></i>Voice AI
+                        </button>
+                        <button onclick="scrollToHydeSection('privacy')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-blue-50 transition-all font-medium border-2 border-blue-200">
+                            <i class="fas fa-shield-alt mr-2"></i>Privacy
+                        </button>
+                        <button onclick="scrollToHydeSection('support')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-blue-50 transition-all font-medium border-2 border-blue-200">
+                            <i class="fas fa-users mr-2"></i>Peer Support
+                        </button>
+                        <button onclick="scrollToHydeSection('crisis')" class="px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-blue-50 transition-all font-medium border-2 border-blue-200">
+                            <i class="fas fa-phone-volume mr-2"></i>Crisis Help
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="max-w-6xl mx-auto px-4 py-12">
+                
+                <!-- Core Features Section -->
+                <section id="features" class="mb-16">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                            <i class="fas fa-star text-blue-600 mr-3"></i>Core Features
+                        </h2>
+                        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                            Comprehensive mental health support powered by AI, designed with your privacy and wellbeing in mind
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                        <!-- Daily Check-ins -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-blue-200 hover:border-blue-400 transition-all cursor-pointer" onclick="openHydeFeature('checkins')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-calendar-check text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Daily Check-ins</h3>
+                            <p class="text-gray-700 text-center mb-4">Text or voice mood tracking with AI analysis and insights</p>
+                            <div class="flex items-center justify-center text-blue-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Emotion-Aware Journaling -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-teal-200 hover:border-teal-400 transition-all cursor-pointer" onclick="openHydeFeature('journaling')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-book text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Smart Journaling</h3>
+                            <p class="text-gray-700 text-center mb-4">Sentiment analysis and personalized insights from your entries</p>
+                            <div class="flex items-center justify-center text-teal-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Risk Assessment -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-red-200 hover:border-red-400 transition-all cursor-pointer" onclick="openHydeFeature('risk')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-heartbeat text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Crisis Prevention</h3>
+                            <p class="text-gray-700 text-center mb-4">Early warning system for mental health risk detection</p>
+                            <div class="flex items-center justify-center text-red-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Personalized Recommendations -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-green-200 hover:border-green-400 transition-all cursor-pointer" onclick="openHydeFeature('recommendations')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-brain text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">AI Recommendations</h3>
+                            <p class="text-gray-700 text-center mb-4">Personalized micro-interventions (CBT, DBT, mindfulness)</p>
+                            <div class="flex items-center justify-center text-green-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Privacy Dashboard -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-purple-200 hover:border-purple-400 transition-all cursor-pointer" onclick="openHydeFeature('privacy-controls')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-user-shield text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Privacy Controls</h3>
+                            <p class="text-gray-700 text-center mb-4">Complete data controls and easy export functionality</p>
+                            <div class="flex items-center justify-center text-purple-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+
+                        <!-- Cultural Intelligence -->
+                        <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-orange-200 hover:border-orange-400 transition-all cursor-pointer" onclick="openHydeFeature('cultural')">
+                            <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <i class="fas fa-globe text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Cultural Awareness</h3>
+                            <p class="text-gray-700 text-center mb-4">Context-aware content for diverse cultural backgrounds</p>
+                            <div class="flex items-center justify-center text-orange-600 font-medium">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Journaling Feature Image -->
+                    <div class="mb-12 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/b6f42ff1-60cf-41c6-a236-f8cb20c06d69.png" 
+                             alt="Person journaling mental health feelings" 
+                             class="w-full h-96 object-cover">
+                    </div>
+                </section>
+
+                <!-- Voice Interaction Section -->
+                <section id="voice" class="mb-16">
+                    <div class="bg-gradient-to-r from-blue-600 to-teal-600 rounded-2xl shadow-2xl overflow-hidden">
+                        <div class="p-8 md:p-12 text-white">
+                            <div class="flex items-center mb-6">
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center mr-6">
+                                    <i class="fas fa-microphone text-4xl"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-4xl font-bold mb-2">Voice AI Interaction</h2>
+                                    <p class="text-xl text-white/90">Natural conversations with empathetic AI support</p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 mb-6">
+                                        <h3 class="text-2xl font-bold mb-4">
+                                            <i class="fas fa-waveform-path mr-2"></i>Voice Features
+                                        </h3>
+                                        <ul class="space-y-3 text-lg">
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>Real-time speech-to-text with visual feedback</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>AI conversations with crisis detection</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>Natural speech output (calm, soothing, warm)</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>Continuous mode for back-and-forth chat</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>Captions, speed control, accessibility</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <i class="fas fa-check-circle text-green-300 mr-3 mt-1"></i>
+                                                <span>Granular privacy controls for voice data</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="rounded-xl overflow-hidden shadow-xl">
+                                    <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/a5822bab-91f5-4ef9-a741-218da99388cc.png" 
+                                         alt="Person using voice AI mental health app" 
+                                         class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6">
+                                <h3 class="text-2xl font-bold mb-4">
+                                    <i class="fas fa-play-circle mr-2"></i>Try Voice AI Demo
+                                </h3>
+                                <p class="mb-6 text-lg">Experience natural AI conversation with empathetic responses</p>
+                                <button onclick="startVoiceDemo()" class="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all font-bold text-xl shadow-lg">
+                                    <i class="fas fa-microphone mr-2"></i>Start Voice Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Privacy & Security Section -->
+                <section id="privacy" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-200">
+                        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-shield-alt text-5xl mr-4"></i>
+                                <div>
+                                    <h2 class="text-4xl font-bold">Privacy & Security</h2>
+                                    <p class="text-xl text-white/90">Your data, your control - always</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/bb346650-462a-4bd1-b92d-fddb021d4385.png" 
+                                     alt="Data privacy and security protection" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-blue-900 mb-4">
+                                        <i class="fas fa-lock text-blue-600 mr-2"></i>Privacy Features
+                                    </h3>
+                                    <ul class="space-y-3 text-gray-700 text-lg">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Data Minimization:</strong> Only necessary information collected</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Encryption:</strong> Journal entries encrypted at rest</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Consent Management:</strong> Granular control over data usage</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Right to Deletion:</strong> GDPR Article 17 compliant</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Data Export:</strong> Download all your data anytime</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Audit Trail:</strong> Complete transparency logging</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-2xl font-bold text-indigo-900 mb-4">
+                                        <i class="fas fa-shield-alt text-indigo-600 mr-2"></i>Security Measures
+                                    </h3>
+                                    <ul class="space-y-3 text-gray-700 text-lg">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Rate Limiting:</strong> Prevent abuse and brute force</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Input Sanitization:</strong> XSS and injection prevention</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Secure Headers:</strong> CSP, HSTS protection</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Password Security:</strong> Bcrypt hashing with salt</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Session Management:</strong> Secure JWT tokens</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-green-600 mr-3 mt-1"></i>
+                                            <span><strong>Two-Factor Auth:</strong> Optional 2FA for accounts</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-300">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                    <i class="fas fa-certificate text-blue-600 mr-2"></i>Compliance Standards
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                        <div class="text-3xl font-bold text-blue-600 mb-2">HIPAA</div>
+                                        <p class="text-gray-700">Healthcare privacy ready</p>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                        <div class="text-3xl font-bold text-blue-600 mb-2">GDPR</div>
+                                        <p class="text-gray-700">EU data rights compliant</p>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                        <div class="text-3xl font-bold text-blue-600 mb-2">CCPA</div>
+                                        <p class="text-gray-700">California privacy law</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Peer Support Section -->
+                <section id="support" class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-green-200">
+                        <div class="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-8">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-users text-5xl mr-4"></i>
+                                <div>
+                                    <h2 class="text-4xl font-bold">AI-Moderated Peer Support</h2>
+                                    <p class="text-xl text-white/90">Safe community spaces for connection and healing</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <div class="mb-8 rounded-xl overflow-hidden shadow-lg">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/e37236c3-ba78-4281-a035-d620cfce55d2.png" 
+                                     alt="Diverse peer support group" 
+                                     class="w-full h-64 object-cover">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-comments text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Safe Spaces</h3>
+                                    <p class="text-gray-700 text-lg">AI-moderated groups ensure respectful, supportive conversations</p>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-user-friends text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Find Your Community</h3>
+                                    <p class="text-gray-700 text-lg">Connect with others facing similar mental health challenges</p>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-shield-alt text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Moderation</h3>
+                                    <p class="text-gray-700 text-lg">AI monitors for harmful content and crisis situations</p>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-xl p-6 border-l-4 border-green-600">
+                                    <i class="fas fa-hand-holding-heart text-3xl text-green-600 mb-3"></i>
+                                    <h3 class="text-xl font-bold text-gray-900 mb-2">Peer Support</h3>
+                                    <p class="text-gray-700 text-lg">Share experiences and receive empathy from real people</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-r from-green-100 to-emerald-100 rounded-xl p-6 border-2 border-green-300">
+                                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                    <i class="fas fa-users-cog mr-2 text-green-600"></i>Planned Peer Group Features
+                                </h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700 text-lg">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                                        <span>Topic-specific support groups (anxiety, depression, trauma)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                                        <span>Cultural affinity spaces (BIPOC, LGBTQ+, veterans)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                                        <span>Scheduled group sessions with trained facilitators</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-600 mr-2 mt-1"></i>
+                                        <span>Anonymous participation with privacy protection</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Crisis Intervention Section -->
+                <section id="crisis" class="mb-16">
+                    <div class="bg-red-50 border-2 border-red-300 rounded-2xl shadow-xl p-8">
+                        <div class="text-center mb-8">
+                            <i class="fas fa-phone-volume text-6xl text-red-600 mb-4"></i>
+                            <h2 class="text-4xl font-bold text-red-900 mb-4">24/7 Crisis Support</h2>
+                            <p class="text-xl text-red-800 max-w-3xl mx-auto">
+                                If you're experiencing a mental health crisis, immediate help is available
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-white rounded-xl p-6 shadow-lg border-2 border-red-200">
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone text-4xl text-red-600 mr-4 mt-1"></i>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-red-900 mb-2">988 Suicide & Crisis Lifeline</h3>
+                                        <p class="text-gray-700 text-lg mb-4">Free, confidential support 24/7 for people in distress</p>
+                                        <a href="tel:988" class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition-all font-bold text-xl">
+                                            <i class="fas fa-phone mr-2"></i>Call 988
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-xl p-6 shadow-lg border-2 border-red-200">
+                                <div class="flex items-start">
+                                    <i class="fas fa-comment text-4xl text-red-600 mr-4 mt-1"></i>
+                                    <div class="flex-1">
+                                        <h3 class="text-2xl font-bold text-red-900 mb-2">Crisis Text Line</h3>
+                                        <p class="text-gray-700 text-lg mb-4">Text HOME to 741741 for 24/7 crisis support via text</p>
+                                        <a href="sms:741741&body=HOME" class="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition-all font-bold text-xl">
+                                            <i class="fas fa-sms mr-2"></i>Text HOME
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                <i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Other Emergency Resources
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <i class="fas fa-ambulance text-3xl text-red-600 mb-2"></i>
+                                    <h4 class="font-bold text-lg mb-2">Emergency</h4>
+                                    <a href="tel:911" class="text-red-600 hover:text-red-700 font-medium text-lg">Call 911</a>
+                                </div>
+                                <div class="text-center">
+                                    <i class="fas fa-hospital text-3xl text-red-600 mb-2"></i>
+                                    <h4 class="font-bold text-lg mb-2">SAMHSA Helpline</h4>
+                                    <a href="tel:1-800-662-4357" class="text-red-600 hover:text-red-700 font-medium text-lg">1-800-662-HELP</a>
+                                </div>
+                                <div class="text-center">
+                                    <i class="fas fa-user-md text-3xl text-red-600 mb-2"></i>
+                                    <h4 class="font-bold text-lg mb-2">Veterans Crisis</h4>
+                                    <a href="tel:988" class="text-red-600 hover:text-red-700 font-medium text-lg">Press 1 after 988</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Database Schema Section -->
+                <section class="mb-16">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-blue-200">
+                        <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8">
+                            <h2 class="text-4xl font-bold mb-2">
+                                <i class="fas fa-database mr-3"></i>Core Data Models
+                            </h2>
+                            <p class="text-xl text-white/90">Privacy-first database architecture</p>
+                        </div>
+                        
+                        <div class="p-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div class="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-600">
+                                    <i class="fas fa-user text-2xl text-indigo-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Users & Profiles</h3>
+                                    <p class="text-sm text-gray-700">Cultural context & preferences</p>
+                                </div>
+                                
+                                <div class="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-600">
+                                    <i class="fas fa-check-square text-2xl text-purple-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Consent Management</h3>
+                                    <p class="text-sm text-gray-700">Granular privacy controls</p>
+                                </div>
+                                
+                                <div class="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-600">
+                                    <i class="fas fa-book-open text-2xl text-blue-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Journal Entries</h3>
+                                    <p class="text-sm text-gray-700">Encrypted with sentiment AI</p>
+                                </div>
+                                
+                                <div class="bg-teal-50 rounded-lg p-4 border-l-4 border-teal-600">
+                                    <i class="fas fa-calendar-check text-2xl text-teal-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Check-ins</h3>
+                                    <p class="text-sm text-gray-700">Daily mood tracking</p>
+                                </div>
+                                
+                                <div class="bg-red-50 rounded-lg p-4 border-l-4 border-red-600">
+                                    <i class="fas fa-exclamation-triangle text-2xl text-red-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Risk Signals</h3>
+                                    <p class="text-sm text-gray-700">Crisis assessment</p>
+                                </div>
+                                
+                                <div class="bg-green-50 rounded-lg p-4 border-l-4 border-green-600">
+                                    <i class="fas fa-running text-2xl text-green-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Activities</h3>
+                                    <p class="text-sm text-gray-700">CBT, DBT, mindfulness</p>
+                                </div>
+                                
+                                <div class="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-600">
+                                    <i class="fas fa-lightbulb text-2xl text-orange-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Recommendations</h3>
+                                    <p class="text-sm text-gray-700">Personalized suggestions</p>
+                                </div>
+                                
+                                <div class="bg-gray-50 rounded-lg p-4 border-l-4 border-gray-600">
+                                    <i class="fas fa-clipboard-list text-2xl text-gray-600 mb-2"></i>
+                                    <h3 class="font-bold text-gray-900">Audit Logs</h3>
+                                    <p class="text-sm text-gray-700">Complete transparency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    `;
+    
+    // Initialize event listeners
+    setTimeout(addHydeEventListeners, 100);
 }
 
 function loadNewsCenter() {
@@ -13280,4 +13839,305 @@ function openHousingOptions() {
 // Open financial planning
 function openFinancialPlanning() {
     showNotification('Loading financial planning and retirement resources...', 'info');
+}
+
+// ============================================
+// HYDE MENTAL HEALTH FUNCTIONS
+// ============================================
+
+// Initialize Hyde event listeners
+function addHydeEventListeners() {
+    console.log('Hyde mental health page loaded successfully');
+}
+
+// Smooth scroll to Hyde sections
+function scrollToHydeSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Update active tab styling
+        const buttons = document.querySelectorAll('[onclick^="scrollToHydeSection"]');
+        buttons.forEach(btn => {
+            if (btn.getAttribute('onclick').includes(sectionId)) {
+                btn.className = 'px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all font-medium';
+            } else {
+                btn.className = 'px-6 py-3 rounded-lg bg-white text-gray-700 hover:bg-blue-50 transition-all font-medium border-2 border-blue-200';
+            }
+        });
+    }
+}
+
+// Open Hyde feature details
+function openHydeFeature(featureId) {
+    const features = {
+        'checkins': {
+            title: 'Daily Check-ins',
+            icon: 'fa-calendar-check',
+            color: 'blue',
+            description: 'Track your mental health with daily mood check-ins using text or voice',
+            details: [
+                'Quick 2-minute daily assessments',
+                'Voice or text input options',
+                'AI analyzes patterns and trends',
+                'Personalized insights and recommendations',
+                'Privacy-protected data with encryption',
+                'Export your check-in history anytime'
+            ],
+            howItWorks: [
+                'Open Hyde and click "Daily Check-in"',
+                'Choose voice or text input',
+                'Answer guided questions about your mood',
+                'Receive instant AI analysis and insights',
+                'Track progress over time with visual charts'
+            ]
+        },
+        'journaling': {
+            title: 'Smart Journaling',
+            icon: 'fa-book',
+            color: 'teal',
+            description: 'Write freely with AI-powered sentiment analysis and personalized insights',
+            details: [
+                'Encrypted journal entries for privacy',
+                'Real-time sentiment analysis',
+                'Emotion tracking and patterns',
+                'Personalized reflections and prompts',
+                'Search and organize your entries',
+                'Export your complete journal'
+            ],
+            howItWorks: [
+                'Click "New Journal Entry"',
+                'Write freely about your thoughts and feelings',
+                'AI analyzes sentiment and emotional patterns',
+                'Receive personalized insights and prompts',
+                'Review your emotional journey over time'
+            ]
+        },
+        'risk': {
+            title: 'Crisis Prevention & Risk Assessment',
+            icon: 'fa-heartbeat',
+            color: 'red',
+            description: 'Early warning system to detect mental health risk and prevent crisis',
+            details: [
+                'AI monitors for crisis indicators',
+                'Early intervention alerts',
+                'Automatic escalation to professionals',
+                'Safety planning and resources',
+                '24/7 crisis hotline connections',
+                'Confidential and compassionate support'
+            ],
+            howItWorks: [
+                'AI continuously analyzes your check-ins and journal entries',
+                'Detects patterns indicating elevated risk',
+                'Provides gentle check-in prompts when needed',
+                'Offers immediate crisis resources if detected',
+                'Can notify emergency contacts with your consent'
+            ]
+        },
+        'recommendations': {
+            title: 'AI-Powered Recommendations',
+            icon: 'fa-brain',
+            color: 'green',
+            description: 'Personalized micro-interventions based on your unique mental health needs',
+            details: [
+                'CBT (Cognitive Behavioral Therapy) techniques',
+                'DBT (Dialectical Behavior Therapy) exercises',
+                'Mindfulness and meditation practices',
+                'Breathing exercises and grounding techniques',
+                'Activity suggestions tailored to your mood',
+                'Evidence-based interventions'
+            ],
+            howItWorks: [
+                'AI analyzes your current emotional state',
+                'Matches you with appropriate interventions',
+                'Suggests micro-activities (5-15 minutes)',
+                'Tracks what works best for you',
+                'Adapts recommendations over time'
+            ]
+        },
+        'privacy-controls': {
+            title: 'Privacy Dashboard & Data Controls',
+            icon: 'fa-user-shield',
+            color: 'purple',
+            description: 'Complete control over your mental health data with granular privacy settings',
+            details: [
+                'View all data collected about you',
+                'Granular consent management',
+                'Export all your data in JSON format',
+                'Delete specific entries or all data',
+                'Control who can access your information',
+                'Transparent audit trail of all actions'
+            ],
+            howItWorks: [
+                'Access Privacy Dashboard from settings',
+                'Review your consent preferences',
+                'Toggle specific data collection options',
+                'Export or delete data with one click',
+                'Review audit logs for transparency'
+            ]
+        },
+        'cultural': {
+            title: 'Cultural Intelligence & Awareness',
+            icon: 'fa-globe',
+            color: 'orange',
+            description: 'Context-aware mental health support that respects your cultural background',
+            details: [
+                'Culturally appropriate content and language',
+                'Recognition of diverse mental health perspectives',
+                'Inclusive of BIPOC, LGBTQ+, religious communities',
+                'Multilingual support (planned)',
+                'Cultural stigma awareness and sensitivity',
+                'Community-specific resources'
+            ],
+            howItWorks: [
+                'Set your cultural preferences during onboarding',
+                'AI adapts language and recommendations',
+                'Content reflects your cultural context',
+                'Connect with culturally similar peer groups',
+                'Access culturally competent resources'
+            ]
+        }
+    };
+    
+    const feature = features[featureId];
+    if (!feature) return;
+    
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+    
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <div class="bg-gradient-to-r from-${feature.color}-600 to-${feature.color}-700 text-white p-8 rounded-t-2xl">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas ${feature.icon} text-3xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">${feature.title}</h2>
+                            <p class="text-white/90 text-lg">${feature.description}</p>
+                        </div>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    <i class="fas fa-star text-${feature.color}-600 mr-2"></i>Key Features
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+                    ${feature.details.map(detail => `
+                        <div class="flex items-start bg-${feature.color}-50 rounded-lg p-3 border-l-4 border-${feature.color}-500">
+                            <i class="fas fa-check text-${feature.color}-600 mr-2 mt-1"></i>
+                            <span class="text-gray-700">${detail}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    <i class="fas fa-cog text-${feature.color}-600 mr-2"></i>How It Works
+                </h3>
+                <div class="space-y-3">
+                    ${feature.howItWorks.map((step, index) => `
+                        <div class="flex items-start bg-gray-50 rounded-lg p-4">
+                            <div class="w-8 h-8 bg-${feature.color}-600 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">
+                                ${index + 1}
+                            </div>
+                            <p class="text-gray-700 pt-1">${step}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="mt-8 bg-${feature.color}-100 rounded-xl p-6 border-2 border-${feature.color}-300">
+                    <p class="text-gray-800 text-center">
+                        <i class="fas fa-shield-alt text-${feature.color}-600 mr-2"></i>
+                        <strong>Privacy First:</strong> All features are built with your privacy and security as the top priority. Your data is encrypted, and you have complete control.
+                    </p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+// Start voice demo
+function startVoiceDemo() {
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4';
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+    
+    modal.innerHTML = `
+        <div class="bg-white rounded-2xl shadow-2xl max-w-3xl w-full" onclick="event.stopPropagation()">
+            <div class="bg-gradient-to-r from-blue-600 to-teal-600 text-white p-6 rounded-t-2xl">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Voice AI Demo</h2>
+                        <p class="text-white/90">Experience empathetic AI conversation</p>
+                    </div>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-all">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-8">
+                <div class="bg-gradient-to-br from-blue-50 to-teal-50 rounded-xl aspect-video flex flex-col items-center justify-center mb-6 border-4 border-blue-300">
+                    <i class="fas fa-microphone text-8xl text-blue-600 mb-4 animate-pulse"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Voice AI Interface</h3>
+                    <p class="text-gray-700 mb-4">Real-time speech-to-text and AI responses</p>
+                    <div class="flex gap-4">
+                        <div class="bg-white rounded-lg px-4 py-2">
+                            <i class="fas fa-waveform text-blue-600 mr-2"></i>
+                            <span class="text-gray-700">Live transcription</span>
+                        </div>
+                        <div class="bg-white rounded-lg px-4 py-2">
+                            <i class="fas fa-brain text-teal-600 mr-2"></i>
+                            <span class="text-gray-700">AI analysis</span>
+                        </div>
+                        <div class="bg-white rounded-lg px-4 py-2">
+                            <i class="fas fa-volume-up text-green-600 mr-2"></i>
+                            <span class="text-gray-700">Speech output</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-100 rounded-xl p-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <i class="fas fa-info-circle text-blue-600 mr-2"></i>Demo Features
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Empathetic responses to emotional sharing</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Crisis keyword detection and escalation</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Natural conversation flow with context awareness</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Multiple voice styles (calm, soothing, warm)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Privacy-protected voice processing</li>
+                    </ul>
+                </div>
+                
+                <div class="flex gap-4">
+                    <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-all font-medium">
+                        <i class="fas fa-microphone mr-2"></i>Start Voice Chat
+                    </button>
+                    <button class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 px-6 rounded-lg transition-all font-medium">
+                        <i class="fas fa-cog mr-2"></i>Voice Settings
+                    </button>
+                </div>
+                
+                <p class="text-center text-sm text-gray-600 mt-6">
+                    This is a demo interface. The full version would include real voice processing capabilities.
+                </p>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
 }
