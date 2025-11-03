@@ -6,11 +6,11 @@
 - **Features**: Comprehensive community resource platform with 11 specialized sections featuring AI-powered news, interactive historical timeline, and immersive heritage experiences
 
 ## Live URLs
+- **🚀 PRODUCTION**: https://digital-green-book.pages.dev
+- **🏥 MVP Healthcare Section**: https://digital-green-book.pages.dev (click MVP Healthcare - Complete with Professional Healthcare Imagery)
+- **📱 Alternative Production URL**: https://3f42da14.digital-green-book.pages.dev
 - **Development**: https://3000-iu727s0sfcxurhhhj6ilv-6532622b.e2b.dev
-- **🏥 MVP Healthcare Section**: https://3000-iu727s0sfcxurhhhj6ilv-6532622b.e2b.dev (click MVP Healthcare - Now with Professional Healthcare Imagery)
-- **RocRoots Connect with Historical Images**: https://3000-iu727s0sfcxurhhhj6ilv-6532622b.e2b.dev (click RocRoots Connect)
-- **API Health Check**: https://3000-iu727s0sfcxurhhhj6ilv-6532622b.e2b.dev/api/resources
-- **GitHub**: (Ready for deployment setup)
+- **GitHub**: https://github.com/Will80-debug/The-Actual-DGB-App-1
 
 ## 🆕 Major Enhancements Completed
 
@@ -386,14 +386,16 @@
 
 ## Deployment
 
-- **Platform**: Cloudflare Pages (configured and ready)
-- **Status**: ✅ All Bug Fixes Complete - VitaHue Fully Functional - Ready for Production
-- **Tech Stack**: Hono + TypeScript + Cloudflare D1 + TailwindCSS + AI Integration
-- **Database**: Local SQLite (development), Cloudflare D1 (production)
+- **Platform**: Cloudflare Pages ✅ DEPLOYED
+- **Production URL**: https://digital-green-book.pages.dev
+- **Status**: ✅ LIVE - MVP Healthcare with Professional Imagery Successfully Deployed
+- **Tech Stack**: Hono + TypeScript + Cloudflare Pages + TailwindCSS + AI Integration
+- **Database**: Local SQLite (development), Static data (production)
 - **Frontend**: Enhanced JavaScript with AI features and interactive media
 - **AI Services**: GenSpark integration for news and visual content
 - **Build System**: Vite with Cloudflare Pages integration
-- **Last Major Update**: January 15, 2025 - Complete Excel Integration: Successfully processed DGB_Partner_Org_Resource_List.xlsx, expanded Resource Hub to 53 organizations, comprehensive Rochester community directory
+- **Project Name**: digital-green-book
+- **Last Deployment**: January 15, 2025 - Complete MVP Healthcare implementation with professional healthcare imagery
 
 ## Development Commands
 

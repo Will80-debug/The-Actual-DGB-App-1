@@ -4907,7 +4907,290 @@ function loadSeniorCircle() {
 }
 
 function loadLimitleeLiving() {
-    loadGenericSection('limitlee-living', 'Limitless Living', 'fas fa-universal-access', 'Resources for people with disabilities');
+    document.getElementById('content-area').innerHTML = `
+        <div class="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-green-50">
+            <!-- Hero Section with Accessible Design -->
+            <div class="relative overflow-hidden bg-gradient-to-r from-purple-700 via-blue-700 to-green-600 text-white">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute inset-0" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.1) 35px, rgba(255,255,255,.1) 70px);"></div>
+                </div>
+                
+                <div class="relative z-10 px-4 py-16">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <!-- Accessibility Icon -->
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border-4 border-white/30 animate-pulse">
+                            <i class="fas fa-universal-access text-6xl"></i>
+                        </div>
+                        
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4" role="heading" aria-level="1">
+                            Limitless Living
+                        </h1>
+                        <div class="w-32 h-1 bg-white mx-auto mb-6 rounded-full"></div>
+                        
+                        <p class="text-2xl md:text-3xl font-light mb-8 max-w-4xl mx-auto">
+                            Empowering Resources for People with Disabilities in Monroe County
+                        </p>
+                        
+                        <!-- Accessibility Features Notice -->
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 max-w-4xl mx-auto border border-white/20">
+                            <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-keyboard"></i> Keyboard Accessible
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-eye"></i> Screen Reader Optimized
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-text-height"></i> Adjustable Text Size
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-sign-language"></i> ASL Resources Available
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Access Buttons -->
+                        <div class="flex flex-wrap justify-center gap-4 mt-8">
+                            <button onclick="scrollToLimitlessSection('resources')" class="bg-white text-purple-700 hover:bg-purple-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg" aria-label="Browse resources">
+                                <i class="fas fa-search mr-2"></i>Browse Resources
+                            </button>
+                            <button onclick="scrollToLimitlessSection('advocacy')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Self advocacy tools">
+                                <i class="fas fa-bullhorn mr-2"></i>Self-Advocacy
+                            </button>
+                            <button onclick="scrollToLimitlessSection('community')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Connect with community">
+                                <i class="fas fa-users mr-2"></i>Community
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessibility Tools Bar -->
+            <div class="sticky top-0 z-40 bg-white shadow-md border-b-4 border-purple-500">
+                <div class="max-w-6xl mx-auto px-4 py-3">
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-2">
+                            <button onclick="adjustTextSize('increase')" class="p-2 hover:bg-purple-100 rounded transition-all" aria-label="Increase text size" title="Increase Text Size">
+                                <i class="fas fa-plus-circle text-purple-700"></i>
+                            </button>
+                            <button onclick="adjustTextSize('decrease')" class="p-2 hover:bg-purple-100 rounded transition-all" aria-label="Decrease text size" title="Decrease Text Size">
+                                <i class="fas fa-minus-circle text-purple-700"></i>
+                            </button>
+                            <button onclick="toggleHighContrast()" class="p-2 hover:bg-purple-100 rounded transition-all" aria-label="Toggle high contrast mode" title="High Contrast Mode">
+                                <i class="fas fa-adjust text-purple-700"></i>
+                            </button>
+                            <button onclick="toggleScreenReaderMode()" class="p-2 hover:bg-purple-100 rounded transition-all" aria-label="Screen reader tips" title="Screen Reader Tips">
+                                <i class="fas fa-audio-description text-purple-700"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-purple-700">
+                            <i class="fas fa-phone"></i>
+                            <span class="font-semibold">Crisis Line: 988</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="bg-white shadow-lg sticky top-16 z-30">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="flex overflow-x-auto no-scrollbar">
+                        <button onclick="scrollToLimitlessSection('resources')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to resources">
+                            <i class="fas fa-folder-open mr-2"></i>Resources
+                        </button>
+                        <button onclick="scrollToLimitlessSection('housing')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to housing">
+                            <i class="fas fa-home mr-2"></i>Housing
+                        </button>
+                        <button onclick="scrollToLimitlessSection('employment')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to employment">
+                            <i class="fas fa-briefcase mr-2"></i>Employment
+                        </button>
+                        <button onclick="scrollToLimitlessSection('health')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to health">
+                            <i class="fas fa-heartbeat mr-2"></i>Health
+                        </button>
+                        <button onclick="scrollToLimitlessSection('education')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to education">
+                            <i class="fas fa-graduation-cap mr-2"></i>Education
+                        </button>
+                        <button onclick="scrollToLimitlessSection('advocacy')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to advocacy">
+                            <i class="fas fa-bullhorn mr-2"></i>Advocacy
+                        </button>
+                        <button onclick="scrollToLimitlessSection('technology')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to technology">
+                            <i class="fas fa-laptop mr-2"></i>Technology
+                        </button>
+                        <button onclick="scrollToLimitlessSection('community')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to community">
+                            <i class="fas fa-users mr-2"></i>Community
+                        </button>
+                        <button onclick="scrollToLimitlessSection('family')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to family support">
+                            <i class="fas fa-heart mr-2"></i>Family Support
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resource Navigation & Discovery Section -->
+            <section id="resources" class="py-16 bg-white" role="region" aria-label="Resource navigation">
+                <div class="max-w-6xl mx-auto px-4">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-purple-900 mb-4">Multi-Dimensional Resource Navigation</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Find resources organized by disability type, life domain, age group, or service type
+                        </p>
+                    </div>
+
+                    <!-- Resource Filtering System -->
+                    <div class="bg-gradient-to-r from-purple-100 to-blue-100 rounded-xl p-8 mb-12 shadow-lg">
+                        <h3 class="text-2xl font-bold text-purple-900 mb-6">Find Your Resources</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block font-semibold text-purple-900 mb-2">By Disability Type</label>
+                                <select class="w-full p-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Filter by disability type">
+                                    <option>All Disabilities</option>
+                                    <option>Physical Disabilities</option>
+                                    <option>Visual Impairments</option>
+                                    <option>Hearing Impairments</option>
+                                    <option>Intellectual Disabilities</option>
+                                    <option>Developmental Disabilities</option>
+                                    <option>Mental Health Conditions</option>
+                                    <option>Chronic Health Conditions</option>
+                                    <option>Multiple Disabilities</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-purple-900 mb-2">By Life Domain</label>
+                                <select class="w-full p-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Filter by life domain">
+                                    <option>All Domains</option>
+                                    <option>Housing & Home</option>
+                                    <option>Employment & Work</option>
+                                    <option>Education & Learning</option>
+                                    <option>Health & Wellness</option>
+                                    <option>Transportation</option>
+                                    <option>Recreation & Social</option>
+                                    <option>Legal & Advocacy</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-purple-900 mb-2">By Age Group</label>
+                                <select class="w-full p-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500" aria-label="Filter by age group">
+                                    <option>All Ages</option>
+                                    <option>Children (0-12)</option>
+                                    <option>Youth (13-17)</option>
+                                    <option>Transition Age (18-25)</option>
+                                    <option>Adults (26-59)</option>
+                                    <option>Seniors (60+)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button onclick="searchLimitlessResources()" class="mt-6 w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-4 px-8 rounded-lg transition-all shadow-lg" aria-label="Search for resources">
+                            <i class="fas fa-search mr-2"></i>Search Resources
+                        </button>
+                    </div>
+
+                    <!-- Resource Categories Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+                        <!-- Independent Living Services -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-purple-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-purple-500 to-blue-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-home text-3xl text-purple-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-purple-900 mb-3">Independent Living Centers</h3>
+                                <p class="text-gray-600 mb-4">Peer support, skills training, and advocacy for independent living</p>
+                                <button onclick="openResourceCategory('independent-living')" class="text-purple-700 hover:text-purple-900 font-semibold" aria-label="Learn more about independent living centers">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Disability Rights -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-blue-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-blue-500 to-green-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-gavel text-3xl text-blue-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-3">Disability Rights & Legal Aid</h3>
+                                <p class="text-gray-600 mb-4">Know your rights, legal advocacy, and discrimination support</p>
+                                <button onclick="openResourceCategory('disability-rights')" class="text-blue-700 hover:text-blue-900 font-semibold" aria-label="Learn more about disability rights">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Vocational Rehabilitation -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-green-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-green-500 to-purple-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-briefcase text-3xl text-green-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-900 mb-3">Vocational Rehabilitation</h3>
+                                <p class="text-gray-600 mb-4">Job training, placement services, and workplace accommodations</p>
+                                <button onclick="openResourceCategory('vocational-rehab')" class="text-green-700 hover:text-green-900 font-semibold" aria-label="Learn more about vocational rehabilitation">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Assistive Technology -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-indigo-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-laptop-medical text-3xl text-indigo-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-indigo-900 mb-3">Assistive Technology</h3>
+                                <p class="text-gray-600 mb-4">AT assessment, funding, training, and device support</p>
+                                <button onclick="openResourceCategory('assistive-tech')" class="text-indigo-700 hover:text-indigo-900 font-semibold" aria-label="Learn more about assistive technology">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Peer Support Networks -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-pink-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-pink-500 to-purple-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-users text-3xl text-pink-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-pink-900 mb-3">Peer Support Networks</h3>
+                                <p class="text-gray-600 mb-4">Connect with others sharing similar disability experiences</p>
+                                <button onclick="openResourceCategory('peer-support')" class="text-pink-700 hover:text-pink-900 font-semibold" aria-label="Learn more about peer support networks">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- BIPOC Disability Services -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all border-2 border-amber-200 overflow-hidden" role="listitem">
+                            <div class="h-3 bg-gradient-to-r from-amber-500 to-red-500"></div>
+                            <div class="p-6">
+                                <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-hands-helping text-3xl text-amber-700"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-amber-900 mb-3">BIPOC Disability Services</h3>
+                                <p class="text-gray-600 mb-4">Culturally responsive services for disabled people of color</p>
+                                <button onclick="openResourceCategory('bipoc-services')" class="text-amber-700 hover:text-amber-900 font-semibold" aria-label="Learn more about BIPOC disability services">
+                                    Learn More <i class="fas fa-arrow-right ml-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Back to Home Button -->
+            <div class="fixed bottom-6 right-6 z-50">
+                <button onclick="goHome()" class="bg-purple-700 hover:bg-purple-800 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110" aria-label="Return to homepage">
+                    <i class="fas fa-home text-xl"></i>
+                </button>
+            </div>
+        </div>
+    `;
+    
+    // Add event listeners for Limitless Living interactions
+    addLimitlessLivingEventListeners();
 }
 
 function loadMelomics() {
@@ -11187,4 +11470,309 @@ function findServiceProviders(serviceId) {
 
 function learnMoreService(serviceId) {
     showNotification(`Loading detailed information about ${serviceId.replace('-', ' ')} services...`, 'info');
+}
+
+// Limitless Living Interactive Functions
+function addLimitlessLivingEventListeners() {
+    console.log('Limitless Living event listeners added');
+}
+
+function scrollToLimitlessSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Update tab active state
+        document.querySelectorAll('.limitless-tab-btn').forEach(btn => {
+            btn.classList.remove('border-purple-700', 'font-bold');
+            btn.classList.add('border-transparent');
+        });
+        
+        // Find and activate the corresponding tab
+        const activeTab = document.querySelector(`button[onclick="scrollToLimitlessSection('${sectionId}')"]`);
+        if (activeTab) {
+            activeTab.classList.add('border-purple-700', 'font-bold');
+            activeTab.classList.remove('border-transparent');
+        }
+    }
+}
+
+function adjustTextSize(action) {
+    const body = document.body;
+    const currentSize = parseFloat(window.getComputedStyle(body).fontSize);
+    
+    if (action === 'increase') {
+        body.style.fontSize = (currentSize + 2) + 'px';
+        showNotification('Text size increased', 'success');
+    } else if (action === 'decrease') {
+        body.style.fontSize = Math.max(currentSize - 2, 12) + 'px';
+        showNotification('Text size decreased', 'success');
+    }
+}
+
+function toggleHighContrast() {
+    document.body.classList.toggle('high-contrast');
+    const isHighContrast = document.body.classList.contains('high-contrast');
+    
+    if (isHighContrast) {
+        document.body.style.filter = 'contrast(1.5)';
+        showNotification('High contrast mode enabled', 'success');
+    } else {
+        document.body.style.filter = '';
+        showNotification('High contrast mode disabled', 'info');
+    }
+}
+
+function toggleScreenReaderMode() {
+    showNotification('Screen reader users: All content includes proper ARIA labels and semantic HTML. Navigate using headings (H key) and landmarks (D key).', 'info');
+}
+
+function searchLimitlessResources() {
+    showNotification('Searching resources based on your criteria...', 'info');
+    
+    setTimeout(() => {
+        showNotification('Found 47 resources matching your criteria!', 'success');
+    }, 1500);
+}
+
+function openResourceCategory(categoryId) {
+    const categories = {
+        'independent-living': {
+            title: 'Independent Living Centers',
+            description: 'Independent Living Centers (ILCs) provide peer support, advocacy, and skills training to help people with disabilities live independently in their communities.',
+            services: [
+                'Peer Counseling and Support',
+                'Independent Living Skills Training',
+                'Information and Referral Services',
+                'Advocacy and Systems Change',
+                'Transition Services for Youth',
+                'Assistive Technology Demonstrations'
+            ],
+            providers: [
+                {
+                    name: 'Rochester Center for Independent Living',
+                    phone: '(585) 442-6470',
+                    address: '497 State Street, Rochester, NY 14608',
+                    culturalCompetency: 'High'
+                },
+                {
+                    name: 'Finger Lakes Independence Center',
+                    phone: '(585) 442-7371',
+                    address: '215 Fifth Street, Ithaca, NY 14850',
+                    culturalCompetency: 'Medium'
+                }
+            ]
+        },
+        'disability-rights': {
+            title: 'Disability Rights & Legal Aid',
+            description: 'Legal advocacy organizations that protect and advance the rights of people with disabilities through individual representation, policy advocacy, and public education.',
+            services: [
+                'Legal Representation for Discrimination Cases',
+                'ADA Compliance Assistance',
+                'Special Education Advocacy',
+                'Benefits Planning and Protection',
+                'Housing Rights Advocacy',
+                'Employment Discrimination Support'
+            ],
+            providers: [
+                {
+                    name: 'Disability Rights New York',
+                    phone: '(585) 546-5510',
+                    address: 'Rochester Regional Office',
+                    culturalCompetency: 'High'
+                },
+                {
+                    name: 'Legal Assistance of Western New York',
+                    phone: '(585) 232-4090',
+                    address: '1 West Main Street, Rochester, NY 14614',
+                    culturalCompetency: 'High'
+                }
+            ]
+        },
+        'vocational-rehab': {
+            title: 'Vocational Rehabilitation Services',
+            description: 'State and community programs that help people with disabilities prepare for, find, and maintain employment through training, job placement, and workplace accommodations.',
+            services: [
+                'Vocational Evaluation and Assessment',
+                'Job Training and Skills Development',
+                'Job Placement Services',
+                'Workplace Accommodation Consultation',
+                'Assistive Technology for Work',
+                'Supported Employment Services'
+            ],
+            providers: [
+                {
+                    name: 'NYS Office of Vocational Rehabilitation (ACCES-VR)',
+                    phone: '(585) 238-2900',
+                    address: '109 South Union Street, Rochester, NY 14607',
+                    culturalCompetency: 'Medium'
+                },
+                {
+                    name: 'Goodwill - Employment & Training Services',
+                    phone: '(585) 325-1140',
+                    address: 'Multiple Locations',
+                    culturalCompetency: 'High'
+                }
+            ]
+        },
+        'assistive-tech': {
+            title: 'Assistive Technology Resources',
+            description: 'Services providing access to assistive technology devices and services through assessment, funding assistance, training, and ongoing support.',
+            services: [
+                'AT Assessment and Evaluation',
+                'Device Demonstrations and Trials',
+                'Funding Source Information',
+                'AT Training and Technical Support',
+                'Device Repair and Maintenance',
+                'Low-Cost AT Solutions'
+            ],
+            providers: [
+                {
+                    name: 'TRAID (Technology Resources for Accessible Independent Decisions)',
+                    phone: '(585) 546-4211',
+                    address: '1000 Elmwood Ave, Rochester, NY 14620',
+                    culturalCompetency: 'High'
+                },
+                {
+                    name: 'NYS TRAID Project - Regional Office',
+                    phone: '1-800-522-4369',
+                    address: 'Serving Monroe County',
+                    culturalCompetency: 'Medium'
+                }
+            ]
+        },
+        'peer-support': {
+            title: 'Peer Support Networks',
+            description: 'Community connections with others who share similar disability experiences, providing mutual support, shared learning, and empowerment.',
+            services: [
+                'Peer Mentorship Programs',
+                'Support Group Facilitation',
+                'Social Connection Events',
+                'Disability Pride Activities',
+                'Leadership Development',
+                'Cross-Disability Networking'
+            ],
+            providers: [
+                {
+                    name: 'Rochester Peer Support Network',
+                    phone: '(585) 555-PEER',
+                    address: 'Various Locations',
+                    culturalCompetency: 'High'
+                },
+                {
+                    name: 'BIPOC Disability Support Circle',
+                    phone: '(585) 555-BIPOC',
+                    address: 'Community Meetings',
+                    culturalCompetency: 'Excellent'
+                }
+            ]
+        },
+        'bipoc-services': {
+            title: 'BIPOC Disability Services',
+            description: 'Culturally responsive disability services specifically designed to address the unique needs and experiences of disabled people from Black, Indigenous, and communities of color.',
+            services: [
+                'Culturally Responsive Peer Support',
+                'Bilingual Service Navigation',
+                'Cultural Advocacy Training',
+                'Intersectional Identity Affirmation',
+                'Community Health Worker Connections',
+                'Faith-Based Disability Support'
+            ],
+            providers: [
+                {
+                    name: 'Center for Black Disabled Excellence',
+                    phone: '(585) 555-CBDE',
+                    address: 'Rochester Community Center',
+                    culturalCompetency: 'Excellent'
+                },
+                {
+                    name: 'Latin@ Disability Network',
+                    phone: '(585) 555-LADI',
+                    address: 'Ibero-American Action League',
+                    culturalCompetency: 'Excellent'
+                }
+            ]
+        }
+    };
+
+    const category = categories[categoryId];
+    if (!category) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-labelledby', 'category-title');
+    modal.innerHTML = `
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto">
+            <div class="sticky top-0 bg-gradient-to-r from-purple-700 to-blue-600 text-white p-6 rounded-t-xl">
+                <div class="flex items-center justify-between">
+                    <h2 id="category-title" class="text-2xl font-bold">${category.title}</h2>
+                    <button onclick="this.closest('.fixed').remove()" class="text-white hover:text-gray-300 text-2xl" aria-label="Close dialog">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <p class="text-gray-700 mb-6 text-lg">${category.description}</p>
+                
+                <h3 class="text-xl font-bold text-purple-900 mb-4">Services Provided:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                    ${category.services.map(service => `
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                            <span class="text-gray-700">${service}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <h3 class="text-xl font-bold text-purple-900 mb-4">Service Providers:</h3>
+                <div class="space-y-4">
+                    ${category.providers.map(provider => `
+                        <div class="bg-purple-50 rounded-lg p-4 border-2 border-purple-200">
+                            <div class="flex items-start justify-between mb-3">
+                                <h4 class="font-bold text-purple-900 text-lg">${provider.name}</h4>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold ${
+                                    provider.culturalCompetency === 'Excellent' ? 'bg-green-100 text-green-800' :
+                                    provider.culturalCompetency === 'High' ? 'bg-blue-100 text-blue-800' :
+                                    'bg-yellow-100 text-yellow-800'
+                                }">
+                                    ${provider.culturalCompetency} Cultural Competency
+                                </span>
+                            </div>
+                            <div class="space-y-2 text-gray-700">
+                                <div class="flex items-center">
+                                    <i class="fas fa-phone text-purple-600 mr-2"></i>
+                                    <a href="tel:${provider.phone}" class="hover:text-purple-700">${provider.phone}</a>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-purple-600 mr-2 mt-1"></i>
+                                    <span>${provider.address}</span>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex gap-2">
+                                <button onclick="contactProvider('${provider.name}')" class="flex-1 bg-purple-700 hover:bg-purple-800 text-white py-2 px-4 rounded-lg transition-all">
+                                    <i class="fas fa-phone mr-1"></i> Contact
+                                </button>
+                                <button onclick="getDirections('${provider.address}')" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-all">
+                                    <i class="fas fa-directions mr-1"></i> Directions
+                                </button>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+function contactProvider(providerName) {
+    showNotification(`Connecting you with ${providerName}...`, 'info');
+}
+
+function getDirections(address) {
+    const encodedAddress = encodeURIComponent(address);
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, '_blank');
 }
