@@ -8351,11 +8351,12 @@ async function loadEconomicSection() {
                 <!-- Real-Time Market Dashboard -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
                     <!-- Live Market Indicators -->
-                    <div class="lg:col-span-2 bg-white rounded-xl shadow-xl p-8">
+                    <div class="lg:col-span-2 bg-white rounded-xl shadow-xl p-8 relative overflow-hidden">
                         <!-- Financial Dashboard Background Image -->
-                        <div class="mb-6 rounded-lg overflow-hidden">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/1b1720cf-ffc2-4e4a-b592-dca2d2ac3c8d" alt="Financial Dashboard" class="w-full h-32 object-cover opacity-20">
+                        <div class="absolute inset-0 opacity-10">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/33f357e9-f32e-4e34-8b05-357790186cfd.png" alt="Market Analysis" class="w-full h-full object-cover">
                         </div>
+                        <div class="relative z-10">
                         <div class="flex items-center justify-between mb-6">
                             <h3 class="text-2xl font-bold text-gray-800">
                                 <i class="fas fa-chart-area mr-3 text-green-600"></i>
@@ -8380,6 +8381,7 @@ async function loadEconomicSection() {
                         <!-- Interactive Market Chart -->
                         <div id="market-chart-container" class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-lg p-6 min-h-[300px]">
                             <!-- Market chart will be rendered here -->
+                        </div>
                         </div>
                     </div>
 
@@ -8458,11 +8460,12 @@ async function loadEconomicSection() {
                 </div>
 
                 <!-- Entrepreneur Spotlight Section -->
-                <div class="bg-white rounded-xl shadow-xl p-8 mb-8">
+                <div class="bg-white rounded-xl shadow-xl p-8 mb-8 relative overflow-hidden">
                     <!-- Entrepreneur Background Image -->
-                    <div class="mb-6 rounded-lg overflow-hidden">
-                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/5b4c668d-6a31-4754-92b2-6890a16645c5" alt="Black Entrepreneurs" class="w-full h-48 object-cover">
+                    <div class="absolute top-0 left-0 right-0 h-64 overflow-hidden">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/39efb331-6ea9-4b34-8477-575d05e82acf.png" alt="Black Entrepreneur Success" class="w-full h-full object-cover opacity-20">
                     </div>
+                    <div class="relative z-10">
                     <div class="flex items-center justify-between mb-6">
                         <h3 class="text-2xl font-bold text-gray-800">
                             <i class="fas fa-user-tie mr-3 text-golden-yellow"></i>
@@ -8476,12 +8479,13 @@ async function loadEconomicSection() {
                     <div id="featured-entrepreneur" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <!-- Featured entrepreneur will be loaded here -->
                     </div>
+                    </div>
                 </div>
 
                 <!-- Financial Education Hub -->
                 <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-white mb-8 relative overflow-hidden">
                     <!-- Financial Education Background -->
-                    <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/84a2f5ea-f84a-4431-92ba-fffb44343538" alt="Financial Education" class="absolute inset-0 w-full h-full object-cover opacity-20">
+                    <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/73b2ddeb-615f-4749-8ff4-8bd72a51bcd8.png" alt="Financial Education Workshop" class="absolute inset-0 w-full h-full object-cover opacity-20">
                     <div class="relative z-10">
                         <h3 class="text-2xl font-bold mb-6">
                             <i class="fas fa-graduation-cap mr-3"></i>
@@ -8510,7 +8514,11 @@ async function loadEconomicSection() {
                 <!-- Investment & Wealth Building Resources -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                     <!-- Investment Strategy Center -->
-                    <div class="bg-white rounded-xl shadow-xl p-8">
+                    <div class="bg-white rounded-xl shadow-xl p-8 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-10">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/b1b4ed8f-3192-4361-b0c5-737cda445a35.png" alt="Family Wealth Planning" class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative z-10">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">
                             <i class="fas fa-chart-line mr-3 text-green-600"></i>
                             Investment Strategy Center
@@ -8546,6 +8554,7 @@ async function loadEconomicSection() {
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
 
                     <!-- Black Financial Institutions -->
@@ -8564,7 +8573,11 @@ async function loadEconomicSection() {
                 </div>
 
                 <!-- Business Development Hub -->
-                <div class="bg-white rounded-xl shadow-xl p-8 mb-8">
+                <div class="bg-white rounded-xl shadow-xl p-8 mb-8 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-56 overflow-hidden">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/d5abafc7-e1c6-49ef-bb6e-61179cfecbf8.png" alt="Startup Launch" class="w-full h-full object-cover opacity-15">
+                    </div>
+                    <div class="relative z-10">
                     <h3 class="text-2xl font-bold text-gray-800 mb-6">
                         <i class="fas fa-rocket mr-3 text-orange-600"></i>
                         Business Development & Entrepreneurship Hub
@@ -8589,10 +8602,15 @@ async function loadEconomicSection() {
                             <p class="text-gray-600 text-sm">Connect with experienced business advisors</p>
                         </div>
                     </div>
+                    </div>
                 </div>
 
                 <!-- Policy Impact & Economic Justice -->
-                <div class="bg-gradient-to-r from-red-600 to-pink-600 rounded-xl p-8 text-white mb-8">
+                <div class="bg-gradient-to-r from-red-600 to-pink-600 rounded-xl p-8 text-white mb-8 relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-20">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/5873418a-f997-4127-b382-7e49668814ee.png" alt="Community Economic Empowerment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative z-10">
                     <h3 class="text-2xl font-bold mb-6">
                         <i class="fas fa-gavel mr-3"></i>
                         Policy Impact & Economic Justice
@@ -8627,6 +8645,7 @@ async function loadEconomicSection() {
                                 </button>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
 
