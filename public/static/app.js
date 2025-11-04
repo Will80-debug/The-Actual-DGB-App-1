@@ -7341,10 +7341,10 @@ function loadLatinConnection() {
                             <button onclick="scrollToLatinSection('recursos')" class="bg-white text-red-700 hover:bg-red-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg">
                                 <i class="fas fa-hands-helping mr-2"></i>Recursos / Resources
                             </button>
-                            <button onclick="scrollToLatinSection('servicios')" class="border-2 border-white text-white hover:bg-white hover:text-red-700 font-semibold py-3 px-8 rounded-lg transition-all">
+                            <button onclick="openLatinCategory('family-services')" class="border-2 border-white text-white hover:bg-white hover:text-red-700 font-semibold py-3 px-8 rounded-lg transition-all">
                                 <i class="fas fa-briefcase mr-2"></i>Servicios / Services
                             </button>
-                            <button onclick="scrollToLatinSection('cultura')" class="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold py-3 px-8 rounded-lg transition-all">
+                            <button onclick="openLatinCategory('arts-culture')" class="border-2 border-white text-white hover:bg-white hover:text-green-700 font-semibold py-3 px-8 rounded-lg transition-all">
                                 <i class="fas fa-music mr-2"></i>Cultura / Culture
                             </button>
                         </div>
@@ -7378,31 +7378,31 @@ function loadLatinConnection() {
             <div class="bg-white shadow-lg sticky top-16 z-30">
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="flex overflow-x-auto no-scrollbar">
-                        <button onclick="scrollToLatinSection('recursos')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
-                            <i class="fas fa-hands-helping mr-2"></i>Recursos
+                        <button onclick="scrollToLatinSection('recursos')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-red-700 font-bold hover:border-red-700 transition-all">
+                            <i class="fas fa-hands-helping mr-2"></i>Todos
                         </button>
-                        <button onclick="scrollToLatinSection('servicios')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
-                            <i class="fas fa-briefcase mr-2"></i>Servicios
+                        <button onclick="openLatinCategory('family-services')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                            <i class="fas fa-home mr-2"></i>Familia
                         </button>
-                        <button onclick="scrollToLatinSection('educacion')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('education-youth')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-graduation-cap mr-2"></i>Educación
                         </button>
-                        <button onclick="scrollToLatinSection('empleo')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('business-employment')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-briefcase mr-2"></i>Empleo
                         </button>
-                        <button onclick="scrollToLatinSection('salud')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('health-services')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-heartbeat mr-2"></i>Salud
                         </button>
-                        <button onclick="scrollToLatinSection('inmigración')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('immigration')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-passport mr-2"></i>Inmigración
                         </button>
-                        <button onclick="scrollToLatinSection('negocios')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('business-employment')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-store mr-2"></i>Negocios
                         </button>
-                        <button onclick="scrollToLatinSection('cultura')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('arts-culture')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-music mr-2"></i>Cultura
                         </button>
-                        <button onclick="scrollToLatinSection('juventud')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
+                        <button onclick="openLatinCategory('education-youth')" class="latin-tab-btn whitespace-nowrap px-6 py-4 text-red-700 border-b-2 border-transparent hover:border-red-700 transition-all">
                             <i class="fas fa-users mr-2"></i>Juventud
                         </button>
                     </div>
@@ -12985,17 +12985,24 @@ function scrollToLatinSection(sectionId) {
         // Smooth scroll to section
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         
-        // Update active tab styling
-        document.querySelectorAll('[data-latin-scroll]').forEach(btn => {
-            btn.classList.remove('bg-red-600', 'text-white');
-            btn.classList.add('bg-white', 'text-gray-700', 'hover:bg-red-50');
+        // Update active tab styling - find buttons with onclick attribute
+        document.querySelectorAll('.latin-tab-btn').forEach(btn => {
+            const onclickAttr = btn.getAttribute('onclick');
+            if (onclickAttr && onclickAttr.includes('scrollToLatinSection')) {
+                // Reset inactive state
+                btn.classList.remove('border-red-700', 'font-bold');
+                btn.classList.add('border-transparent');
+            }
         });
         
-        const activeBtn = document.querySelector(`[data-latin-scroll="${sectionId}"]`);
-        if (activeBtn) {
-            activeBtn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-red-50');
-            activeBtn.classList.add('bg-red-600', 'text-white');
-        }
+        // Highlight active tab
+        document.querySelectorAll('.latin-tab-btn').forEach(btn => {
+            const onclickAttr = btn.getAttribute('onclick');
+            if (onclickAttr && onclickAttr.includes(`'${sectionId}'`)) {
+                btn.classList.remove('border-transparent');
+                btn.classList.add('border-red-700', 'font-bold');
+            }
+        });
     }
 }
 
