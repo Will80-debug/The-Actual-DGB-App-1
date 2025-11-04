@@ -4315,22 +4315,26 @@ function loadYouthVibe() {
                                 <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
                                     <i class="fas fa-camera text-2xl text-pink-500 mb-2"></i>
                                     <h5 class="font-semibold text-sm">15-Sec Dance Tutorial</h5>
-                                    <p class="text-xs text-gray-600">Learn trending moves</p>
+                                    <p class="text-xs text-gray-600 mb-3">Learn trending moves</p>
+                                    <button onclick="joinDanceChallenge()" class="bg-pink-100 text-pink-700 px-3 py-1 rounded text-xs font-semibold hover:bg-pink-200 transition-all">Join Now</button>
                                 </div>
                                 <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
                                     <i class="fas fa-laugh text-2xl text-yellow-500 mb-2"></i>
                                     <h5 class="font-semibold text-sm">Safe Meme Monday</h5>
-                                    <p class="text-xs text-gray-600">Weekly meme creation</p>
+                                    <p class="text-xs text-gray-600 mb-3">Weekly meme creation</p>
+                                    <button onclick="joinMemeChallenge()" class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold hover:bg-yellow-200 transition-all">Create Meme</button>
                                 </div>
                                 <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
                                     <i class="fas fa-tshirt text-2xl text-green-500 mb-2"></i>
                                     <h5 class="font-semibold text-sm">Fit Battle Friday</h5>
-                                    <p class="text-xs text-gray-600">Rate outfits 1-5</p>
+                                    <p class="text-xs text-gray-600 mb-3">Rate outfits 1-5</p>
+                                    <button onclick="joinFitBattleChallenge()" class="bg-green-100 text-green-700 px-3 py-1 rounded text-xs font-semibold hover:bg-green-200 transition-all">Show Outfit</button>
                                 </div>
                                 <div class="bg-white rounded-lg p-3 text-center hover:shadow-md transition-all">
                                     <i class="fas fa-hamburger text-2xl text-orange-500 mb-2"></i>
                                     <h5 class="font-semibold text-sm">$10 Food Challenge</h5>
-                                    <p class="text-xs text-gray-600">Make meals last all day</p>
+                                    <p class="text-xs text-gray-600 mb-3">Make meals last all day</p>
+                                    <button onclick="joinFoodChallenge()" class="bg-orange-100 text-orange-700 px-3 py-1 rounded text-xs font-semibold hover:bg-orange-200 transition-all">Take Challenge</button>
                                 </div>
                             </div>
                         </div>
@@ -5378,6 +5382,183 @@ window.browseTemplates = function() {
             
             <button class="w-full bg-gray-800 text-white py-2 rounded-lg font-semibold">
                 View All 24 Templates
+            </button>
+        </div>
+    `);
+};
+
+// Creative Challenges Functions
+window.joinDanceChallenge = function() {
+    showYouthVibeModal('💃 15-Second Dance Tutorial', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="text-4xl mb-2">🕺</div>
+                <h3 class="text-xl font-bold">Learn This Week's Trending Move</h3>
+                <p class="text-gray-600">Master the "Smooth Slide" in 15 seconds</p>
+            </div>
+            
+            <div class="bg-pink-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">How It Works:</h4>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-start">
+                        <span class="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                        <span>Watch the tutorial video (15 seconds)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                        <span>Practice the moves at your own pace</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                        <span>Record yourself and share with #YouthVibeDance</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">4</span>
+                        <span>Get featured in our weekly highlight reel</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 p-4 rounded-lg">
+                <h4 class="font-bold text-yellow-700 mb-2">This Week's Song:</h4>
+                <p class="text-sm">"Good Energy" - Trending on TikTok</p>
+                <p class="text-xs text-gray-600 mt-1">Safe for all ages • Clean version</p>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 rounded-lg font-bold">
+                Watch Tutorial
+            </button>
+        </div>
+    `);
+};
+
+window.joinMemeChallenge = function() {
+    showYouthVibeModal('😂 Safe Meme Monday', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="text-4xl mb-2">🎨</div>
+                <h3 class="text-xl font-bold">Create Your Meme Masterpiece</h3>
+                <p class="text-gray-600">This week: "When the teacher says..."</p>
+            </div>
+            
+            <div class="bg-yellow-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">Theme Guidelines:</h4>
+                <div class="space-y-2 text-sm">
+                    <div>✅ School life humor (relatable & funny)</div>
+                    <div>✅ Pop culture references (appropriate)</div>
+                    <div>✅ Family-friendly content only</div>
+                    <div>❌ No mean-spirited jokes</div>
+                    <div>❌ No real names or photos of others</div>
+                </div>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-bold text-green-700 mb-2">Prizes:</h4>
+                <ul class="text-sm space-y-1">
+                    <li>🥇 Most Creative: Featured on homepage</li>
+                    <li>🥈 Funniest: $15 gift card</li>
+                    <li>🥉 Best Template Use: Shoutout post</li>
+                </ul>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-2">
+                <button class="bg-yellow-500 text-white py-2 rounded-lg font-semibold">
+                    Meme Templates
+                </button>
+                <button class="bg-purple-500 text-white py-2 rounded-lg font-semibold">
+                    Submit Meme
+                </button>
+            </div>
+        </div>
+    `);
+};
+
+window.joinFitBattleChallenge = function() {
+    showYouthVibeModal('👕 Fit Battle Friday', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="text-4xl mb-2">✨</div>
+                <h3 class="text-xl font-bold">Show Off Your Style</h3>
+                <p class="text-gray-600">Rate outfits 1-5 stars • Get feedback from peers</p>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">How to Participate:</h4>
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                        <span>Post a photo of your outfit</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                        <span>Rate 3 other outfits (1-5 stars)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                        <span>Get constructive feedback on your style</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 flex-shrink-0">4</span>
+                        <span>Top 3 styles featured in Friday roundup</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded-lg">
+                <h4 class="font-bold text-blue-700 mb-2">This Week's Categories:</h4>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-white p-2 rounded">👟 Sneaker Game</div>
+                    <div class="bg-white p-2 rounded">🎨 Color Coordination</div>
+                    <div class="bg-white p-2 rounded">💎 Accessory Choice</div>
+                    <div class="bg-white p-2 rounded">🔥 Overall Vibe</div>
+                </div>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-green-500 to-teal-500 text-white py-3 rounded-lg font-bold">
+                Upload Your Fit
+            </button>
+        </div>
+    `);
+};
+
+window.joinFoodChallenge = function() {
+    showYouthVibeModal('🍔 $10 Food Challenge', `
+        <div class="space-y-4">
+            <div class="text-center">
+                <div class="text-4xl mb-2">🎯</div>
+                <h3 class="text-xl font-bold">Make $10 Last All Day</h3>
+                <p class="text-gray-600">Budget-friendly meals + smart shopping tips</p>
+            </div>
+            
+            <div class="bg-orange-50 p-4 rounded-lg">
+                <h4 class="font-bold mb-2">Challenge Rules:</h4>
+                <div class="space-y-2 text-sm">
+                    <div>💰 Total budget: $10 for 3 meals</div>
+                    <div>🛒 Shop at local stores (show receipts)</div>
+                    <div>🍽️ Meals must be filling & nutritious</div>
+                    <div>📸 Document your shopping & cooking</div>
+                    <div>⏰ Complete within 24 hours</div>
+                </div>
+            </div>
+            
+            <div class="bg-green-50 p-4 rounded-lg">
+                <h4 class="font-bold text-green-700 mb-2">What You'll Learn:</h4>
+                <ul class="text-sm space-y-1">
+                    <li>• Smart grocery shopping strategies</li>
+                    <li>• Meal prep basics for busy students</li>
+                    <li>• Budget-friendly cooking hacks</li>
+                    <li>• Nutrition on a tight budget</li>
+                </ul>
+            </div>
+            
+            <div class="bg-yellow-50 p-4 rounded-lg text-center">
+                <h4 class="font-bold text-yellow-700 mb-1">Grand Prize</h4>
+                <p class="text-2xl font-bold">$50 Grocery Gift Card</p>
+                <p class="text-xs text-gray-600">+ Feature in Youth Vibe newsletter</p>
+            </div>
+            
+            <button class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-bold">
+                Start Challenge
             </button>
         </div>
     `);
