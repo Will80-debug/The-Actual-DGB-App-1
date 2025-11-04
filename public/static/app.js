@@ -3898,9 +3898,14 @@ function loadYouthVibe() {
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                         <!-- Education Pathways -->
-                        <div class="opportunity-card bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('education')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                        <div class="opportunity-card bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('education')">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/e2d7d50b-226a-4ca8-b604-afe72e4c7348.png" 
+                                     alt="Students celebrating college acceptance" 
+                                     class="w-full h-full object-cover opacity-40">
+                            </div>
+                            <div class="text-center p-6">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center -mt-12 relative z-10 border-4 border-blue-500">
                                     <i class="fas fa-graduation-cap text-2xl"></i>
                                 </div>
                                 <h3 class="font-bold text-lg mb-2">Education Pathways</h3>
@@ -3912,9 +3917,14 @@ function loadYouthVibe() {
                         </div>
 
                         <!-- Creative Development -->
-                        <div class="opportunity-card bg-gradient-to-br from-pink-500 to-rose-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('creative')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                        <div class="opportunity-card bg-gradient-to-br from-pink-500 to-rose-500 text-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('creative')">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/80a64394-0af1-46ea-ac4c-fbea06c271ad.png" 
+                                     alt="Young artists and musicians creating" 
+                                     class="w-full h-full object-cover opacity-40">
+                            </div>
+                            <div class="text-center p-6">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center -mt-12 relative z-10 border-4 border-pink-500">
                                     <i class="fas fa-palette text-2xl"></i>
                                 </div>
                                 <h3 class="font-bold text-lg mb-2">Creative Development</h3>
@@ -3926,9 +3936,14 @@ function loadYouthVibe() {
                         </div>
 
                         <!-- Career Launch -->
-                        <div class="opportunity-card bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('career')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                        <div class="opportunity-card bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('career')">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/5182340c-9e1f-49d6-994d-7b61606c8deb.png" 
+                                     alt="Young entrepreneur working" 
+                                     class="w-full h-full object-cover opacity-40">
+                            </div>
+                            <div class="text-center p-6">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center -mt-12 relative z-10 border-4 border-green-500">
                                     <i class="fas fa-rocket text-2xl"></i>
                                 </div>
                                 <h3 class="font-bold text-lg mb-2">Career Launch</h3>
@@ -3940,9 +3955,14 @@ function loadYouthVibe() {
                         </div>
 
                         <!-- Community Leadership -->
-                        <div class="opportunity-card bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('leadership')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                        <div class="opportunity-card bg-gradient-to-br from-purple-500 to-indigo-500 text-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('leadership')">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/c24dec27-ed73-49a6-aa85-2a7c3768e330.png" 
+                                     alt="Young leaders organizing community" 
+                                     class="w-full h-full object-cover opacity-40">
+                            </div>
+                            <div class="text-center p-6">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center -mt-12 relative z-10 border-4 border-purple-500">
                                     <i class="fas fa-megaphone text-2xl"></i>
                                 </div>
                                 <h3 class="font-bold text-lg mb-2">Community Leadership</h3>
@@ -3957,9 +3977,14 @@ function loadYouthVibe() {
                     <!-- Second Row of Categories -->
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <!-- Physical Wellbeing -->
-                        <div class="opportunity-card bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('wellness')">
-                            <div class="text-center">
-                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                        <div class="opportunity-card bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-xl overflow-hidden hover:shadow-xl hover:scale-105 transition-all cursor-pointer" onclick="openCategoryModal('wellness')">
+                            <div class="h-32 overflow-hidden">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/d4088ddc-a522-4776-9c7a-39f97ee30949.png" 
+                                     alt="Teenagers playing basketball" 
+                                     class="w-full h-full object-cover opacity-40">
+                            </div>
+                            <div class="text-center p-6">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center -mt-12 relative z-10 border-4 border-orange-500">
                                     <i class="fas fa-heartbeat text-2xl"></i>
                                 </div>
                                 <h3 class="font-bold text-lg mb-2">Physical Wellbeing</h3>
@@ -4602,8 +4627,13 @@ function loadYouthVibe() {
                         <span class="bg-gradient-to-r from-orange-600 to-red-600 text-transparent bg-clip-text">Connect with Mentors Who Get It</span>
                     </h2>
                     
-                    <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl p-8 mb-8">
-                        <div class="text-center">
+                    <div class="relative overflow-hidden bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-2xl mb-8">
+                        <div class="absolute inset-0 opacity-30">
+                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/e3226eab-6dbf-46de-98a4-631eeeb891df.png" 
+                                 alt="Mentorship relationship" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative z-10 text-center p-8">
                             <i class="fas fa-handshake text-6xl mb-4 opacity-80"></i>
                             <h3 class="text-2xl font-bold mb-4">Find Your Perfect Mentor Match</h3>
                             <p class="text-lg mb-6 opacity-90">Connect with successful professionals who understand your journey and want to help you succeed.</p>
