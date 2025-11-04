@@ -365,10 +365,10 @@ app.get('/', (c) => {
                     communities' best interests at heart.
                 </p>
                 <div class="flex justify-center space-x-4">
-                    <button onclick="scrollToSection('resources')" class="bg-light-green hover:bg-medium-green text-black font-semibold py-3 px-6 rounded-lg transition-colors">
+                    <button onclick="navigateTo('resource-hub')" class="bg-light-green hover:bg-medium-green text-black font-semibold py-3 px-6 rounded-lg transition-colors">
                         <i class="fas fa-search mr-2"></i>Find Resources
                     </button>
-                    <button onclick="scrollToSection('events')" class="border-2 border-light-green text-light-green hover:bg-light-green hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors">
+                    <button onclick="navigateTo('events-sync')" class="border-2 border-light-green text-light-green hover:bg-light-green hover:text-black font-semibold py-3 px-6 rounded-lg transition-colors">
                         <i class="fas fa-calendar mr-2"></i>View Events
                     </button>
                 </div>
