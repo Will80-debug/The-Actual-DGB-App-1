@@ -6018,13 +6018,13 @@ function loadLimitleeLiving() {
                         
                         <!-- Quick Access Buttons -->
                         <div class="flex flex-wrap justify-center gap-4 mt-8">
-                            <button onclick="scrollToLimitlessSection('resources')" class="bg-white text-purple-700 hover:bg-purple-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg" aria-label="Browse resources">
+                            <button onclick="loadResourceHub()" class="bg-white text-purple-700 hover:bg-purple-100 font-semibold py-3 px-8 rounded-lg transition-all shadow-lg" aria-label="Browse resources">
                                 <i class="fas fa-search mr-2"></i>Browse Resources
                             </button>
-                            <button onclick="scrollToLimitlessSection('advocacy')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Self advocacy tools">
+                            <button onclick="openResourceCategory('disability-rights')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Self advocacy tools">
                                 <i class="fas fa-bullhorn mr-2"></i>Self-Advocacy
                             </button>
-                            <button onclick="scrollToLimitlessSection('community')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Connect with community">
+                            <button onclick="openResourceCategory('peer-support')" class="border-2 border-white text-white hover:bg-white hover:text-purple-700 font-semibold py-3 px-8 rounded-lg transition-all" aria-label="Connect with community">
                                 <i class="fas fa-users mr-2"></i>Community
                             </button>
                         </div>
@@ -6062,32 +6062,26 @@ function loadLimitleeLiving() {
             <div class="bg-white shadow-lg sticky top-16 z-30">
                 <div class="max-w-6xl mx-auto px-4">
                     <div class="flex overflow-x-auto no-scrollbar">
-                        <button onclick="scrollToLimitlessSection('resources')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to resources">
-                            <i class="fas fa-folder-open mr-2"></i>Resources
+                        <button onclick="scrollToLimitlessSection('resources')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-purple-700 font-bold hover:border-purple-700 transition-all" aria-label="Navigate to resources">
+                            <i class="fas fa-folder-open mr-2"></i>All Resources
                         </button>
-                        <button onclick="scrollToLimitlessSection('housing')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to housing">
-                            <i class="fas fa-home mr-2"></i>Housing
+                        <button onclick="openResourceCategory('independent-living')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Independent living centers">
+                            <i class="fas fa-home mr-2"></i>Independent Living
                         </button>
-                        <button onclick="scrollToLimitlessSection('employment')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to employment">
+                        <button onclick="openResourceCategory('vocational-rehab')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to employment">
                             <i class="fas fa-briefcase mr-2"></i>Employment
                         </button>
-                        <button onclick="scrollToLimitlessSection('health')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to health">
-                            <i class="fas fa-heartbeat mr-2"></i>Health
-                        </button>
-                        <button onclick="scrollToLimitlessSection('education')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to education">
-                            <i class="fas fa-graduation-cap mr-2"></i>Education
-                        </button>
-                        <button onclick="scrollToLimitlessSection('advocacy')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to advocacy">
-                            <i class="fas fa-bullhorn mr-2"></i>Advocacy
-                        </button>
-                        <button onclick="scrollToLimitlessSection('technology')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to technology">
+                        <button onclick="openResourceCategory('assistive-tech')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Assistive technology">
                             <i class="fas fa-laptop mr-2"></i>Technology
                         </button>
-                        <button onclick="scrollToLimitlessSection('community')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to community">
+                        <button onclick="openResourceCategory('disability-rights')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to advocacy">
+                            <i class="fas fa-bullhorn mr-2"></i>Advocacy
+                        </button>
+                        <button onclick="openResourceCategory('peer-support')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to community">
                             <i class="fas fa-users mr-2"></i>Community
                         </button>
-                        <button onclick="scrollToLimitlessSection('family')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="Navigate to family support">
-                            <i class="fas fa-heart mr-2"></i>Family Support
+                        <button onclick="openResourceCategory('bipoc-services')" class="limitless-tab-btn whitespace-nowrap px-6 py-4 text-purple-700 border-b-2 border-transparent hover:border-purple-700 transition-all" aria-label="BIPOC disability services">
+                            <i class="fas fa-heart mr-2"></i>BIPOC Services
                         </button>
                     </div>
                 </div>
