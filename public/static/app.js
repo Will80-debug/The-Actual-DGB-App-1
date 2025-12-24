@@ -1728,7 +1728,7 @@ function loadRocRootsConnect() {
                     <div class="relative rounded-lg overflow-hidden shadow-lg">
                         <video 
                             src="https://cdn1.genspark.ai/user-upload-image/5/e4b69783-d43d-4905-bc1c-4d3bf10a42d3.mp4"
-                            poster="https://cdn1.genspark.ai/user-upload-image/video_frames/e0e27cf3-09b3-48ac-a6a3-697359f4ebe1"
+                            poster="https://www.genspark.ai/api/files/s/r3JFLjZa?cache_control=3600"
                             controls 
                             class="w-full h-64 md:h-80 object-cover bg-gradient-to-br from-cultural-brown/10 to-golden-yellow/10"
                             preload="metadata">
