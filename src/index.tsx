@@ -487,25 +487,6 @@ app.get('/', (c) => {
                         </div>
                     </div>
 
-                    <!-- Hyde -->
-                    <div class="bg-medium-green text-white rounded-lg p-6 hover:bg-dark-green transition-colors cursor-pointer shadow-lg relative overflow-hidden" onclick="navigateTo('hyde')">
-                        <!-- Background Image -->
-                        <div class="absolute inset-0 opacity-20">
-                            <img src="https://cdn1.genspark.ai/user-upload-image/3_generated/3a4cabf1-05bd-423e-be11-d5def513ef13" 
-                                 alt="Mental Health Wellness Background" 
-                                 class="w-full h-full object-cover">
-                        </div>
-                        <div class="relative z-10 text-center">
-                            <div class="flex justify-center mb-4">
-                                <img src="https://page.gensparksite.com/v1/base64_upload/4de31b976f09eff608106a75354173ca" 
-                                     alt="Mental Health Support" 
-                                     class="w-24 h-24 object-cover rounded-full border-4 border-white/30 shadow-lg">
-                            </div>
-                            <h4 class="text-xl font-bold mb-2">Hyde</h4>
-                            <p class="text-sm opacity-90">Understands your culture, predicts risks early, and provides personalized mental health support when you need it most.</p>
-                        </div>
-                    </div>
-
                     <!-- News Central -->
                     <div class="bg-forest-green text-white rounded-lg p-6 hover:bg-dark-green transition-colors cursor-pointer shadow-lg relative overflow-hidden" onclick="navigateTo('news-central')">
                         <!-- Background Image -->
