@@ -3247,8 +3247,6 @@ function loadMVPHealthcare() {
     addMVPHealthcareEventListeners();
 }
 
-}
-
 function loadNewsCenter() {
     loadNewsSection();
 }
