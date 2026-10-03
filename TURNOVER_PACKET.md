@@ -7,7 +7,9 @@
 
 ## I. Executive Summary
 
-This turnover packet contains all Work Product created during the contract periods for the Greater Rochester Health Foundation (GRHF) Digital Green Book project. All items listed in Section II were created as part of contractual deliverables and are being transferred to GRHF as required.
+This turnover packet contains all Work Product created by William Powell Consulting during the contract periods for the Greater Rochester Health Foundation (GRHF) Digital Green Book project. All items listed in Section II were created as part of contractual deliverables and are being transferred to GRHF as required.
+
+**Important Note**: Meeting notes and governance documentation were created and maintained by Mrs. Juanita Lyde, GRHF's meeting facilitator and program coordinator, and are not part of William Powell Consulting's Work Product. To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive managed by GRHF.
 
 ---
 
@@ -130,32 +132,26 @@ These items were created during the contract periods and fall under Foreground I
 - Community liaison contact information
 - Event coordinator contact lists
 
-### 3. Meeting Notes & Governance Notes (Contractual Deliverable)
+### 3. Meeting Notes & Governance Notes (NOT Work Product)
 
-**✅ All meeting notes and governance documentation have been provided to GRHF and are stored in the Digital Green Book Google Drive created and managed by GRHF.**
-
-GRHF has full access to:
+**Meeting notes and governance documentation were created and maintained by Mrs. Juanita Lyde, the meeting facilitator and program coordinator, and are NOT part of William Powell Consulting's Work Product.**
 
 #### Notes from Meetings with GRHF Staff
-- All meeting notes from contract engagement period
-- Meeting dates, attendees, and discussion topics
-- Action items and decisions made
-- Follow-up requirements and outcomes
-- **Location**: Digital Green Book Google Drive (GRHF-managed)
+- Meeting notes were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator)
+- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
+- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
 
 #### Notes from Meetings with Common Ground Health/RIO
-- Collaboration discussion notes
-- Data sharing protocol documentation
-- Integration planning materials
-- Partnership objective documentation
-- **Location**: Digital Green Book Google Drive (GRHF-managed)
+- Meeting notes were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator)
+- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
+- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
 
 #### Notes from DGB Advisory Group Governance Sessions
-- Advisory group meeting minutes
-- Strategic direction discussion notes
-- Community feedback session documentation
-- Governance decisions and recommendations
-- **Location**: Digital Green Book Google Drive (GRHF-managed)
+- Meeting notes and governance documentation were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator) until she removed herself from the project
+- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
+- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
+
+**Clarification**: William Powell Consulting attended meetings as requested but did not create or maintain meeting notes. All meeting facilitation and note-taking was handled by GRHF's designated program coordinator.
 
 ### 4. Weekly / Monthly Progress Updates (Contractual Deliverable)
 
@@ -612,7 +608,6 @@ The following items were created voluntarily and are **NOT** contractually requi
 All Work Product created during the contract periods (Contract #24-04398 and Contract #24-04372) has been provided to the Greater Rochester Health Foundation through the following mechanisms:
 
 1. **Digital Green Book Google Drive** (GRHF-managed and controlled):
-   - All meeting notes and governance documentation
    - All weekly progress updates (2024 contract)
    - All monthly progress updates (2025 contract)
    - All formal reports and deliverable documentation
@@ -620,13 +615,14 @@ All Work Product created during the contract periods (Contract #24-04398 and Con
    - Complete marketing strategy documentation
    - Comprehensive rollout plan and implementation guides
    - Community engagement and partnership materials
+   - **Note**: Meeting notes were created by Mrs. Juanita Lyde (GRHF program coordinator), not by William Powell Consulting
 
 2. **During the engagement** through:
    - Regular status updates and progress reports
-   - Meeting notes and documentation shared in real-time
    - Content updates delivered as part of ongoing support
    - Bug fixes and maintenance activities documented and implemented
    - Technical support provided during contract periods
+   - Meeting attendance and participation (notes kept by GRHF program coordinator)
 
 3. **In this turnover packet** including:
    - Complete content update documentation
@@ -642,10 +638,11 @@ All Work Product created during the contract periods (Contract #24-04398 and Con
 
 - No additional Work Product exists beyond what is listed in Section II of this turnover packet and what has been provided in the Digital Green Book Google Drive
 - All contractually required deliverables have been provided to GRHF
-- All content updates, meeting notes, progress reports, and support documentation created during the contract periods have been provided
+- All content updates, progress reports, and support documentation created during the contract periods have been provided
 - All onboarding lists and organizational contact information developed during the engagement have been provided
 - All marketing materials, marketing strategy documents, and rollout plans have been provided in the Digital Green Book Google Drive
 - GRHF has full access to all Work Product through the Google Drive and this turnover packet
+- **Meeting notes were created and maintained by Mrs. Juanita Lyde (GRHF's program coordinator) and are not part of William Powell Consulting's Work Product**
 
 ### Background IP Retention
 
