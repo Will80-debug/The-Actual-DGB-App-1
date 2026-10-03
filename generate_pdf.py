@@ -1,10 +1,22 @@
 #!/usr/bin/env python3
 """
-Convert Markdown turnover packet to professional PDF
+Convert Markdown turnover packet to professional PDF with Will Motivates branding
 """
 import markdown2
 from weasyprint import HTML, CSS
 from pathlib import Path
+import base64
+import requests
+
+# Download and encode the Will Motivates logo
+logo_url = "https://www.genspark.ai/api/files/s/FKlTEoa0"
+try:
+    response = requests.get(logo_url)
+    logo_base64 = base64.b64encode(response.content).decode('utf-8')
+    logo_data_uri = f"data:image/png;base64,{logo_base64}"
+except Exception as e:
+    print(f"Warning: Could not load logo: {e}")
+    logo_data_uri = ""
 
 # Read the markdown file
 markdown_file = Path('/home/user/webapp/TURNOVER_PACKET.md')
@@ -16,7 +28,7 @@ html_content = markdown2.markdown(
     extras=['tables', 'fenced-code-blocks', 'header-ids']
 )
 
-# Create professional HTML template with styling
+# Create professional HTML template with Will Motivates branding
 html_template = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -31,12 +43,12 @@ html_template = f"""
             @top-center {{
                 content: "Digital Green Book - Turnover Packet";
                 font-size: 9pt;
-                color: #666;
+                color: #506175;
             }}
             @bottom-center {{
                 content: "Page " counter(page) " of " counter(pages);
                 font-size: 9pt;
-                color: #666;
+                color: #506175;
             }}
         }}
         
@@ -44,32 +56,45 @@ html_template = f"""
             font-family: 'Georgia', 'Times New Roman', serif;
             font-size: 11pt;
             line-height: 1.6;
-            color: #333;
+            color: #0b1a2c;
             max-width: 100%;
         }}
         
+        .logo-header {{
+            text-align: center;
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+            border-bottom: 3px solid #00aeef;
+        }}
+        
+        .logo-header img {{
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 0.5em;
+        }}
+        
         h1 {{
-            color: #2c5530;
+            color: #071a30;
             font-size: 24pt;
             margin-top: 0;
             margin-bottom: 0.5em;
             page-break-after: avoid;
-            border-bottom: 3px solid #2c5530;
+            border-bottom: 3px solid #00aeef;
             padding-bottom: 0.3em;
         }}
         
         h2 {{
-            color: #2c5530;
+            color: #164f8c;
             font-size: 18pt;
             margin-top: 1.5em;
             margin-bottom: 0.5em;
             page-break-after: avoid;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid #29abe2;
             padding-bottom: 0.2em;
         }}
         
         h3 {{
-            color: #3d6f42;
+            color: #1075bc;
             font-size: 14pt;
             margin-top: 1.2em;
             margin-bottom: 0.5em;
@@ -77,7 +102,7 @@ html_template = f"""
         }}
         
         h4 {{
-            color: #4a7f50;
+            color: #164f8c;
             font-size: 12pt;
             margin-top: 1em;
             margin-bottom: 0.4em;
@@ -106,7 +131,7 @@ html_template = f"""
         }}
         
         th {{
-            background-color: #2c5530;
+            background-color: #071a30;
             color: white;
             padding: 8px;
             text-align: left;
@@ -134,7 +159,7 @@ html_template = f"""
             background-color: #f5f5f5;
             padding: 12px;
             border-radius: 5px;
-            border-left: 4px solid #2c5530;
+            border-left: 4px solid #00aeef;
             overflow-x: auto;
             font-size: 9pt;
         }}
@@ -146,15 +171,15 @@ html_template = f"""
         
         hr {{
             border: none;
-            border-top: 2px solid #2c5530;
+            border-top: 2px solid #00aeef;
             margin: 2em 0;
         }}
         
         blockquote {{
-            border-left: 4px solid #2c5530;
+            border-left: 4px solid #00aeef;
             padding-left: 1em;
             margin-left: 0;
-            color: #666;
+            color: #506175;
             font-style: italic;
         }}
         
@@ -174,7 +199,7 @@ html_template = f"""
         }}
         
         strong {{
-            color: #2c5530;
+            color: #071a30;
         }}
         
         /* Prevent page breaks inside important elements */
@@ -192,6 +217,9 @@ html_template = f"""
     </style>
 </head>
 <body>
+    <div class="logo-header">
+        <img src="{logo_data_uri}" alt="Will Motivates Logo">
+    </div>
     {html_content}
 </body>
 </html>
