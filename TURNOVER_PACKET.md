@@ -7,9 +7,9 @@
 
 ## I. Executive Summary
 
-This turnover packet contains all Work Product created by William Powell Consulting during the contract periods for the Greater Rochester Health Foundation (GRHF) Digital Green Book project. All items listed in Section II were created as part of contractual deliverables and are being transferred to GRHF as required.
+This turnover packet contains all Work Product created by William Powell Consulting during the contract periods for the Greater Rochester Health Foundation (GRHF) Digital Green Book project under Contract #24-04398 and Contract #24-04372. All items listed in Section II were created as part of contractual deliverables and are being transferred to GRHF as required.
 
-**Important Note**: Meeting notes and governance documentation were created and maintained by Mrs. Juanita Lyde, GRHF's meeting facilitator and program coordinator, and are not part of William Powell Consulting's Work Product. To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive managed by GRHF.
+**Meeting Notes**: Meeting notes were maintained by the project facilitator, Mrs. Juanita Lyde, and stored in the Digital Green Book Google Drive. These notes were not authored by William Powell Consulting and are not Work Product under the contracts.
 
 ---
 
@@ -19,229 +19,46 @@ These items were created during the contract periods and fall under Foreground I
 
 ### 1. Content Updates (Contractual Deliverable)
 
-#### Text Updates Made During Contract Period
-- **Homepage Hero Section**: Updated title, mission statement, and call-to-action buttons
-- **Navigation Labels**: Standardized naming across all 11 community resource pages
-- **Resource Descriptions**: Updated descriptions for partner organizations and services
-- **Event Listings**: Content for community events calendar
-
-#### Content Additions for Organizations, Partners, and Listings
-- **Partner Organizations Database**: 54 vetted partner organizations across multiple categories:
-  - Family Support Services
-  - Food Security
-  - Mental Health & Parent Support
-  - Healthcare Advocacy
-  - Violence Prevention
-  - Women's Empowerment
-  - Substance Abuse Recovery
-  - Reentry Services
-  - Wellness & Mental Health
-  - Fatherhood Support
-  - Community Services
-  - Latino Community Services
-  - Civil Rights & Economic Empowerment
-  - Women's Services
-  - Disability Rights
-  - Peer Support
-  - Arts & Culture
-  - Education & Youth
-  - Business & Employment
-  - Legal Services
-  - Health Services
-
-#### Content Drafts Created During Support Work
-- Community resource category descriptions
+Text content manually written by William Powell Consulting:
+- Organization descriptions for partner organizations
 - Service area definitions
-- Organization profile templates
-- Event submission guidelines
+- Resource category descriptions
 
 ### 2. Onboarding Lists (Contractual Deliverable)
 
-#### Lists of Organizations Onboarded
-**Total Organizations**: 54 partner organizations documented across the following categories:
+Lists of organizations onboarded and documented:
+- 54 partner organizations across multiple service categories
+- Contact information for partner organizations
+- Service area categorization
 
-**Black Community Focus Organizations** (includes both "Black Community Focus" and "All Communities"):
-1. Hillside Family of Agencies (Family Support Services)
-2. Cameron Community Ministries (Food Security)
-3. Black Mothers BReastfeeding Association (Mental Health & Parent Support)
-4. Health Advocates of Rochester (Healthcare Advocacy)
-5. Pathstone Corporation (Family Support Services)
-6. Threshold Center for Alternative Youth Services (Violence Prevention)
-7. Women's Empowerment 360 (Women's Empowerment)
-8. Substance Abuse Mental Health Services (Substance Abuse Recovery)
-9. Reentry ROC (Reentry Services)
-10. New York Wellness Center (Wellness & Mental Health)
-11. Fathers and Families of Rochester (Fatherhood Support)
-12. Baden Street Settlement (Community Services)
-13. Charles Settlement House (Community Services)
-14. Eastman Dental Center (Healthcare Advocacy)
-15. Bivona Child Advocacy Center (Family Support Services)
-16. Center for Youth Services (Violence Prevention)
-17. DePaul Community Services (Mental Health & Parent Support)
-18. Family Promise of Greater Rochester (Family Support Services)
-19. Food Bank of the Southern Tier (Food Security)
-20. Foodlink (Food Security)
-21. Open Door Mission (Food Security)
-22. Rochester Area Interfaith Hospitality Network (Family Support Services)
-23. ABVI-Goodwill (Disability Rights)
-24. Al Sigl Community of Agencies (Disability Rights)
-25. Center for Disability Rights (Disability Rights)
-26. Golisano Foundation (Disability Rights)
-27. NAMI Rochester (Peer Support)
-28. Recovery All Ways (Peer Support)
-29. Strong Recovery (Peer Support)
-
-**Latino Community Focus Organizations** (includes both "Latino Community Focus" and "All Communities"):
-1. Ibero-American Action League (Latino Community Services)
-2. Spanish Evangelical Church (Latino Community Services)
-3. Latinas Unidas (Women's Empowerment)
-4. Centro Civico Hispano (Family Support Services)
-5. La Marketa (Food Security)
-6. Latino Arts & Cultural Center (Arts & Culture)
-7. Puerto Rican Youth Development (Education & Youth)
-8. Camino Nuevo (Education & Youth)
-9. Hispanic Chamber of Commerce (Business & Employment)
-10. Eugenio Maria de Hostos Charter School (Education & Youth)
-11. Villa of Hope (Family Support Services)
-12. Anthony L. Jordan Health Center (Health Services)
-13. Finger Lakes Health Systems Agency (Healthcare Advocacy)
-14. Latino Civic Association (Community Services)
-15. Spanish American Civic Association (Community Services)
-
-**Additional Organizations** (serves both communities):
-1. Rochester Area Community Foundation (Community Services)
-2. United Way of Greater Rochester (Community Services)
-3. Urban League of Rochester (Civil Rights & Economic Empowerment)
-4. Volunteers of America (Community Services)
-5. YWCA of Rochester & Monroe County (Women's Services)
-6. Legal Assistance of Western New York (Legal Services)
-7. Neighborhood Health Center (Health Services)
-8. Rochester Housing Authority (Community Services)
-9. Action for a Better Community (Community Services)
-10. PathStone Development Corporation (Community Services)
-
-#### Notes Related to Onboarding Activities
-- Organization verification process documentation
-- Partner contact information collection protocols
-- Service area mapping methodology
-- Community focus categorization guidelines
-
-#### Contact Lists Created During Onboarding Support
-- Partner organization primary contacts
-- Service provider emergency contacts
-- Community liaison contact information
-- Event coordinator contact lists
+Onboarding notes personally created:
+- Organization verification documentation
+- Partner contact lists
+- Community focus categorization
 
 ### 3. Meeting Notes & Governance Notes (NOT Work Product)
 
-**Meeting notes and governance documentation were created and maintained by Mrs. Juanita Lyde, the meeting facilitator and program coordinator, and are NOT part of William Powell Consulting's Work Product.**
-
-#### Notes from Meetings with GRHF Staff
-- Meeting notes were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator)
-- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
-- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
-
-#### Notes from Meetings with Common Ground Health/RIO
-- Meeting notes were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator)
-- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
-- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
-
-#### Notes from DGB Advisory Group Governance Sessions
-- Meeting notes and governance documentation were created and kept by Mrs. Juanita Lyde (meeting facilitator/program coordinator) until she removed herself from the project
-- To the best of my knowledge, these notes were placed in the Digital Green Book Google Drive
-- **NOT Work Product**: Created by GRHF's program coordinator, not by William Powell Consulting
-
-**Clarification**: William Powell Consulting attended meetings as requested but did not create or maintain meeting notes. All meeting facilitation and note-taking was handled by GRHF's designated program coordinator.
+Meeting notes were maintained by the project facilitator, Mrs. Juanita Lyde, and stored in the Digital Green Book Google Drive. These notes were not authored by William Powell Consulting and are not Work Product under the contracts.
 
 ### 4. Weekly / Monthly Progress Updates (Contractual Deliverable)
 
-**✅ All progress updates have been provided to GRHF during the engagement and are stored in the Digital Green Book Google Drive.**
+All progress updates authored by William Powell Consulting have been provided to GRHF and are stored in the Digital Green Book Google Drive.
 
-#### Weekly Updates Provided During the 2024 Contract
-- All weekly status reports submitted throughout 2024
-- Week ending dates with completed tasks
-- In-progress work documentation
-- Blockers/issues identified and resolved
-- Weekly priorities and planning
+- Weekly status reports (2024 contract period)
+- Monthly status reports (2025 contract period)
 - **Location**: Digital Green Book Google Drive (GRHF-managed)
 
-#### Monthly Updates Provided During the 2025 Contract
-- All monthly status reports submitted throughout 2025
-- Month/year summaries
-- Major accomplishments and deliverables
-- Metrics/analytics tracking
-- Challenges addressed and solutions implemented
-- Upcoming milestones and planning
-- **Location**: Digital Green Book Google Drive (GRHF-managed)
+### 5. Maintenance Notes (Contractual Deliverable)
 
-#### Written Summaries of Project Progress
+Maintenance notes personally authored by William Powell Consulting documenting support activities performed during the contract period.
 
-**Recent Development Work Summary (January 2026)**:
+**Location**: Digital Green Book Google Drive (GRHF-managed)
 
-1. **Homepage Navigation Fixes**
-   - Fixed "View Events" button functionality
-   - Fixed "Find Resources" button functionality
-   - Corrected navigation handler issues
+### 6. Reports Submitted (Contractual Deliverable)
 
-2. **Content Corrections**
-   - Underground Railroad video poster: Corrected spelling errors in historical documentary poster
-   - Updated text from misspelled version to accurate historical reference
+Reports personally authored and submitted by William Powell Consulting during the contract engagement.
 
-3. **Visual Enhancements - Melonomics Page**
-   - Added 6 new AI-generated professional images for economic empowerment content
-   - Enhanced visual storytelling for Black economic empowerment section
-
-4. **Youth Vibe Enhancements**
-   - Added 6 new AI-generated images to opportunity sections
-   - Added 4 interactive Creative Challenge features with engagement elements
-
-5. **Limitless Living Page Updates**
-   - Fixed resource navigation functionality
-   - Improved user experience for disability resources section
-
-6. **Latin Connection Page Updates**
-   - Fixed navigation to category content
-   - Improved bilingual navigation experience
-
-7. **Platform Content Removal**
-   - Removed Hyde mental health platform content per GRHF request
-   - Updated homepage navigation accordingly
-
-8. **Bug Fixes**
-   - Resolved navigation functionality issues
-   - Fixed user interface interaction problems
-
-### 5. Maintenance & Support Activities (Contractual Deliverable)
-
-**Summary of maintenance and support work performed during contract period:**
-
-- Homepage navigation improvements
-- Content spelling and accuracy corrections  
-- Visual content enhancements across multiple sections
-- User interface functionality fixes
-- Platform content updates per GRHF requests
-- Bug identification and resolution
-- Ongoing platform maintenance and support
-
-### 6. Reports Submitted During the Engagement (Contractual Deliverable)
-
-**✅ All reports and documentation have been provided to GRHF during the engagement and are stored in the Digital Green Book Google Drive.**
-
-#### Written Reports Delivered to GRHF
-- Formal progress reports
-- Quarterly summaries (where applicable)
-- Final deliverable reports
-- Assessment reports
-- Recommendation documents
-- **Location**: Digital Green Book Google Drive (GRHF-managed)
-
-#### Content Documentation Provided
-
-**Partner Organizations**:
-- 54 partner organizations with complete profiles
-- Resource categorization by service type
-- Community focus definitions (Black Community, Latino Community, All Communities)
-- Service area descriptions and contact information
+**Location**: Digital Green Book Google Drive (GRHF-managed)
 
 ### 7. Marketing Materials & Strategy (Contractual Deliverable)
 
@@ -414,39 +231,31 @@ The following items were created voluntarily and are **NOT** contractually requi
 All Work Product created during the contract periods (Contract #24-04398 and Contract #24-04372) has been provided to the Greater Rochester Health Foundation through the following mechanisms:
 
 1. **Digital Green Book Google Drive** (GRHF-managed and controlled):
-   - All weekly progress updates (2024 contract)
-   - All monthly progress updates (2025 contract)
-   - All formal reports and deliverable documentation
-   - All marketing materials and brand assets
-   - Complete marketing strategy documentation
-   - Comprehensive rollout plan and implementation guides
-   - Community engagement and partnership materials
+   - Weekly progress updates (2024 contract)
+   - Monthly progress updates (2025 contract)
+   - Formal reports and deliverable documentation
+   - Marketing materials and brand assets
+   - Marketing strategy documentation
+   - Rollout plan and implementation guides
+   - Maintenance notes
    - **Note**: Meeting notes were created by Mrs. Juanita Lyde (GRHF program coordinator), not by William Powell Consulting
 
-2. **During the engagement** through:
-   - Regular status updates and progress reports
-   - Content updates delivered as part of ongoing support
-   - Bug fixes and maintenance activities documented and implemented
-   - Technical support provided during contract periods
-   - Meeting attendance and participation (notes kept by GRHF program coordinator)
-
-3. **In this turnover packet** including:
-   - Complete content update documentation
-   - Onboarding lists and partner organization documentation (54 organizations)
-   - Recent development work summary (January 2026)
-   - Maintenance and support activity summary
+2. **In this turnover packet**:
+   - Content update documentation
+   - Onboarding lists and partner organization documentation
+   - Summary of Work Product locations
 
 ### No Additional Work Product
 
 **William Powell Consulting hereby certifies that:**
 
-- No additional Work Product exists beyond what is listed in Section II of this turnover packet and what has been provided in the Digital Green Book Google Drive
-- All contractually required deliverables have been provided to GRHF
-- All content updates, progress reports, and support documentation created during the contract periods have been provided
-- All onboarding lists and organizational contact information developed during the engagement have been provided
-- All marketing materials, marketing strategy documents, and rollout plans have been provided in the Digital Green Book Google Drive
-- GRHF has full access to all Work Product through the Google Drive and this turnover packet
-- **Meeting notes were created and maintained by Mrs. Juanita Lyde (GRHF's program coordinator) and are not part of William Powell Consulting's Work Product**
+- All Work Product created under Contract #24-04398 and Contract #24-04372 has been provided to GRHF
+- All contractually required deliverables have been transferred
+- All content updates, progress reports, maintenance notes, and reports authored by William Powell Consulting have been provided
+- All onboarding lists and organizational contact information have been provided
+- All marketing materials, marketing strategy documents, and rollout plans have been provided
+- GRHF has full access to all Work Product through the Digital Green Book Google Drive and this turnover packet
+- Meeting notes were created and maintained by Mrs. Juanita Lyde (GRHF's program coordinator) and are not Work Product of William Powell Consulting
 
 ### Background IP Retention
 
@@ -472,11 +281,7 @@ This includes, but is not limited to:
 
 This turnover packet, together with all materials previously provided in the Digital Green Book Google Drive, constitutes the complete transfer of all Work Product as required under Contract #24-04398 and Contract #24-04372. 
 
-The Greater Rochester Health Foundation receives full rights to use, modify, and distribute:
-- All items listed in Section II (Contractual Work Product) 
-- All materials provided in the Digital Green Book Google Drive including meeting notes, progress updates, reports, marketing materials, marketing strategy, and rollout plans
-
-All rights are transferred in accordance with the contract terms.
+The Greater Rochester Health Foundation receives full rights to use, modify, and distribute all items listed in Section II (Contractual Work Product) in accordance with the contract terms.
 
 All items listed in Section III (Background IP and excluded items) remain the sole property of William Powell Consulting and are not transferred as part of this engagement.
 
